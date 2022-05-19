@@ -3,7 +3,7 @@
 // let json = JSON.parse(JSON.stringify(file))
 
 
-function getUrl(filename){
+const getUrl = function(filename){
     var file = require('../private/' + filename);
     var json = JSON.parse(JSON.stringify(file));
     var result_urls = []
@@ -14,7 +14,7 @@ function getUrl(filename){
     return result_urls;
 }
 
-function trim_repo_url(array){
+const trim_repo_url = function(array){
     var repo_url = array;
     for(var i = 0; i < array.length; i++){
         for(var j = 0; j < array[i].length; j++){
