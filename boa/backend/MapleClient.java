@@ -29,7 +29,7 @@ public class MapleClient {
 
     public int run(String script, String output_dir, String name) {
         try (final BoaClient client = new BoaClient()) {
-            client.login("zyou", "Forever");
+            client.login(username, password);
 
             // print all available input datasets
             InputHandle dataset = client.getDataset("2019 October/GitHub");
