@@ -38,15 +38,15 @@ const returnAllUrls = async(directory, res) => {
         var path = '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/Examplore-master/meteor_app/client/'
         var name = 'output.txt';
         var path_for_repo_url = '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/Examplore-master/meteor_app/client/';
-        // var name1 = ' repo';
-        // for(let i = 0; i < repo_url.length; i++){
-        //     console.log(JSON.stringify(repo_url[1][i][1])+",")
-        // }
-        // fs.writeFileSync(path + name, res.toString(), (err) => {
+
+        for(let i = 0; i < repo_url.length; i++){
+            console.log(JSON.stringify(repo_url[1][i][1])+",")
+        }
+        fs.writeFileSync(path + name, res.toString(), (err) => {
       
-        //     // In case of a error throw err.
-        //     if (err) throw err;
-        // })
+            // In case of a error throw err.
+            if (err) throw err;
+        })
 
         
         
