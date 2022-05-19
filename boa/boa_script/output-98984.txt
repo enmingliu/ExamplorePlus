@@ -1,0 +1,2 @@
+pj[https://github.com/goodow/j2objc/jre_emul/android/libcore/luni/src/main/java/java/util/Date.java] = 1379012880000000
+pj1[https://github.com/goodow/j2objc/jre_emul/android/libcore/luni/src/main/java/java/util/Date.java] = 3
