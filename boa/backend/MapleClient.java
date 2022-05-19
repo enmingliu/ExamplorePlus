@@ -1,20 +1,4 @@
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import edu.iastate.cs.boa.BoaClient;
 import edu.iastate.cs.boa.BoaException;
 import edu.iastate.cs.boa.CompileStatus;
@@ -22,6 +6,14 @@ import edu.iastate.cs.boa.ExecutionStatus;
 import edu.iastate.cs.boa.InputHandle;
 import edu.iastate.cs.boa.JobHandle;
 import edu.iastate.cs.boa.NotLoggedInException;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 
 public class MapleClient {
     final String username = "zyou";
@@ -89,13 +81,6 @@ public class MapleClient {
         return -1;
     }
 
-    public static int findSecondOcur(String pattern, String str) {
-        Matcher matcher = Pattern.compile(pattern).matcher(str);
-        int numOfOcurrences = 2;
-        for (int i = 0; i < numOfOcurrences; i++)
-            matcher.find();
-        return matcher.start();
-    }
 
     public static void main(String[] args) throws IOException {
         MapleClient client = new MapleClient();
@@ -106,7 +91,6 @@ public class MapleClient {
 
         if (directoryListing != null) {
             for (File child : directoryListing) {
-                // Do something with child
                 String content = new String(Files.readAllBytes(Paths.get(
                         "/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/Examplore-master/meteor_app/client/sampleJSON/"
                                 + child.getName())));
