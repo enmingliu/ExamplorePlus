@@ -1,0 +1,276 @@
+# retrieve valid GitHub urls, given the repo urls and file paths of a set of code examples
+p: Project = input;
+#record: output collection[string] of string;
+#record_time: output collection[string] of time;
+#dev: output collection[string] of int;
+pj: output collection[string] of time;
+pj1: output sum[string] of int;
+
+# repo urls of selected code examples
+q_urls : array of string;
+q_urls = {"https://github.com/goodow/j2objc",
+"https://github.com/AvogadroSG1/SCADASystem",
+"https://github.com/krouge/MWS_projet",
+"https://github.com/wtsi-npg/illumina2bam",
+"https://github.com/mstrey/lotoNaMao",
+"https://github.com/jimtahu/OMShips_android",
+"https://github.com/smaldeniya/GlobalMeshETicket",
+"https://github.com/liuxian-nus/Test",
+"https://github.com/codehaus/jbehave-core",
+"https://github.com/dianping/cat",
+"https://github.com/robworth/patientview",
+"https://github.com/yukoff/concourse-connect",
+"https://github.com/cbcrg/tcoffee-server",
+"https://github.com/alibaba/otter",
+"https://github.com/eea/eea.eunis",
+"https://github.com/IQSS/dvn",
+"https://github.com/hyperic/sigar",
+"https://github.com/SVMP/android_libcore",
+"https://github.com/miserani/paodequeijo",
+"https://github.com/jaejaejae/ramonCS2103",
+"https://github.com/terraframe/Runway-SDK",
+"https://github.com/todoroo/astrid",
+"https://github.com/hackystat/hackystat-utilities",
+"https://github.com/gabegorelick/guitar-core",
+"https://github.com/ariesteam/thinklab",
+"https://github.com/peggyl/hackblue",
+"https://github.com/QADM/SCG",
+"https://github.com/HubSpot/jmte",
+"https://github.com/eastseven/tsm",
+"https://github.com/Qi4j/qi4j-sdk",
+"https://github.com/spontecorp/ferretotalserver",
+"https://github.com/ralscha/extdirectspring",
+"https://github.com/payhum/codebase",
+"https://github.com/svn2github/tigervnc",
+"https://github.com/zendtech/zendserver-sdk-java",
+"https://github.com/1and1/Activiti-internal",
+"https://github.com/Imaginea/pancake-android",
+"https://github.com/ferquies/2dam",
+"https://github.com/elka-projekt/cs-voltdb",
+"https://github.com/charlestontelles/INN372-web",
+"https://github.com/ovitas/compass2",
+"https://github.com/comsince/myappweixin",
+"https://github.com/angusmacdonald/h2o",
+"https://github.com/jarvis-su/codes",
+"https://github.com/svn2github/sakai-kernel",
+"https://github.com/flowerrrr/RMT",
+"https://github.com/pdinc-oss/gitblit",
+"https://github.com/kef/hieos",
+"https://github.com/ramesesinc/clfc",
+"https://github.com/abdulazeezsk/netvogue",
+"https://github.com/mensonge/mensonge",
+"https://github.com/GDI-Vlaanderen/geonetwork",
+"https://github.com/Jrende/IV1201",
+"https://github.com/SDLLanguageTechnologies/Testy",
+"https://github.com/UweTrottmann/QuickDic-Dictionary",
+"https://github.com/tmyroadctfig/swingx",
+"https://github.com/wuzbin/opentsdb",
+"https://github.com/dlitvinov/FastEMFStore.core",
+"https://github.com/lounaspaikka/lounaspaikka",
+"https://github.com/JadiraOrg/jadira",
+"https://github.com/cupofcat/Life-Planning",
+"https://github.com/Paxle/Paxle",
+"https://github.com/zayac/natty",
+"https://github.com/jeromexu/ubank",
+"https://github.com/vyloy/lnvc",
+"https://github.com/germanescobar/mokai",
+"https://github.com/svn2github/plantuml",
+"https://github.com/mosesn/Beer-Battle",
+"https://github.com/botaydotcom/iCreate",
+"https://github.com/hoevenvd/java_for_weather",
+"https://github.com/grkg8tr/BurnBot",
+"https://github.com/svn2github/sakai-kernel",
+"https://github.com/rwilson/J2Free",
+"https://github.com/baohaojun/davmail",
+"https://github.com/dekellum/iudex",
+"https://github.com/jaliste/unitime",
+"https://github.com/wholcomb/tip",
+"https://github.com/palava/palava-bridge",
+"https://github.com/osvaldogusmao/ProjetoPI",
+"https://github.com/sriksun/incubator-falcon",
+"https://github.com/Starlink/starjava",
+"https://github.com/dvn/dvn-svn-import-test4",
+"https://github.com/ses6498/RITSeniorDesignSmartRefrigerator",
+"https://github.com/jak786/VASE",
+"https://github.com/spring-projects/spring-integration",
+"https://github.com/krouge/MWS_projet",
+"https://github.com/AndiDog/thesis-code",
+"https://github.com/DenisPanchenko/Fastov",
+"https://github.com/ErkiDerLoony/xpeter",
+"https://github.com/obiba/magma",
+"https://github.com/INCF/eeg2",
+"https://github.com/sinuni/Fellesprosjektet"
+};
+
+q_files: array of string;
+q_files = {
+"jre_emul/android/libcore/luni/src/main/java/java/util/Date.java",
+"PagingSystem/src/alert/AlertMonitoringSystem.java",
+"Application/src/java/ch/heigvd/comem/services/FileManager.java",
+"src/uk/ac/sanger/npg/illumina/Lane.java",
+"mobile/Loterias/src/main/java/br/nom/strey/maicon/loterias/megasena/MegasenaResultadosDAO.java",
+"test/src/org/omships/omships/test/PortItemTest.java",
+"src/com/globalmesh/action/hall/PlatinumAction.java",
+"IRMS/IRMSCustomer-war/src/java/servlet/CEMSServlet.java",
+"jbehave-core/src/test/java/org/jbehave/core/steps/ParameterConvertersBehaviour.java",
+"cat-home/src/test/java/com/dianping/cat/report/task/utilization/UtilizationBuilderTest.java",
+"patientview-parent/patientview/src/main/java/org/patientview/patientview/model/TestResult.java",
+"src/main/java/com/concursive/connect/web/modules/calendar/utils/CalendarView.java",
+"app/models/Repo.java",
+"node/etl/src/main/java/com/alibaba/otter/node/etl/load/loader/db/interceptor/log/LogLoadInterceptor.java",
+"web/src/main/java/ro/finsiel/eunis/search/Utilities.java",
+"DVN-root/DVN-web/src/main/java/edu/harvard/iq/dvn/core/web/study/StudyUI.java",
+"bindings/java/src/org/hyperic/sigar/cmd/Ps.java",
+"luni/src/test/java/libcore/net/http/HttpResponseCacheTest.java",
+"src/visao/JDialogRegistrarPagamento.java",
+"CS2103/lib/apache-log4j-1.2.16/src/main/java/org/apache/log4j/DailyRollingFileAppender.java",
+"runwaysdk-server/src/main/java/com/runwaysdk/query/AttributeDateTime.java",
+"api/src/com/todoroo/andlib/utility/DateUtilities.java",
+"src/org/hackystat/utilities/logger/OneLineFormatter.java",
+"model-core/src/test/java/edu/umd/cs/guitar/util/UtilTest.java",
+"plugins/org.integratedmodelling.thinklab.core/src/org/integratedmodelling/utils/MiscUtilities.java",
+"src/extractor/EventExtractor.java",
+"opentaps-1.5/opentaps/opentaps-common/src/common/org/opentaps/common/reporting/etl/UtilEtl.java",
+"test/com/floreysoft/jmte/AbstractEngineTest.java",
+"tsm/src/main/java/com/justinmobile/tsm/application/web/ApplicationVersionController.java",
+"libraries/rest-common/src/main/java/org/qi4j/library/rest/common/table/TableBuilder.java",
+"src/java/com/spontecorp/ferretotalserver/controller/reporte/JasperManagement.java",
+"src/test/java/ch/ralscha/extdirectspring/provider/PollProvider.java",
+"Payhum/src/com/openhr/zipfile/PayZipDownload.java",
+"trunk/java/com/tigervnc/rfb/Configuration.java",
+"zendserver-sdk-java/org.zend.sdk/sdklib/org/zend/sdklib/monitor/ZendMonitor.java",
+"modules/activiti-engine/src/main/java/org/activiti/engine/impl/jobexecutor/TimerDeclarationImpl.java",
+"src/com/imaginea/android/sugarcrm/sync/SugarSyncManager.java",
+"AD/Tema 2/h2/src/main/org/h2/message/TraceSystem.java",
+"src/frontend/org/voltdb/jdbc/JDBC4PerfCounter.java",
+"SolarPowerCalcWeb/src/au/edu/qut/inn372/greenhat/bean/Calculator.java",
+"core/src/main/java/no/ovitas/compass2/util/DateUtil.java",
+"phoneBook/src/com/comsince/phonebook/view/pulltorefreshlistview/RefreshListView.java",
+"src/test/org/h2o/test/h2/H2TestBase.java",
+"dataOperation/src/main/java/sqlite/Main.java",
+"tags/kernel-1.0.19/kernel-impl/src/main/java/org/sakaiproject/time/impl/BasicTimeService.java",
+"rmt/src/main/java/de/flower/rmt/util/Dates.java",
+"src/com/gitblit/wicket/WicketUtils.java",
+"src/logbrowser/src/java/com/vangent/hieos/logbrowser/servlets/GetDateServlet.java",
+"platform/android/PaymentCollectionApp/src/com/rameses/paymentcollectionapp/CollectionSheetInfo.java",
+"Server/netvogue_web/src/main/java/org/netvogue/server/webmvc/controllers/StatusUpdateController.java",
+"src/main/java/mensonge/userinterface/tree/PanneauArbre.java",
+"web/src/main/java/org/fao/geonet/kernel/harvest/harvester/fragment/FragmentHarvester.java",
+"app/models/Availability.java",
+"src/main/java/com/sdl/selenium/web/utils/GetData.java",
+"jars/icu4j-4_8_1_1/main/tests/core/src/com/ibm/icu/dev/test/format/DateFormatRegressionTestJ.java",
+"swingx-core/src/test/java/org/jdesktop/swingx/JXDatePickerIssues.java",
+"src/tools/CliQuery.java",
+"org.eclipse.emf.emfstore.client.ui/src/org/eclipse/emf/emfstore/client/ui/views/scm/SCMLabelProvider.java",
+"src/fi/aalto/lounaspaikka/LounaspaikkaActivity.java",
+"usertype.core/src/main/java/org/jadira/usertype/dateandtime/legacyjdk/columnmapper/TimestampColumnDateMapper.java",
+"src/com/appspot/analyser/DeleteSuggestion.java",
+"sandbox/GuiRemote/src/main/java/org/paxle/gui/remote/actions/ViewChartAction.java",
+"src/main/java/ru/natty/persist/Album.java",
+"src/java/main/com/ufinity/marchant/ubank/common/DateUtil.java",
+"lcm/src/com/lorent/trigger/ConfStartTrigger.java",
+"mokai-connectors/mokai-smpp-server/src/main/java/org/mokai/connector/smpp/SmppServerConnector.java",
+"tags/plantuml-7938/src/net/sourceforge/plantuml/acearth/PSystemXearth.java",
+"twilio-java/src/main/java/com/twilio/sdk/resource/instance/AuthorizedConnectApp.java",
+"src/com/android/apptime/Main.java",
+"src/org/tom/weather/astro/AstroFormat.java",
+"src/com/nicknackhacks/dailyburn/api/FoodDao.java",
+"tags/kernel-1.2.0-rc13/kernel-util/src/main/java/org/sakaiproject/util/DateWidgetFormat.java",
+"lib/src/java/org/j2free/jsp/el/DateTimeUtils.java",
+"src/java/davmail/util/StringUtil.java",
+"iudex-http/src/main/java/iudex/http/Headers.java",
+"JavaSource/org/unitime/timetable/util/RoomAvailabilityService.java",
+"projects/unsorted/get_calendar/GetCalendar.java",
+"src/main/java/de/cosmocode/palava/jobs/form/parseDate.java",
+"src/br/com/unifeob/app/util/Util.java",
+"common/src/test/java/org/apache/falcon/entity/EntityUtilTest.java",
+"ant/src/main/org/apache/tools/ant/util/DateUtils.java",
+"tags/release-2.1/src/DVN-web/src/edu/harvard/iq/dvn/core/web/util/DateValidator.java",
+"code/mobile/smartFridge/src/edu/rit/smartFridge/ItemDetailActivity.java",
+"editor/server/src/de/hpi/bpmn/serialization/erdf/BPMNeRDFSerialization.java",
+"spring-integration-http/src/test/java/org/springframework/integration/http/support/DefaultHttpHeaderMapperFromMessageOutboundTests.java",
+"Reflex/src/ch/heigvd/comem/reflex/PostPictureActivity.java",
+"Sample application/Android/src/de/andidog/mobiprint/Iso8601.java",
+"src/core/Table.java",
+"lib/smack-3.2.1-source/org/jivesoftware/smackx/workgroup/packet/QueueOverview.java",
+"magma-api/src/test/java/org/obiba/magma/type/DateTypeTest.java",
+"src/main/java/cz/zcu/kiv/eegdatabase/logic/util/BookingRoomUtils.java",
+"mysql-connector-java-5.1.18/src/testsuite/simple/DateTest.java"
+    
+};
+
+last_commit_sha1 : string;
+last_commit_message : string;
+last_commit_date : time;
+committers: map[string] of bool;
+
+# Merge revisions (merging from branches) are associated with empty files
+# merge_filter := "merge";
+
+# Get the last snapshot of a given file in a given GitHub repo
+getLastSnapshot := function(repo : CodeRepository, file : string) : ChangedFile {
+    snapshot : ChangedFile;
+    commit_sha1 : string;
+    commit_message : string;
+    commit_time : time;
+    
+    visit(repo, visitor {
+        before node: Revision -> {
+            #if (match(merge_filter, lowercase(node.log))) stop;
+            commit_sha1 = node.id;
+            commit_message = node.log;
+            commit_time = node.commit_date;
+            
+
+        }
+        
+        before node: ChangedFile -> {
+            if (node.name != file) stop;
+            snapshot = node;
+            last_commit_sha1 = commit_sha1;
+            last_commit_message = commit_message;
+            last_commit_date  = commit_time;
+        }
+    });
+    
+    return snapshot;
+};
+
+#visit(p, visitor {
+#	before node: Revision ->
+#		if (!haskey(committers, node.committer.username)) {
+#			committers[node.committer.username] = true;
+#			counts[p.id] << 1;
+#		}
+#});
+visit(p, visitor {
+	before node: CodeRepository -> {
+	    foreach(i:int; def(q_urls[i])) {
+	        q_url := q_urls[i];
+	        if(p.project_url == q_url) {
+	           q_file := q_files[i];
+	           snapshot := getLastSnapshot(node, q_file); 
+#	           id := format("%s ** %s", q_url, q_file);
+#	           urls := format("%s/blob/%s/%s", q_url, last_commit_sha1, q_file);
+#	           record[id] << urls;
+#	           record_time[id] << p.created_date;
+#               dev[id] << len(p.developers);
+##	           foreach(j:int; def(dev[j]){
+##	               record_dev[id] << dev[j].username;
+##	           }
+
+	           pj[q_url+"/"+q_file] << last_commit_date;
+#	           pj1[q_url+"/"+q_file] << len(p.developers) + 1;
+	           foreach (j: int; def(p.code_repositories[j]))
+                	foreach (z: int; def(p.code_repositories[j].revisions[z]))
+                		committers[p.code_repositories[j].revisions[z].committer.username] = true;
+            
+                if (len(committers) > 0)
+                	pj1[q_url+"/"+q_file] << len(committers);
+	        }
+	    }
+	    
+	    stop;
+	}
+
+});

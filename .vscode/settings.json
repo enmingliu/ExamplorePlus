@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "boa_backend/boa"
+    ],
+    // "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.autoSave": "afterDelay",
+    "java.semanticHighlighting.enabled": true,
+    "java.jdt.ls.vmargs": "",
+    "java.import.gradle.jvmArguments": ""
+}
