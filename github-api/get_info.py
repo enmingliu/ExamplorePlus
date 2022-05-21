@@ -11,7 +11,7 @@ def extract_info(github_URL):
     owner = splits[3]
     repo = splits[4]
 
-    # first request
+    # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo
     # PARAMS = {'page':1}
     # sending get request and saving the response as response object
@@ -27,10 +27,10 @@ def extract_info(github_URL):
     ret["num_forks"] = data['forks_count']
 
     # GET number of open issues
-    ret["num_issues"] = data['open_issues_count']
+    ret["num_open_issues"] = data['open_issues_count']
     # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
 
-    # second request
+    # SECOND REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=1"
     r = requests.get(url = request_URL)
 
@@ -40,17 +40,29 @@ def extract_info(github_URL):
     splits = data.split(">")
     splits = splits[1].split("=")
     ret["num_contributors"] = splits[-1]
-    
+
+    # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/issues?state=closed&per_page=1"
+    r = requests.get(url = request_URL)
+
+    # GET number of closed issues
+    try:
+        data = r.headers['Link']
+        splits = data.split(">")
+        splits = splits[1].split("=")
+        ret["num_closed_issues"] = splits[-1]
+    except:
+        ret["num_closed_issues"] = 0
+
     # return dictionary of values
     return ret
 
 def main():
-    # sample url
+    # sample url, no need to add /tree/master, just added here for convenience of access
     github_URL = "https://github.com/ArchimedesCAD/Archimedes/tree/master/br.org.archimedes.core/src/br/org/archimedes/gui/model/Workspace.java"
     print(extract_info(github_URL))
     github_URL = "https://github.com/MIPS/cts/tree/master/tools/dx-tests/src/dxconvext/util/FileUtils.java"
     print(extract_info(github_URL))
-
 
 if __name__ == "__main__":
     main()
