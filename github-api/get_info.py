@@ -11,7 +11,7 @@ def extract_info(github_URL):
     owner = splits[3]
     repo = splits[4]
 
-    # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    # # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo
     # PARAMS = {'page':1}
     # sending get request and saving the response as response object
@@ -33,7 +33,6 @@ def extract_info(github_URL):
     # SECOND REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=1"
     r = requests.get(url = request_URL)
-
     # GET number of contributors
     # https://stackoverflow.com/questions/44347339/github-api-how-efficiently-get-the-total-contributors-amount-per-repository
     data = r.headers['Link']
@@ -41,7 +40,7 @@ def extract_info(github_URL):
     splits = splits[1].split("=")
     ret["num_contributors"] = splits[-1]
 
-    # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    # # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/issues?state=closed&per_page=1"
     r = requests.get(url = request_URL)
 
@@ -54,15 +53,76 @@ def extract_info(github_URL):
     except:
         ret["num_closed_issues"] = 0
 
+    # Test
+    list_of_authors = get_authors_info(owner,repo,ret["num_contributors"])
+    ret["authors_info"] = [];
+    for item in list_of_authors:
+        num_of_contributions = get_contribution_last_year("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", item['username'])
+        ret["authors_info"].append({
+            item['username'] : {
+                "num_of_contributions" : num_of_contributions,
+                "num_of_followers" : item['num_followers']
+            }
+        })
+
     # return dictionary of values
     return ret
+
+
+def get_contribution_last_year(api_key, username):
+    headers = {"Authorization": "Bearer " + api_key}
+    variables = {
+        "username": username
+    }
+    query = """
+          query($username: String!) { 
+              user(login: $username) {
+                  name
+                  contributionsCollection {
+                    contributionCalendar {
+                      colors
+                      totalContributions
+                      weeks {
+                        contributionDays {
+                          color
+                          contributionCount
+                          date
+                          weekday
+                        }
+                        firstDay
+                      }
+                    }
+                  }
+                }
+              }
+          
+          """
+    request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables': variables}, headers=headers)
+    if request.status_code == 200 and isinstance(request.json(),type(None)) == False:
+        return request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
+    else:
+        return 0
+
+def get_authors_info(owner, repo, num_contributors):
+    list_of_usernames = []
+    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=" + num_contributors
+    r = requests.get(url = request_URL)
+    for item in r.json():
+      username = item['url'].split('/')[len(item['url'].split('/')) - 1]
+      request_URL = item['followers_url']
+      r = requests.get(url = request_URL)
+      list_of_usernames.append({
+          'username': username,
+          'num_followers' : len(r.json())
+          })
+    
+    return list_of_usernames
 
 def main():
     # sample url, no need to add /tree/master, just added here for convenience of access
     github_URL = "https://github.com/ArchimedesCAD/Archimedes/tree/master/br.org.archimedes.core/src/br/org/archimedes/gui/model/Workspace.java"
     print(extract_info(github_URL))
-    github_URL = "https://github.com/MIPS/cts/tree/master/tools/dx-tests/src/dxconvext/util/FileUtils.java"
-    print(extract_info(github_URL))
+    
 
 if __name__ == "__main__":
     main()
