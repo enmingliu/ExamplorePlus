@@ -104,19 +104,19 @@ def get_contribution_last_year(api_key, username):
         return 0
 
 def get_authors_info(owner, repo, num_contributors):
-    list_of_usernames = []
+    list_of_author_info = []
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=" + num_contributors
     r = requests.get(url = request_URL)
     for item in r.json():
       username = item['url'].split('/')[len(item['url'].split('/')) - 1]
       request_URL = item['followers_url']
       r = requests.get(url = request_URL)
-      list_of_usernames.append({
+      list_of_author_info.append({
           'username': username,
           'num_followers' : len(r.json())
           })
     
-    return list_of_usernames
+    return list_of_author_info
 
 def main():
     # sample url, no need to add /tree/master, just added here for convenience of access
