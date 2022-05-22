@@ -59,7 +59,8 @@ def extract_info(github_URL):
     for item in list_of_authors:
         num_of_contributions = get_contribution_last_year("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", item['username'])
         ret["authors_info"].append({
-            item['username'] : {
+            'username' : item['username'],
+            'metric' : {
                 "num_of_contributions" : num_of_contributions,
                 "num_of_followers" : item['num_followers']
             }
@@ -112,7 +113,7 @@ def get_authors_info(owner, repo, num_contributors):
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=" + num_contributors
     r = requests.get(url = request_URL)
     for item in r.json():
-      username = item['url'].split('/')[len(item['url'].split('/')) - 1]
+      username = item['url'].split('/')[-1]
       # do fetch request for the number of followers, for each author
       request_URL = item['followers_url']
       r = requests.get(url = request_URL)
