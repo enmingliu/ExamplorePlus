@@ -53,7 +53,7 @@ def extract_info(github_URL):
     except:
         ret["num_closed_issues"] = 0
 
-    # Test
+    # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
     list_of_authors = get_authors_info(owner,repo,ret["num_contributors"])
     ret["authors_info"] = [];
     for item in list_of_authors:
@@ -70,7 +70,10 @@ def extract_info(github_URL):
 
 
 def get_contribution_last_year(api_key, username):
+    # referenced https://gist.github.com/gbaman/b3137e18c739e0cf98539bf4ec4366ad.
+    # need to have an API key for using GraphQL API to get the totalContributions
     headers = {"Authorization": "Bearer " + api_key}
+    # variables used for passing parameters into the query
     variables = {
         "username": username
     }
@@ -105,10 +108,12 @@ def get_contribution_last_year(api_key, username):
 
 def get_authors_info(owner, repo, num_contributors):
     list_of_author_info = []
+    # based on the second request. 
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=" + num_contributors
     r = requests.get(url = request_URL)
     for item in r.json():
       username = item['url'].split('/')[len(item['url'].split('/')) - 1]
+      # do fetch request for the number of followers, for each author
       request_URL = item['followers_url']
       r = requests.get(url = request_URL)
       list_of_author_info.append({
