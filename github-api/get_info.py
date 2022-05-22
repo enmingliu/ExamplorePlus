@@ -55,14 +55,14 @@ def extract_info(github_URL):
 
     # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
     list_of_authors = get_authors_info(owner,repo,ret["num_contributors"])
-    ret["authors_info"] = [];
+    ret["authors_info"] = []
     for item in list_of_authors:
         num_of_contributions = get_contribution_last_year("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", item['username'])
         ret["authors_info"].append({
-            'username' : item['username'],
-            'metric' : {
+            "username" : item["username"],
+            "metric" : {
                 "num_of_contributions" : num_of_contributions,
-                "num_of_followers" : item['num_followers']
+                "num_of_followers" : item["num_of_followers"]
             }
         })
 
@@ -101,9 +101,9 @@ def get_contribution_last_year(api_key, username):
               }
           
           """
-    request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables': variables}, headers=headers)
+    request = requests.post("https://api.github.com/graphql", json={"query": query, "variables": variables}, headers=headers)
     if request.status_code == 200 and isinstance(request.json(),type(None)) == False:
-        return request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
+        return request.json()["data"]["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
     else:
         return 0
 
@@ -118,8 +118,8 @@ def get_authors_info(owner, repo, num_contributors):
       request_URL = item['followers_url']
       r = requests.get(url = request_URL)
       list_of_author_info.append({
-          'username': username,
-          'num_followers' : len(r.json())
+          "username": username,
+          "num_of_followers" : len(r.json())
           })
     
     return list_of_author_info
