@@ -54,7 +54,7 @@ def extract_info(github_URL):
         ret["num_closed_issues"] = 0
 
     # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
-    list_of_authors = get_authors_info(owner,repo,ret["num_contributors"])
+    list_of_authors = get_authors_info(owner,repo)
     ret["authors_info"] = [];
     for item in list_of_authors:
         num_of_contributions = get_contribution_last_year("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", item['username'])
@@ -107,10 +107,10 @@ def get_contribution_last_year(api_key, username):
     else:
         return 0
 
-def get_authors_info(owner, repo, num_contributors):
+def get_authors_info(owner, repo):
     list_of_author_info = []
     # based on the second request. 
-    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=" + num_contributors
+    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=5"
     r = requests.get(url = request_URL)
     for item in r.json():
       username = item['url'].split('/')[-1]
