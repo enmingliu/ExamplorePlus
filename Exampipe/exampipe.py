@@ -1,8 +1,12 @@
+#!/usr/bin/python
+
 import enum
+import sys
 import json
 from multiprocessing.sharedctypes import Value
 import os
 from time import time
+from tracemalloc import start
 from get_info import extract_info
 
 # From (https://stackoverflow.com/questions/1883980/find-the-nth-occurrence-of-substring-in-a-string)
@@ -35,6 +39,19 @@ def extract_url(line):
     return (key, url, value)
 
 def main():
+    if len(sys.argv) < 3:
+        print("Argument should be: python3 exampipe.py <start_idx> <max_api_calls>")
+        return
+
+    try:
+        start_idx = int(sys.argv[1])
+        max_api_calls = int(sys.argv[2])
+        cur_idx = start_idx
+    except:
+        print("<start_idx> and <max_api_calls> should be int: python3 exampipe.py <start_idx> <max_api_calls>")
+        return
+
+
     input_json_dir = "input_json"
     input_boa_dir = "input_boa"
     output_json_dir = "output_json"
@@ -60,8 +77,12 @@ def main():
                 for idx, obj in enumerate(data):
                     if obj["url"] in url_data_map:
                         github_api_data = extract_info(obj["url"])
+                        cur_idx += 1
                         github_api_data.update(url_data_map[obj["url"]])
                         data[idx].update(github_api_data)
+                        if cur_idx >= start_idx + max_api_calls:
+                            print("Max API calls reached")
+                            return
 
                 with open(os.path.join(os.getcwd(), output_json_dir, filename), 'w+') as fo:
                     json.dump(data, fo)        
