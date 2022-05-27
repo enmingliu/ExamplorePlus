@@ -1,6 +1,5 @@
-from sys import api_version
-import requests
 import os
+import requests
 from dotenv import load_dotenv
 
 
