@@ -1,10 +1,16 @@
+from sys import api_version
 import requests
+import os
+from dotenv import load_dotenv
+
 
 # TODO: insert code to section out URLs from BOA output
 
 # given Github URL from BOA output, scrape relevant data and return dictionary of values
 # generalize to for loop for all URLs
-def extract_info(github_URL):
+
+
+def extract_info(github_URL, api_key):
     ret = {}
     # extract owner + repo name
     splits = github_URL.split("/")
@@ -54,10 +60,10 @@ def extract_info(github_URL):
         ret["num_closed_issues"] = 0
 
     # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
-    list_of_authors = get_authors_info(owner,repo)
+    list_of_authors = get_authors_info(owner,repo, ret["num_contributors"])
     ret["authors_info"] = [];
     for item in list_of_authors:
-        num_of_contributions = get_contribution_last_year("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", item['username'])
+        num_of_contributions = get_contribution_last_year(api_key, item['username'])
         ret["authors_info"].append({
             'username' : item['username'],
             'metric' : {
@@ -107,10 +113,10 @@ def get_contribution_last_year(api_key, username):
     else:
         return 0
 
-def get_authors_info(owner, repo):
+def get_authors_info(owner, repo, num_of_contributors):
     list_of_author_info = []
     # based on the second request. 
-    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=5"
+    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=" + (num_of_contributors if int(num_of_contributors) < 5 else "5")
     r = requests.get(url = request_URL)
     for item in r.json():
       username = item['url'].split('/')[-1]
@@ -127,8 +133,11 @@ def get_authors_info(owner, repo):
 
 def main():
     # sample url, no need to add /tree/master, just added here for convenience of access
+    load_dotenv()
+    api_key = os.getenv('GITHUB_PERSONAL_ACCESS_TOKEN')
     github_URL = "https://github.com/ArchimedesCAD/Archimedes/tree/master/br.org.archimedes.core/src/br/org/archimedes/gui/model/Workspace.java"
-    print(extract_info(github_URL))
+    print(extract_info(github_URL, api_key))
+    
     
 
 if __name__ == "__main__":
