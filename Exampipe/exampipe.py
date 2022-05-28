@@ -10,12 +10,12 @@ from tracemalloc import start
 from get_info import extract_info
 
 # From (https://stackoverflow.com/questions/1883980/find-the-nth-occurrence-of-substring-in-a-string)
-def find_nth(src, ele, n):
-    start = src.find(ele)
-    while start >= 0 and n > 1:
-        start = src.find(ele, start+len(ele))
-        n -= 1
-    return start
+# def find_nth(src, ele, n):
+#     start = src.find(ele)
+#     while start >= 0 and n > 1:
+#         start = src.find(ele, start+len(ele))
+#         n -= 1
+#     return start
 
 # Extract key, url, and value from boa script output line
 # $key[url] = value$
@@ -28,13 +28,13 @@ def extract_url(line):
         raise ValueError('Malformed line')
     
     url = line[ob_pos+1:cb_pos]
-    ins_pos = find_nth(url,'/', 5)
+    # ins_pos = find_nth(url,'/', 5)
 
-    if ins_pos == -1:
-        raise ValueError('Malformed line')
+    # if ins_pos == -1:
+    #     raise ValueError('Malformed line')
 
     key = line[0:ob_pos]
-    url = url[0:ins_pos+1] + "tree/master/" + url[ins_pos+1:]
+    # url = url[0:ins_pos+1] + "tree/master/" + url[ins_pos+1:]
     value = line[eq_pos+2:]
     return (key, url, value)
 

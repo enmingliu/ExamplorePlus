@@ -92,7 +92,7 @@ public class MapleClient {
         if (directoryListing != null) {
             for (File child : directoryListing) {
                 String content = new String(Files.readAllBytes(Paths.get(
-                        "/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/Examplore-master/meteor_app/client/sampleJSON/"
+                        "/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/meteor_app/client/sampleJSON/"
                                 + child.getName())));
 
                 // System.out.println(content);
@@ -162,14 +162,14 @@ public class MapleClient {
                         "      if(p.project_url == q_url) {" +
                         "        q_file := q_files[i];" +
                         "        snapshot := getLastSnapshot(node, q_file);" +
-                        "        pj[q_url+\"/\"+q_file] << last_commit_date;" +
+                        "        pj[q_url+\"/tree/master/\"+q_file] << last_commit_date;" +
                         "        foreach (j: int; def(p.code_repositories[j]))" +
                         "         foreach (z: int; def(p.code_repositories[j].revisions[z])) " +
                         "          committers[p.code_repositories[j].revisions[z].committer.username] = true;" +
                         "        if (len(committers) > 0)pj1[q_url+\"/\"+q_file] << len(committers); }}stop;}});";
 
                 client.run(query,
-                        "/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/Examplore-master/boa/output",
+                        "/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/boa/output",
                         child.getName());
 
             }
