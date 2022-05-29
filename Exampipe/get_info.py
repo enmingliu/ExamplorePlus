@@ -15,6 +15,7 @@ def extract_info(github_URL, api_key):
     splits = github_URL.split("/")
     owner = splits[3]
     repo = splits[4]
+    print(owner + ", " + repo)
 
     # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo
@@ -26,13 +27,22 @@ def extract_info(github_URL, api_key):
     data = r.json()
 
     # GET number of stars
-    ret["num_stars"] = data['stargazers_count']
+    try:
+        ret["num_stars"] = data['stargazers_count']
+    except:
+        pass
 
     # GET number of forks
-    ret["num_forks"] = data['forks_count']
+    try:
+        ret["num_forks"] = data['forks_count']
+    except:
+        pass
 
     # GET number of open issues
-    ret["num_open_issues"] = data['open_issues_count']
+    try:
+        ret["num_open_issues"] = data['open_issues_count']
+    except:
+        pass
     # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
 
     # SECOND REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -40,10 +50,13 @@ def extract_info(github_URL, api_key):
     r = requests.get(url = request_URL)
     # GET number of contributors
     # https://stackoverflow.com/questions/44347339/github-api-how-efficiently-get-the-total-contributors-amount-per-repository
-    data = r.headers['Link']
-    splits = data.split(">")
-    splits = splits[1].split("=")
-    ret["num_contributors"] = splits[-1]
+    try:
+        data = r.headers['Link']
+        splits = data.split(">")
+        splits = splits[1].split("=")
+        ret["num_contributors"] = splits[-1]
+    except:
+        ret["num_contributors"] = 0
 
     # # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/issues?state=closed&per_page=1"
@@ -59,18 +72,19 @@ def extract_info(github_URL, api_key):
         ret["num_closed_issues"] = 0
 
     # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
-    list_of_authors = get_authors_info(owner,repo, ret["num_contributors"])
-    ret["authors_info"] = [];
-    for item in list_of_authors:
-        num_of_contributions = get_contribution_last_year(api_key, item['username'])
-        ret["authors_info"].append({
-            'username' : item['username'],
-            'metric' : {
-                "num_of_contributions_last_yr" : num_of_contributions,
-                "num_of_followers" : item['num_of_followers'],
-                'num_of_contri_for_cur_repo' : item['num_of_contri_for_cur_repo']
-            }
-        })
+    if ret["num_contributors"] != 0:
+        list_of_authors = get_authors_info(owner,repo, ret["num_contributors"])
+        ret["authors_info"] = [];
+        for item in list_of_authors:
+            num_of_contributions = get_contribution_last_year(api_key, item['username'])
+            ret["authors_info"].append({
+                'username' : item['username'],
+                'metric' : {
+                    "num_of_contributions_last_yr" : num_of_contributions,
+                    "num_of_followers" : item['num_of_followers'],
+                    'num_of_contri_for_cur_repo' : item['num_of_contri_for_cur_repo']
+                }
+            })
     # return dictionary of values
     return ret
 
@@ -115,7 +129,7 @@ def get_contribution_last_year(api_key, username):
 def get_authors_info(owner, repo, num_of_contributors):
     list_of_author_info = []
     # based on the second request. 
-    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=" + (num_of_contributors if int(num_of_contributors) < 5 else "5")
+    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=" + (str(num_of_contributors) if int(num_of_contributors) < 5 else "5")
     r = requests.get(url = request_URL)
     for item in r.json():
       username = item['url'].split('/')[-1]
