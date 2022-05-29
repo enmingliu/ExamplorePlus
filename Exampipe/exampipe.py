@@ -59,18 +59,17 @@ def main():
     output_json_dir = "output_json"
 
     url_data_map = {}
-    url_timestamp_map = {}
     for filename in os.listdir(os.path.join(os.getcwd(), input_boa_dir)):
         with open(os.path.join(os.getcwd(), input_boa_dir, filename), 'r') as f:
             data = f.read().split('\n')
+            data.pop()
             for s in data:
                 try:
                     key, url, value = extract_url(s)
                     if key == "pj":
-                        url_timestamp_map[url] = value
                         url_data_map[url] = {"timestamp" : value}
-                except ValueError:
-                    print("Boa output could not be decoded")
+                except ValueError as e:
+                    print("Boa output could not be decoded: " + str(e))
 
     if not os.path.exists(os.path.join(os.getcwd(), output_json_dir)):
         os.makedirs(os.path.join(os.getcwd(), output_json_dir))
