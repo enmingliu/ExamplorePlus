@@ -6,6 +6,7 @@ import { Examples } from '../api/options.js';
 import { ActionLog } from '../api/actionlog.js';
 import Pycollections from 'pycollections';
 
+
 import './body.html';
 
 var exampleTotal = function(){
@@ -290,6 +291,8 @@ Template.body.events({
     var newDataSet = $(event.target).val()
     console.log('Dataset', newDataSet);
     Session.set('dataset', newDataSet);
+    console.log(Examples.find({dataset: Session.get('dataset')}));
+
   },
   'click .change-dataset'(event, instance){
     console.log('API Change')

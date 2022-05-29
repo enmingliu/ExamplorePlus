@@ -7,7 +7,7 @@ import json
 from multiprocessing.sharedctypes import Value
 import os
 from time import time
-from tracemalloc import start
+# from tracemalloc import start
 from get_info import extract_info
 from dotenv import load_dotenv
 
@@ -64,6 +64,7 @@ def main():
             data = f.read().split('\n')
             data.pop()
             for s in data:
+                
                 try:
                     key, url, value = extract_url(s)
                     if key == "pj":
