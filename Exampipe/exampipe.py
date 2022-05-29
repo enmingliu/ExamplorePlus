@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import enum
+from genericpath import exists
 import sys
 import json
 from multiprocessing.sharedctypes import Value
@@ -8,6 +9,7 @@ import os
 from time import time
 from tracemalloc import start
 from get_info import extract_info
+from dotenv import load_dotenv
 
 # From (https://stackoverflow.com/questions/1883980/find-the-nth-occurrence-of-substring-in-a-string)
 # def find_nth(src, ele, n):
@@ -57,18 +59,21 @@ def main():
     output_json_dir = "output_json"
 
     url_data_map = {}
-    url_timestamp_map = {}
     for filename in os.listdir(os.path.join(os.getcwd(), input_boa_dir)):
         with open(os.path.join(os.getcwd(), input_boa_dir, filename), 'r') as f:
             data = f.read().split('\n')
+            data.pop()
             for s in data:
                 try:
                     key, url, value = extract_url(s)
                     if key == "pj":
-                        url_timestamp_map[url] = value
                         url_data_map[url] = {"timestamp" : value}
-                except ValueError:
-                    print("Boa output could not be decoded")
+                except ValueError as e:
+                    print("Boa output could not be decoded: " + str(e))
+
+    if not os.path.exists(os.path.join(os.getcwd(), output_json_dir)):
+        os.makedirs(os.path.join(os.getcwd(), output_json_dir))
+        print("Create directory: " + str(os.path.join(os.getcwd(), output_json_dir)))
 
     for filename in os.listdir(os.path.join(os.getcwd(), input_json_dir)):
         with open(os.path.join(os.getcwd(), input_json_dir, filename)) as f:
@@ -76,7 +81,7 @@ def main():
                 data = json.load(f)
                 for idx, obj in enumerate(data):
                     if obj["url"] in url_data_map:
-                        github_api_data = extract_info(obj["url"])
+                        github_api_data = extract_info(obj["url"], api_key)
                         cur_idx += 1
                         github_api_data.update(url_data_map[obj["url"]])
                         data[idx].update(github_api_data)
@@ -91,4 +96,6 @@ def main():
                 print("JSON cannot be decoded " + filename)
 
 if __name__ == "__main__":
+    load_dotenv()
+    api_key = os.getenv('GITHUB_PERSONAL_ACCESS_TOKEN')
     main()
