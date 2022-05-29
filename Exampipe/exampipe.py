@@ -6,7 +6,7 @@ import json
 from multiprocessing.sharedctypes import Value
 import os
 from time import time
-from tracemalloc import start
+# from tracemalloc import start
 from get_info import extract_info
 
 # From (https://stackoverflow.com/questions/1883980/find-the-nth-occurrence-of-substring-in-a-string)
@@ -39,17 +39,17 @@ def extract_url(line):
     return (key, url, value)
 
 def main():
-    if len(sys.argv) < 3:
-        print("Argument should be: python3 exampipe.py <start_idx> <max_api_calls>")
-        return
+    # if len(sys.argv) < 3:
+    #     print("Argument should be: python3 exampipe.py <start_idx> <max_api_calls>")
+    #     return
 
-    try:
-        start_idx = int(sys.argv[1])
-        max_api_calls = int(sys.argv[2])
-        cur_idx = start_idx
-    except:
-        print("<start_idx> and <max_api_calls> should be int: python3 exampipe.py <start_idx> <max_api_calls>")
-        return
+    # try:
+    #     start_idx = int(sys.argv[1])
+    #     max_api_calls = int(sys.argv[2])
+    #     cur_idx = start_idx
+    # except:
+    #     print("<start_idx> and <max_api_calls> should be int: python3 exampipe.py <start_idx> <max_api_calls>")
+    #     return
 
 
     input_json_dir = "input_json"
@@ -62,33 +62,36 @@ def main():
         with open(os.path.join(os.getcwd(), input_boa_dir, filename), 'r') as f:
             data = f.read().split('\n')
             for s in data:
+                
                 try:
                     key, url, value = extract_url(s)
                     if key == "pj":
                         url_timestamp_map[url] = value
                         url_data_map[url] = {"timestamp" : value}
+
+                    print(url_timestamp_map)
+
                 except ValueError:
                     print("Boa output could not be decoded")
+    # for filename in os.listdir(os.path.join(os.getcwd(), input_json_dir)):
+    #     with open(os.path.join(os.getcwd(), input_json_dir, filename)) as f:
+    #         try:
+    #             data = json.load(f)
+    #             for idx, obj in enumerate(data):
+    #                 if obj["url"] in url_data_map:
+    #                     github_api_data = extract_info(obj["url"])
+    #                     cur_idx += 1
+    #                     github_api_data.update(url_data_map[obj["url"]])
+    #                     data[idx].update(github_api_data)
+    #                     # if cur_idx >= start_idx + max_api_calls:
+    #                     #     print("Max API calls reached")
+    #                     #     return
 
-    for filename in os.listdir(os.path.join(os.getcwd(), input_json_dir)):
-        with open(os.path.join(os.getcwd(), input_json_dir, filename)) as f:
-            try:
-                data = json.load(f)
-                for idx, obj in enumerate(data):
-                    if obj["url"] in url_data_map:
-                        github_api_data = extract_info(obj["url"])
-                        cur_idx += 1
-                        github_api_data.update(url_data_map[obj["url"]])
-                        data[idx].update(github_api_data)
-                        if cur_idx >= start_idx + max_api_calls:
-                            print("Max API calls reached")
-                            return
-
-                with open(os.path.join(os.getcwd(), output_json_dir, filename), 'w+') as fo:
-                    json.dump(data, fo)        
+    #             with open(os.path.join(os.getcwd(), output_json_dir, filename), 'w+') as fo:
+    #                 json.dump(data, fo)        
                         
-            except json.decoder.JSONDecodeError:
-                print("JSON cannot be decoded " + filename)
+    #         except json.decoder.JSONDecodeError:
+    #             print("JSON cannot be decoded " + filename)
 
 if __name__ == "__main__":
     main()
