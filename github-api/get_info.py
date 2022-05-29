@@ -11,17 +11,23 @@ def extract_info(github_URL):
     owner = splits[3]
     repo = splits[4]
 
+    # insert Github API Access Token
+    username = "nikkiwoo"
+    api_token = "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"
+
     # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo
-    # PARAMS = {'page':1}
     # sending get request and saving the response as response object
-    # r = requests.get(url = request_URL, params=PARAMS)
-    r = requests.get(url = request_URL)
+    r = requests.get(url = request_URL, auth=(username,api_token))
     # extracting data in json format
     data = r.json()
 
     # GET number of stars
-    ret["num_stars"] = data['stargazers_count']
+    try:
+        ret["num_stars"] = data['stargazers_count']
+    except KeyError:
+        print("API LIMIT REACHED")
+        return None
 
     # GET number of forks
     ret["num_forks"] = data['forks_count']
@@ -32,17 +38,21 @@ def extract_info(github_URL):
 
     # SECOND REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=1"
-    r = requests.get(url = request_URL)
+    r = requests.get(url = request_URL, auth=(username,api_token))
     # GET number of contributors
     # https://stackoverflow.com/questions/44347339/github-api-how-efficiently-get-the-total-contributors-amount-per-repository
-    data = r.headers['Link']
-    splits = data.split(">")
-    splits = splits[1].split("=")
-    ret["num_contributors"] = splits[-1]
+    try:
+        data = r.headers['Link']
+        splits = data.split(">")
+        splits = splits[1].split("=")
+        ret["num_contributors"] = splits[-1]
+    except KeyError:
+        ret["num_contributors"] = 0
+    
 
     # # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/issues?state=closed&per_page=1"
-    r = requests.get(url = request_URL)
+    r = requests.get(url = request_URL, auth=(username,api_token))
 
     # GET number of closed issues
     try:
@@ -50,22 +60,22 @@ def extract_info(github_URL):
         splits = data.split(">")
         splits = splits[1].split("=")
         ret["num_closed_issues"] = splits[-1]
-    except:
+    except KeyError:
         ret["num_closed_issues"] = 0
 
     # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
-    list_of_authors = get_authors_info(owner,repo)
-    ret["authors_info"] = [];
-    for item in list_of_authors:
-        num_of_contributions = get_contribution_last_year("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", item['username'])
-        ret["authors_info"].append({
-            'username' : item['username'],
-            'metric' : {
-                "num_of_contributions_last_yr" : num_of_contributions,
-                "num_of_followers" : item['num_of_followers'],
-                'num_of_contri_for_cur_repo' : item['num_of_contri_for_cur_repo']
-            }
-        })
+    # list_of_authors = get_authors_info(owner,repo,api_token)
+    # ret["authors_info"] = [];
+    # for item in list_of_authors:
+    #     num_of_contributions = get_contribution_last_year("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", item['username'])
+    #     ret["authors_info"].append({
+    #         'username' : item['username'],
+    #         'metric' : {
+    #             "num_of_contributions_last_yr" : num_of_contributions,
+    #             "num_of_followers" : item['num_of_followers'],
+    #             'num_of_contri_for_cur_repo' : item['num_of_contri_for_cur_repo']
+    #         }
+    #     })
     # return dictionary of values
     return ret
 
@@ -107,16 +117,17 @@ def get_contribution_last_year(api_key, username):
     else:
         return 0
 
-def get_authors_info(owner, repo):
+def get_authors_info(owner, repo, api_key):
+    headers = {'Authorization': 'token %s' % api_key}
     list_of_author_info = []
     # based on the second request. 
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=5"
-    r = requests.get(url = request_URL)
+    r = requests.get(url = request_URL, headers=headers)
     for item in r.json():
       username = item['url'].split('/')[-1]
       # do fetch request for the number of followers, for each author
       request_URL = item['followers_url']
-      r = requests.get(url = request_URL)
+      r = requests.get(url = request_URL, headers=headers)
       list_of_author_info.append({
           'username': username,
           'num_of_followers' : len(r.json()),
@@ -127,7 +138,7 @@ def get_authors_info(owner, repo):
 
 def main():
     # sample url, no need to add /tree/master, just added here for convenience of access
-    github_URL = "https://github.com/ArchimedesCAD/Archimedes/tree/master/br.org.archimedes.core/src/br/org/archimedes/gui/model/Workspace.java"
+    github_URL = "https://github.com/ArchimedesCAD/Archimedes/"
     print(extract_info(github_URL))
     
 
