@@ -56,16 +56,16 @@ def extract_info(github_URL):
     # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
     list_of_authors = get_authors_info(owner,repo)
     ret["authors_info"] = [];
-    for item in list_of_authors:
-        num_of_contributions = get_contribution_last_year("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", item['username'])
-        ret["authors_info"].append({
-            'username' : item['username'],
-            'metric' : {
-                "num_of_contributions_last_yr" : num_of_contributions,
-                "num_of_followers" : item['num_of_followers'],
-                'num_of_contri_for_cur_repo' : item['num_of_contri_for_cur_repo']
-            }
-        })
+    # for item in list_of_authors:
+    #     # num_of_contributions = get_contribution_last_year("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", item['username'])
+    #     ret["authors_info"].append({
+    #         'username' : item['username'],
+    #         'metric' : {
+    #             "num_of_contributions_last_yr" : num_of_contributions,
+    #             "num_of_followers" : item['num_of_followers'],
+    #             'num_of_contri_for_cur_repo' : item['num_of_contri_for_cur_repo']
+    #         }
+    #     })
     # return dictionary of values
     return ret
 

@@ -15,7 +15,7 @@ def extract_info(github_URL):
 
     # insert Github API Access Token
     username = "ZacYoutube"
-    api_token = "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" # TODO
+    api_token = "" # TODO
 
     # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo
