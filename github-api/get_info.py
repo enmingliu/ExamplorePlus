@@ -1,4 +1,8 @@
 import requests
+import time
+from calendar import timegm
+from datetime import datetime
+from pytz import timezone
 
 # TODO: insert code to section out URLs from BOA output
 
@@ -50,7 +54,7 @@ def extract_info(github_URL):
         ret["num_contributors"] = 0
     
 
-    # # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/issues?state=closed&per_page=1"
     r = requests.get(url = request_URL, auth=(username,api_token))
 
@@ -62,6 +66,22 @@ def extract_info(github_URL):
         ret["num_closed_issues"] = splits[-1]
     except KeyError:
         ret["num_closed_issues"] = 0
+
+    # FOURTH REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/branches/master"
+    r = requests.get(url = request_URL, auth=(username,api_token))
+
+    # GET time of last commit
+    data = r.json()
+    last_commit = data['commit']['commit']['author']['date']
+    # convert to UTC
+    datetime_object = datetime.strptime(last_commit, "%Y-%m-%dT%H:%M:%SZ")
+    converted = datetime_object.astimezone(timezone('UTC'))
+    converted = converted.strftime("%Y-%m-%dT%H:%M:%SZ")
+    utc_time = time.strptime(converted, "%Y-%m-%dT%H:%M:%SZ")
+    epoch_time = timegm(utc_time)
+    # add to dictionary
+    ret["last_commit"] = epoch_time
 
     # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
     # list_of_authors = get_authors_info(owner,repo,api_token)
