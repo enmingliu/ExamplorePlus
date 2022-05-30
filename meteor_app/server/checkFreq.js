@@ -20,7 +20,7 @@ const get_frequent_dataset = async function(num_of_dataset){
 }
 
 
-const update_database = async function(){
+const update_database = async function(urls){
     return new Promise((resolve, reject)=>{
         Examples.find().forEach(d => {
 
@@ -68,7 +68,7 @@ const update_database = async function(){
  
 // let urls = await get_frequent_dataset(2);
 
-// update_database()
+// update_database(urls)
 
 
 
