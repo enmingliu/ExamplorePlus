@@ -1,6 +1,6 @@
 
 import { ActionLog, Examples } from "./main";
-import {PythonShell} from 'python-shell';
+import { PythonShell } from 'python-shell';
 
 const get_frequent_dataset = async function(num_of_dataset){
 
