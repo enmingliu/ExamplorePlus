@@ -67,7 +67,7 @@ def main():
                 try:
                     key, url, value = extract_url(s)
                     if key == "pj":
-                        url_data_map[url] = {"timestamp" : value}
+                        url_data_map[url] = {"timestamp" : int(value) / 1000}
                 except ValueError as e:
                     print("Boa output could not be decoded: " + str(e))
 
@@ -81,7 +81,8 @@ def main():
                 data = json.load(f)
                 for idx, obj in enumerate(data):
                     if obj["url"] in url_data_map:
-                        github_api_data = extract_info(obj["url"], api_key)
+                        # curl -H "Authorization: token api_key" -X GET https://api.github.com/rate_limit 
+                        github_api_data = extract_info(obj["url"])
                         cur_idx += 1
                         github_api_data.update(url_data_map[obj["url"]])
                         data[idx].update(github_api_data)
