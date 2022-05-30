@@ -69,7 +69,7 @@ var option_lists = [
   'cleanUpCall'
 ];
 
-console.log(blocknames)
+// console.log(blocknames)
 
 var addSpan = function(exampleID,expressionStart,expressionEnd,blockname){
   if (expressionStart !== -1 && expressionEnd !== -1) {
@@ -291,7 +291,7 @@ Template.body.events({
     var newDataSet = $(event.target).val()
     console.log('Dataset', newDataSet);
     Session.set('dataset', newDataSet);
-    console.log(Examples.find({dataset: Session.get('dataset')}));
+    ActionLog.insert({date : new Date(), dataset : newDataSet});
 
   },
   'click .change-dataset'(event, instance){

@@ -1,15 +1,11 @@
-import os
 import requests
-from dotenv import load_dotenv
-
+import sys
 
 # TODO: insert code to section out URLs from BOA output
 
 # given Github URL from BOA output, scrape relevant data and return dictionary of values
 # generalize to for loop for all URLs
-
-
-def extract_info(github_URL, api_key):
+def extract_info(github_URL):
     ret = {}
     # extract owner + repo name
     splits = github_URL.split("/")
@@ -17,12 +13,14 @@ def extract_info(github_URL, api_key):
     repo = splits[4]
     print(owner + ", " + repo)
 
+    # insert Github API Access Token
+    username = "ZacYoutube"
+    api_token = "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" # TODO
+
     # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo
-    # PARAMS = {'page':1}
     # sending get request and saving the response as response object
-    # r = requests.get(url = request_URL, params=PARAMS)
-    r = requests.get(url = request_URL)
+    r = requests.get(url = request_URL, auth=(username,api_token))
     # extracting data in json format
     data = r.json()
 
@@ -30,24 +28,24 @@ def extract_info(github_URL, api_key):
     try:
         ret["num_stars"] = data['stargazers_count']
     except:
-        pass
+        ret["num_stars"] = 0
 
     # GET number of forks
     try:
         ret["num_forks"] = data['forks_count']
     except:
-        pass
+        ret["num_forks"] = 0
 
     # GET number of open issues
     try:
         ret["num_open_issues"] = data['open_issues_count']
     except:
-        pass
+        ret["num_open_issues"] = 0
     # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
 
     # SECOND REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=1"
-    r = requests.get(url = request_URL)
+    r = requests.get(url = request_URL, auth=(username,api_token))
     # GET number of contributors
     # https://stackoverflow.com/questions/44347339/github-api-how-efficiently-get-the-total-contributors-amount-per-repository
     try:
@@ -55,12 +53,13 @@ def extract_info(github_URL, api_key):
         splits = data.split(">")
         splits = splits[1].split("=")
         ret["num_contributors"] = splits[-1]
-    except:
+    except KeyError:
         ret["num_contributors"] = 0
+    
 
     # # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/issues?state=closed&per_page=1"
-    r = requests.get(url = request_URL)
+    r = requests.get(url = request_URL, auth=(username,api_token))
 
     # GET number of closed issues
     try:
@@ -68,23 +67,22 @@ def extract_info(github_URL, api_key):
         splits = data.split(">")
         splits = splits[1].split("=")
         ret["num_closed_issues"] = splits[-1]
-    except:
+    except KeyError:
         ret["num_closed_issues"] = 0
 
     # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
-    if ret["num_contributors"] != 0:
-        list_of_authors = get_authors_info(owner,repo, ret["num_contributors"])
-        ret["authors_info"] = [];
-        for item in list_of_authors:
-            num_of_contributions = get_contribution_last_year(api_key, item['username'])
-            ret["authors_info"].append({
-                'username' : item['username'],
-                'metric' : {
-                    "num_of_contributions_last_yr" : num_of_contributions,
-                    "num_of_followers" : item['num_of_followers'],
-                    'num_of_contri_for_cur_repo' : item['num_of_contri_for_cur_repo']
-                }
-            })
+    # list_of_authors = get_authors_info(owner,repo,api_token)
+    # ret["authors_info"] = [];
+    # for item in list_of_authors:
+    #     num_of_contributions = get_contribution_last_year("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", item['username'])
+    #     ret["authors_info"].append({
+    #         'username' : item['username'],
+    #         'metric' : {
+    #             "num_of_contributions_last_yr" : num_of_contributions,
+    #             "num_of_followers" : item['num_of_followers'],
+    #             'num_of_contri_for_cur_repo' : item['num_of_contri_for_cur_repo']
+    #         }
+    #     })
     # return dictionary of values
     return ret
 
@@ -126,16 +124,17 @@ def get_contribution_last_year(api_key, username):
     else:
         return 0
 
-def get_authors_info(owner, repo, num_of_contributors):
+def get_authors_info(owner, repo, api_key):
+    headers = {'Authorization': 'token %s' % api_key}
     list_of_author_info = []
     # based on the second request. 
-    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=" + (str(num_of_contributors) if int(num_of_contributors) < 5 else "5")
-    r = requests.get(url = request_URL)
+    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=5"
+    r = requests.get(url = request_URL, headers=headers)
     for item in r.json():
       username = item['url'].split('/')[-1]
       # do fetch request for the number of followers, for each author
       request_URL = item['followers_url']
-      r = requests.get(url = request_URL)
+      r = requests.get(url = request_URL, headers=headers)
       list_of_author_info.append({
           'username': username,
           'num_of_followers' : len(r.json()),
@@ -146,11 +145,9 @@ def get_authors_info(owner, repo, num_of_contributors):
 
 def main():
     # sample url, no need to add /tree/master, just added here for convenience of access
-    load_dotenv()
-    api_key = os.getenv('GITHUB_PERSONAL_ACCESS_TOKEN')
-    github_URL = "https://github.com/ArchimedesCAD/Archimedes/tree/master/br.org.archimedes.core/src/br/org/archimedes/gui/model/Workspace.java"
-    print(extract_info(github_URL, api_key))
+    # github_URL = "https://github.com/ArchimedesCAD/Archimedes/"
     
+    print(extract_info(sys.argv[1]))
     
 
 if __name__ == "__main__":
