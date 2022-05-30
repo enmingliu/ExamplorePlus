@@ -19,7 +19,6 @@ const get_frequent_dataset = async function(num_of_dataset){
     return res;
 }
 
-let urls = await get_frequent_dataset(2);
 
 const update_database = async function(){
     return new Promise((resolve, reject)=>{
@@ -67,9 +66,9 @@ const update_database = async function(){
     })
 }
  
+// let urls = await get_frequent_dataset(2);
 
-// test()
+// update_database()
 
 
 
-// get_frequent_dataset(2);
