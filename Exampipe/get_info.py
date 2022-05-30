@@ -1,4 +1,8 @@
 import requests
+import time
+from calendar import timegm
+from datetime import datetime
+from pytz import timezone
 import sys
 
 # TODO: insert code to section out URLs from BOA output
@@ -11,11 +15,10 @@ def extract_info(github_URL):
     splits = github_URL.split("/")
     owner = splits[3]
     repo = splits[4]
-    print(owner + ", " + repo)
 
     # insert Github API Access Token
     username = "ZacYoutube"
-    api_token = "" # TODO
+    api_token = "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"
 
     # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo
@@ -27,20 +30,15 @@ def extract_info(github_URL):
     # GET number of stars
     try:
         ret["num_stars"] = data['stargazers_count']
-    except:
-        ret["num_stars"] = 0
+    except KeyError:
+        print("API LIMIT REACHED")
+        return None
 
     # GET number of forks
-    try:
-        ret["num_forks"] = data['forks_count']
-    except:
-        ret["num_forks"] = 0
+    ret["num_forks"] = data['forks_count']
 
     # GET number of open issues
-    try:
-        ret["num_open_issues"] = data['open_issues_count']
-    except:
-        ret["num_open_issues"] = 0
+    ret["num_open_issues"] = data['open_issues_count']
     # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
 
     # SECOND REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,7 +55,7 @@ def extract_info(github_URL):
         ret["num_contributors"] = 0
     
 
-    # # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/issues?state=closed&per_page=1"
     r = requests.get(url = request_URL, auth=(username,api_token))
 
@@ -69,6 +67,22 @@ def extract_info(github_URL):
         ret["num_closed_issues"] = splits[-1]
     except KeyError:
         ret["num_closed_issues"] = 0
+
+    # FOURTH REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/branches/master"
+    r = requests.get(url = request_URL, auth=(username,api_token))
+
+    # GET time of last commit
+    data = r.json()
+    last_commit = data['commit']['commit']['author']['date']
+    # convert to UTC
+    datetime_object = datetime.strptime(last_commit, "%Y-%m-%dT%H:%M:%SZ")
+    converted = datetime_object.astimezone(timezone('UTC'))
+    converted = converted.strftime("%Y-%m-%dT%H:%M:%SZ")
+    utc_time = time.strptime(converted, "%Y-%m-%dT%H:%M:%SZ")
+    epoch_time = timegm(utc_time)
+    # add to dictionary
+    ret["last_commit"] = epoch_time
 
     # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
     # list_of_authors = get_authors_info(owner,repo,api_token)
@@ -146,7 +160,6 @@ def get_authors_info(owner, repo, api_key):
 def main():
     # sample url, no need to add /tree/master, just added here for convenience of access
     # github_URL = "https://github.com/ArchimedesCAD/Archimedes/"
-    
     print(extract_info(sys.argv[1]))
     
 
