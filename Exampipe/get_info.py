@@ -1,4 +1,5 @@
 import requests
+import sys
 
 # TODO: insert code to section out URLs from BOA output
 
@@ -69,6 +70,20 @@ def extract_info(github_URL):
     except KeyError:
         ret["num_closed_issues"] = 0
 
+    # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
+    # list_of_authors = get_authors_info(owner,repo,api_token)
+    # ret["authors_info"] = [];
+    # for item in list_of_authors:
+    #     num_of_contributions = get_contribution_last_year("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", item['username'])
+    #     ret["authors_info"].append({
+    #         'username' : item['username'],
+    #         'metric' : {
+    #             "num_of_contributions_last_yr" : num_of_contributions,
+    #             "num_of_followers" : item['num_of_followers'],
+    #             'num_of_contri_for_cur_repo' : item['num_of_contri_for_cur_repo']
+    #         }
+    #     })
+    # return dictionary of values
     return ret
 
 
@@ -130,8 +145,9 @@ def get_authors_info(owner, repo, api_key):
 
 def main():
     # sample url, no need to add /tree/master, just added here for convenience of access
-    github_URL = "https://github.com/ArchimedesCAD/Archimedes/"
-    print(extract_info(github_URL))
+    # github_URL = "https://github.com/ArchimedesCAD/Archimedes/"
+    
+    print(extract_info(sys.argv[1]))
     
 
 if __name__ == "__main__":
