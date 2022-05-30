@@ -38,7 +38,7 @@ const update_database = async function(){
                     if (err){
                         reject(err)
                     }else{
-                        resolve(res[0])
+                        resolve(res)
                         // console.log(res)
                         if(d.num_stars !== res[1].num_stars){
                             Examples.update({_id: d_id}, {$set: { "num_stars": res[1].num_stars }});
