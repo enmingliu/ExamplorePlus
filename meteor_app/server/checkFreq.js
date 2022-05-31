@@ -1,17 +1,19 @@
 
-import { ActionLog, Examples } from "./main";
+import { ActionLog, Examples } from "./main.js";
 import { PythonShell } from 'python-shell';
 
-const get_frequent_dataset = async function(num_of_dataset){
+const bound = Meteor.bindEnvironment((callback) => {callback();});
+
+export const get_frequent_dataset = async function(){
 
     const pipeline = [
         {$group:{_id:"$dataset", count:{$sum: 1}}}
       ]
     const aggCursor = await ActionLog.rawCollection().aggregate(pipeline).toArray();
     let temp = [], res = [];
-    if(aggCursor.length >= num_of_dataset){
-        temp = [...aggCursor].sort((a,b) => b.count - a.count).slice(0, num_of_dataset);
-    }
+    
+    temp = [...aggCursor].sort((a,b) => b.count - a.count).slice(0, aggCursor.length > 5 ? 5 : aggCursor.length); // max 5 popular apis checking
+    
     for(let item of temp){
         res.push(item._id);
     } 
@@ -20,9 +22,7 @@ const get_frequent_dataset = async function(num_of_dataset){
 }
 
 
-
-
-const update_database = async function(urls){
+export const update_database = async function(urls){
     return new Promise((resolve, reject)=>{
         Examples.find().forEach(d => {
 
@@ -41,22 +41,57 @@ const update_database = async function(urls){
                     }else{
                         resolve(res)
                         let obj = JSON.parse(res[0].replace(/'/g, '"'));
-                        // console.log(d.dataset, d.url, obj.num_stars)
-                        if(d.num_stars !== obj.num_stars){
-                            Examples.update({_id: d_id}, {$set: { "num_stars": obj.num_stars }});
+                        let isChange = false;
+                        // console.log(d.num_stars, obj.num_stars)
+                        if(d.num_stars && d.num_stars !== obj.num_stars){
+                            bound(() => {
+                                Examples.update({_id: d._id}, {$set: { "num_stars": obj.num_stars }});
+                            })       
+                            isChange = true;
                         }
-                        if(d.num_forks !== obj.num_forks){
-                            Examples.update({_id: d_id}, {$set: { "num_forks": obj.num_forks }});
+                        if(d.num_forks && d.num_forks !== obj.num_forks){
+                            bound(() => {
+                                Examples.update({_id: d._id}, {$set: { "num_forks": obj.num_forks }});
+                            })
+                            isChange = true;
                         }
-                        if(d.num_open_issues !== obj.num_open_issues){
-                            Examples.update({_id: d_id}, {$set: { "num_open_issues": obj.num_open_issues }});
+                        if(d.num_open_issues && d.num_open_issues !== obj.num_open_issues){
+                            bound(() => {
+                                Examples.update({_id: d._id}, {$set: { "num_open_issues": obj.num_open_issues }});
+                            })
+                            isChange = true;
                         }
-                        if(d.num_contributors !== parseInt(obj.num_contributors)){
-                            Examples.update({_id: d_id}, {$set: { "num_contributors": parseInt(obj.num_contributors) }});
+                        if(d.num_contributors && parseInt(d.num_contributors) !== parseInt(obj.num_contributors)){
+                            bound(() => {
+                                Examples.update({_id: d._id}, {$set: { "num_contributors": parseInt(obj.num_contributors) }});
+                            })
+                            isChange = true;
                         }
-                        if(d.num_closed_issues !== obj.num_closed_issues){
-                            Examples.update({_id: d_id}, {$set: { "num_closed_issues": obj.num_closed_issues }});
+                        if(d.num_closed_issues && d.num_closed_issues !== obj.num_closed_issues){
+                            bound(() => {
+                                Examples.update({_id: d._id}, {$set: { "num_closed_issues": obj.num_closed_issues }});
+                            })
+                            isChange = true;
                         }
+                        if(d.timestamp && d.timestamp !== obj.last_commit){
+                            bound(() => {
+                                Examples.update({_id: d._id}, {$set: { "timestamp": obj.last_commit }});
+                            })
+                            isChange = true;
+                        }
+
+                        if(isChange == true){
+                            let rank_metric = (Math.log(Math.max(1, obj.num_stars)) + Math.log(Math.max(1, obj.num_forks)) + (obj.num_closed_issues - obj.num_open_issues) / Math.max(1, obj.num_contributors)) ** (d.timestamp ** (-Math.log(0.5)));
+                            if(d.ranking_metric){
+                                bound(() => {
+                                    Examples.update({_id: d._id}, {$set: { "ranking_metric": rank_metric }});
+                                })
+                            }
+
+                            isChange = false;
+                            
+                        }
+
                     }
                     
         
