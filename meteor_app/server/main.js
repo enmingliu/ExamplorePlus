@@ -1,7 +1,9 @@
 
 import { Meteor } from 'meteor/meteor';
 import { EJSON } from 'meteor/ejson';
-import { Session } from 'meteor/session';
+import { CronJob } from 'cron';
+import { get_frequent_dataset, update_database } from './checkFreq';
+
 
 export const Examples = new Mongo.Collection('examples');
 export const ActionLog = new Mongo.Collection('actionlog');
@@ -62,5 +64,16 @@ Meteor.startup(() => {
       
           
   }
+
+  //referenced https://stackoverflow.com/questions/40687237/cron-jobs-in-meteor
+  new CronJob({
+    cronTime: '0 8 * * *', // everyday at 8 am
+    onTick: Meteor.bindEnvironment(async () => {
+      let urls = await get_frequent_dataset();
+      update_database(urls);
+    }),
+    start: true,
+    timeZone: 'America/Los_Angeles',
+  });
 });
 

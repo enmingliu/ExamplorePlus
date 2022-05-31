@@ -21,25 +21,24 @@ def extract_info(github_URL):
     api_token = "" # TODO
 
     # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    request_URL = "https://api.github.com/repos/" + owner + "/" + repo
-    # sending get request and saving the response as response object
-    r = requests.get(url = request_URL, auth=(username,api_token))
-    # extracting data in json format
-    data = r.json()
+    # request_URL = "https://api.github.com/repos/" + owner + "/" + repo
+    # # sending get request and saving the response as response object
+    # r = requests.get(url = request_URL, auth=(username,api_token))
+    # # extracting data in json format
+    # data = r.json()
 
-    # GET number of stars
-    try:
-        ret["num_stars"] = data['stargazers_count']
-    except KeyError:
-        print("API LIMIT REACHED")
-        return None
+    # # GET number of stars
+    # try:
+    #     ret["num_stars"] = data['stargazers_count']
+    # except KeyError:
+    #     ret["num_stars"] = 0
 
-    # GET number of forks
-    ret["num_forks"] = data['forks_count']
+    # # GET number of forks
+    # ret["num_forks"] = data['forks_count']
 
-    # GET number of open issues
-    ret["num_open_issues"] = data['open_issues_count']
-    # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
+    # # GET number of open issues
+    # ret["num_open_issues"] = data['open_issues_count']
+    # # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
 
     # SECOND REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=1"
@@ -50,7 +49,7 @@ def extract_info(github_URL):
         data = r.headers['Link']
         splits = data.split(">")
         splits = splits[1].split("=")
-        ret["num_contributors"] = splits[-1]
+        ret["num_contributors"] = int(splits[-1])
     except KeyError:
         ret["num_contributors"] = 0
     
