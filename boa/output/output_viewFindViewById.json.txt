@@ -1,4 +1,5 @@
 pj[https://github.com/AndlyticsProject/andlytics/tree/master/src/com/github/andlyticsproject/ExportActivity.java] = 1358503255000000
+pj[https://github.com/Blakez/android_packages_apps_Settings/tree/master/src/com/android/settings/fuelgauge/PowerUsageDetail.java] = 1362357409000000
 pj[https://github.com/Blakez/android_packages_apps_Settings/tree/master/src/com/android/settings/wifi/WifiSettingsForSetupWizardXL.java] = 1362357409000000
 pj[https://github.com/DocuSignDev/ActionBarSherlock/tree/master/src/com/actionbarsherlock/widget/ActivityChooserView.java] = 1351359035000000
 pj[https://github.com/DroidJunk/droidjunk_packages_apps_Contacts/tree/master/src/com/android/contacts/detail/ContactDetailFragment.java] = 1339542258000000
@@ -62,6 +63,7 @@ pj[https://github.com/kvite/astridclone/tree/master/greendroid/GreenDroid/src/gr
 pj[https://github.com/lounaspaikka/lounaspaikka/tree/master/src/fi/aalto/lounaspaikka/RestaurantsActivity.java] = 1336228374000000
 pj[https://github.com/mauriciojovel/clasificados/tree/master/GuanaAnuncios/src/com/udb/mad/shinmen/benja/guana/anuncios/adapters/AnuncioCustomAdapter.java] = 1379968978000000
 pj[https://github.com/mevansjr/FSO/tree/master/ADP 2/QuoteMe v3.0/QuoteMe/src/com/markevansjr/quoteme/AddFragmentTab.java] = 1362070342000000
+pj[https://github.com/mevansjr/FSO/tree/master/APD 2/QuoteMe v3.0/QuoteMe/src/com/markevansjr/quoteme/AddFragmentTab.java] = 1362072463000000
 pj[https://github.com/mfportzert/Quizz-Places/tree/master/src/com/quizz/places/adapters/SectionsItemAdapter.java] = 1370778648000000
 pj[https://github.com/msi88/Popya/tree/master/Popya/src/at/fhv/popya/application/view/SendMessageListener.java] = 1340014696000000
 pj[https://github.com/mturek/gras/tree/master/NestedFragments/src/com/example/newspinproj/ContactsFragment.java] = 1367913560000000
@@ -79,9 +81,12 @@ pj[https://github.com/racamirko/Common-Sense-Net-2/tree/master/RealFarm/src/com/
 pj[https://github.com/samicemalone/android-vlc-remote/tree/master/src/org/peterbaldwin/vlcremote/fragment/ServerInfoDialog.java] = 1391398778000000
 pj[https://github.com/sandyimu/EDUkid/tree/master/EDUkid/src/bu/edu/cs673/edukid/learn/LearnContentViewFragment.java] = 1386293847000000
 pj[https://github.com/serious198706/DFCarCheckerProject/tree/master/DFCarChecker/src/main/java/com/df/service/Helper.java] = 1385028343000000
+pj[https://github.com/serious198706/DFCarCheckerProject/tree/master/DFCarChecker/src/main/java/com/df/service/Helper.java] = 1385028343000000
 pj[https://github.com/spacecaker/android_frameworks_base_CSM9.1/tree/master/core/java/android/preference/DialogPreference.java] = 1365327880000000
 pj[https://github.com/teamgummy/frameworks_base/tree/master/core/java/android/app/FragmentBreadCrumbs.java] = 1324501840000000
 pj[https://github.com/teamgummy/packages_apps_Settings/tree/master/src/com/android/settings/ProxySelector.java] = 1325441297000000
+pj[https://github.com/teamgummy/packages_apps_Settings/tree/master/src/com/android/settings/vpn2/VpnDialog.java] = 1325441297000000
+pj[https://github.com/teamgummy/packages_apps_Settings/tree/master/src/com/android/settings/wifi/WifiSettingsForSetupWizardXL.java] = 1325441297000000
 pj[https://github.com/timothyjlaurent/WhereToEat/tree/master/src/com/codepath/apps/nommable/fragments/MenuFragment.java] = 1386566179000000
 pj[https://github.com/ushahidi/Ushahidi_Android/tree/master/Core/src/com/ushahidi/android/app/adapters/CategorySpinnerAdater.java] = 1364263311000000
 pj[https://github.com/victoryckl/android-demos/tree/master/TextReader/actionbarsherlock/src/com/actionbarsherlock/internal/app/ActionBarImpl.java] = 1403170667000000
@@ -94,6 +99,7 @@ pj[https://github.com/zh2009/CHIPS/tree/master/CHIPSApp/src/com/chips/adapters/E
 pj[https://github.com/zhoulzhou/IPCPlayer/tree/master/src/com/example/ipcplayer/merge/CTVAdapter.java] = 1371447348000000
 pj[https://github.com/zwaldowski/zw-schoolwork/tree/master/CS 2340/ProjectTeamRocket/FindMyThings/src/edu/gatech/oad/rocket/findmythings/list/ArrayListAdapter.java] = 1380477523000000
 pj1[https://github.com/AndlyticsProject/andlytics/src/com/github/andlyticsproject/ExportActivity.java] = 26
+pj1[https://github.com/Blakez/android_packages_apps_Settings/src/com/android/settings/fuelgauge/PowerUsageDetail.java] = 1
 pj1[https://github.com/Blakez/android_packages_apps_Settings/src/com/android/settings/wifi/WifiSettingsForSetupWizardXL.java] = 1
 pj1[https://github.com/DocuSignDev/ActionBarSherlock/src/com/actionbarsherlock/widget/ActivityChooserView.java] = 41
 pj1[https://github.com/DroidJunk/droidjunk_packages_apps_Contacts/src/com/android/contacts/detail/ContactDetailFragment.java] = 107
@@ -157,6 +163,7 @@ pj1[https://github.com/kvite/astridclone/greendroid/GreenDroid/src/greendroid/wi
 pj1[https://github.com/lounaspaikka/lounaspaikka/src/fi/aalto/lounaspaikka/RestaurantsActivity.java] = 9
 pj1[https://github.com/mauriciojovel/clasificados/GuanaAnuncios/src/com/udb/mad/shinmen/benja/guana/anuncios/adapters/AnuncioCustomAdapter.java] = 8
 pj1[https://github.com/mevansjr/FSO/ADP 2/QuoteMe v3.0/QuoteMe/src/com/markevansjr/quoteme/AddFragmentTab.java] = 1
+pj1[https://github.com/mevansjr/FSO/APD 2/QuoteMe v3.0/QuoteMe/src/com/markevansjr/quoteme/AddFragmentTab.java] = 1
 pj1[https://github.com/mfportzert/Quizz-Places/src/com/quizz/places/adapters/SectionsItemAdapter.java] = 5
 pj1[https://github.com/msi88/Popya/Popya/src/at/fhv/popya/application/view/SendMessageListener.java] = 2
 pj1[https://github.com/mturek/gras/NestedFragments/src/com/example/newspinproj/ContactsFragment.java] = 6
@@ -173,10 +180,12 @@ pj1[https://github.com/qhkyzf/FeiAndroid/SysBrowser/src/com/android/browser/kai/
 pj1[https://github.com/racamirko/Common-Sense-Net-2/RealFarm/src/com/commonsensenet/realfarm/view/WeatherForecastItemWrapper.java] = 12
 pj1[https://github.com/samicemalone/android-vlc-remote/src/org/peterbaldwin/vlcremote/fragment/ServerInfoDialog.java] = 2
 pj1[https://github.com/sandyimu/EDUkid/EDUkid/src/bu/edu/cs673/edukid/learn/LearnContentViewFragment.java] = 8
-pj1[https://github.com/serious198706/DFCarCheckerProject/DFCarChecker/src/main/java/com/df/service/Helper.java] = 1
+pj1[https://github.com/serious198706/DFCarCheckerProject/DFCarChecker/src/main/java/com/df/service/Helper.java] = 2
 pj1[https://github.com/spacecaker/android_frameworks_base_CSM9.1/core/java/android/preference/DialogPreference.java] = 3
 pj1[https://github.com/teamgummy/frameworks_base/core/java/android/app/FragmentBreadCrumbs.java] = 10
 pj1[https://github.com/teamgummy/packages_apps_Settings/src/com/android/settings/ProxySelector.java] = 8
+pj1[https://github.com/teamgummy/packages_apps_Settings/src/com/android/settings/vpn2/VpnDialog.java] = 8
+pj1[https://github.com/teamgummy/packages_apps_Settings/src/com/android/settings/wifi/WifiSettingsForSetupWizardXL.java] = 8
 pj1[https://github.com/timothyjlaurent/WhereToEat/src/com/codepath/apps/nommable/fragments/MenuFragment.java] = 4
 pj1[https://github.com/ushahidi/Ushahidi_Android/Core/src/com/ushahidi/android/app/adapters/CategorySpinnerAdater.java] = 18
 pj1[https://github.com/victoryckl/android-demos/TextReader/actionbarsherlock/src/com/actionbarsherlock/internal/app/ActionBarImpl.java] = 5
