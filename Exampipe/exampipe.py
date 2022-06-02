@@ -1,7 +1,9 @@
 #!/usr/bin/python
 
 import enum
+import math
 from genericpath import exists
+from time import time
 import sys
 import json
 from multiprocessing.sharedctypes import Value
@@ -123,7 +125,7 @@ def main():
                 try:
                     key, url, value = extract_url(s)
                     if key == "pj":
-                        url_data_map[url] = {"timestamp" : int(value) / 1000000}
+                        url_data_map[url] = {"timestamp" : float(value) / 1000000}
                 except ValueError as e:
                     print("Boa output could not be decoded: " + str(e))
 
@@ -139,7 +141,7 @@ def main():
                     if obj["url"] in url_data_map:
                         # curl -H "Authorization: token api_key" -X GET https://api.github.com/rate_limit 
                         github_api_data = extract_info(obj["url"])
-
+                        
                         stars_forks = (math.log(max(1.0, float(github_api_data["num_stars"]))) + math.log(max(1.0, float(github_api_data["num_forks"]))))
                         open_closed_issues = max(1.0, float(github_api_data["num_closed_issues"]) - float(github_api_data["num_open_issues"])) / (max(1.0, float(github_api_data["num_contributors"])))
                         try:
