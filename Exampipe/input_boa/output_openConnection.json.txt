@@ -14,6 +14,7 @@ pj[https://github.com/NCIP/stats-application-commons/tree/master/src/gov/nih/nci
 pj[https://github.com/NF28Group/Vmote/tree/master/src/fr/nf28/vmote/series/model/GetSeriesAsyncTask.java] = 1371038911000000
 pj[https://github.com/Norconex/commons-lang/tree/master/norconex-commons-lang/src/main/java/com/norconex/commons/lang/url/URLStreamer.java] = 1416625741000000
 pj[https://github.com/SVMP/android_libcore/tree/master/luni/src/main/java/org/apache/harmony/xml/parsers/DocumentBuilderImpl.java] = 1316010181000000
+pj[https://github.com/SVMP/android_libcore/tree/master/luni/src/test/java/org/apache/harmony/luni/tests/java/net/URLConnectionTest.java] = 1316010181000000
 pj[https://github.com/ShadowDog007/MobManager/tree/master/src/main/java/com/forgenz/mobmanager/common/util/Updater.java] = 1384335386000000
 pj[https://github.com/SpigotMC/BungeeCord/tree/master/proxy/src/main/java/net/md_5/bungee/Metrics.java] = 1383729077000000
 pj[https://github.com/TaintDroid/android_platform_libcore/tree/master/luni/src/main/java/java/net/URLClassLoader.java] = 1349201888000000
@@ -22,10 +23,12 @@ pj[https://github.com/akiellor/selenium/tree/master/java/server/test/org/openqa/
 pj[https://github.com/aldaris/opensso/tree/master/products/amserver/source/com/sun/identity/tools/nightly/NightlyIndexHtml.java] = 1214373289000000
 pj[https://github.com/and146/SPLAT-ARI/tree/master/vo/src/main/uk/ac/starlink/vo/TableSetSaxHandler.java] = 1358431082000000
 pj[https://github.com/anffernee/letuwb/tree/master/src/com/zrd/zr/pnj/SecureURL.java] = 1333964504000000
+pj[https://github.com/bluespark80/example/tree/master/crypto/src/test/java/org/apache/harmony/crypto/tests/javax/crypto/CipherTest.java] = 1276638458000000
 pj[https://github.com/bluespark80/example/tree/master/x-net/src/test/java/tests/api/javax/net/ssl/HttpsURLConnectionTest.java] = 1251474113000000
 pj[https://github.com/brachior/platform_libcore/tree/master/luni/src/test/java/org/apache/harmony/luni/tests/java/net/URLConnectionTest.java] = 1316010181000000
 pj[https://github.com/bryanjimenez/empanada/tree/master/hadoop/hadoop-1.2.1/src/test/org/apache/hadoop/hdfs/security/TestDelegationTokenForProxyUser.java] = 1380046542000000
 pj[https://github.com/ciaranj/luntbuild/tree/master/luntbuild/contrib/anttask/src/java/net/mccg/lunt/LuntDeployTask.java] = 1206013873000000
+pj[https://github.com/codefireX/platform_libcore/tree/master/luni/src/test/java/libcore/java/net/URLConnectionTest.java] = 1349815923000000
 pj[https://github.com/codefireX/platform_libcore/tree/master/luni/src/test/java/libcore/net/http/HttpResponseCacheTest.java] = 1349815923000000
 pj[https://github.com/ctiao/DanmakuFlameMaster/tree/master/DanmakuFlameMaster/src/main/java/master/flame/danmaku/danmaku/parser/android/AndroidFileSource.java] = 1384480969000000
 pj[https://github.com/cytoscape/cytoscape-impl/tree/master/ding-impl/ding-presentation-impl/src/main/java/org/cytoscape/ding/customgraphics/CustomGraphicsTranslator.java] = 1359747940000000
@@ -46,7 +49,10 @@ pj[https://github.com/guoliqiang/coding/tree/master/third_part/hadoop_src/hadoop
 pj[https://github.com/gxa/gxa/tree/master/atlas-loader/src/main/java/uk/ac/ebi/gxa/loader/steps/ArrayDataStep.java] = 1379695070000000
 pj[https://github.com/hex705/tiles/tree/master/eclipse/labels/src/labelsANDgraph.java] = 1379533501000000
 pj[https://github.com/iansealy/picard-detct/tree/master/src/java/net/sf/samtools/seekablestream/SeekableHTTPStream.java] = 1366723914000000
+pj[https://github.com/ikeji/openjdk7-jdk/tree/master/test/java/net/URL/OpenConnection.java] = 1276935280000000
 pj[https://github.com/ikeji/openjdk7-jdk/tree/master/test/sun/net/www/protocol/http/Finalizer.java] = 1276935280000000
+pj[https://github.com/ikeji/openjdk7-jdk/tree/master/test/sun/security/ssl/sun/net/www/protocol/https/HttpsURLConnection/HttpsCreateSockTest.java] = 1276935280000000
+pj[https://github.com/ikeji/openjdk7-jdk/tree/master/test/sun/security/ssl/sun/net/www/protocol/https/HttpsURLConnection/Identities.java] = 1276935280000000
 pj[https://github.com/jblaya/openmrs-core/tree/master/api/src/main/java/org/openmrs/scheduler/tasks/CheckInternetConnectivityTask.java] = 1281996924000000
 pj[https://github.com/jbossas/jboss-vfs/tree/master/src/test/java/org/jboss/test/vfs/URLConnectionUnitTestCase.java] = 1377871070000000
 pj[https://github.com/johnugeorge/Hadoop-mdfs/tree/master/hadoop-1.2.1/src/test/org/apache/hadoop/security/authentication/client/TestPseudoAuthenticator.java] = 1379692132000000
@@ -69,6 +75,7 @@ pj[https://github.com/pankajc-optimus/android-lib/tree/master/OAuth/Code/FaceBoo
 pj[https://github.com/paypal/sdk-core-java/tree/master/src/main/java/com/paypal/core/DefaultHttpConnection.java] = 1380176971000000
 pj[https://github.com/payutc/pauline/tree/master/src/fr/utc/assos/payutc/api/JsonApiClient.java] = 1371997999000000
 pj[https://github.com/penSecIT/commons-vfs/tree/master/tags/vfs-1.0-RC/core/src/main/java/org/apache/commons/vfs/impl/URLStreamHandlerProxy.java] = 1185680554000000
+pj[https://github.com/penSecIT/commons-vfs/tree/master/tags/vfs-1.0-RC7/src/test/org/apache/commons/vfs/impl/test/VfsClassLoaderTests.java] = 1185680554000000
 pj[https://github.com/plushdevelopment/Frienemy---Android/tree/master/src/com/facebook/android/Util.java] = 1335362550000000
 pj[https://github.com/prsebastian/gwt-issue-8215/tree/master/dev/core/src/com/google/gwt/dev/util/Util.java] = 1323981091000000
 pj[https://github.com/seasarorg/mobylet/tree/master/mobylet-core/src/main/java/org/mobylet/core/util/HttpUtils.java] = 1310360705000000
@@ -107,6 +114,7 @@ pj1[https://github.com/NCIP/stats-application-commons/src/gov/nih/nci/caintegrat
 pj1[https://github.com/NF28Group/Vmote/src/fr/nf28/vmote/series/model/GetSeriesAsyncTask.java] = 4
 pj1[https://github.com/Norconex/commons-lang/norconex-commons-lang/src/main/java/com/norconex/commons/lang/url/URLStreamer.java] = 2
 pj1[https://github.com/SVMP/android_libcore/luni/src/main/java/org/apache/harmony/xml/parsers/DocumentBuilderImpl.java] = 111
+pj1[https://github.com/SVMP/android_libcore/luni/src/test/java/org/apache/harmony/luni/tests/java/net/URLConnectionTest.java] = 111
 pj1[https://github.com/ShadowDog007/MobManager/src/main/java/com/forgenz/mobmanager/common/util/Updater.java] = 2
 pj1[https://github.com/SpigotMC/BungeeCord/proxy/src/main/java/net/md_5/bungee/Metrics.java] = 16
 pj1[https://github.com/TaintDroid/android_platform_libcore/luni/src/main/java/java/net/URLClassLoader.java] = 122
@@ -115,10 +123,12 @@ pj1[https://github.com/akiellor/selenium/java/server/test/org/openqa/selenium/se
 pj1[https://github.com/aldaris/opensso/products/amserver/source/com/sun/identity/tools/nightly/NightlyIndexHtml.java] = 124
 pj1[https://github.com/and146/SPLAT-ARI/vo/src/main/uk/ac/starlink/vo/TableSetSaxHandler.java] = 19
 pj1[https://github.com/anffernee/letuwb/src/com/zrd/zr/pnj/SecureURL.java] = 2
+pj1[https://github.com/bluespark80/example/crypto/src/test/java/org/apache/harmony/crypto/tests/javax/crypto/CipherTest.java] = 71
 pj1[https://github.com/bluespark80/example/x-net/src/test/java/tests/api/javax/net/ssl/HttpsURLConnectionTest.java] = 71
 pj1[https://github.com/brachior/platform_libcore/luni/src/test/java/org/apache/harmony/luni/tests/java/net/URLConnectionTest.java] = 116
 pj1[https://github.com/bryanjimenez/empanada/hadoop/hadoop-1.2.1/src/test/org/apache/hadoop/hdfs/security/TestDelegationTokenForProxyUser.java] = 11
 pj1[https://github.com/ciaranj/luntbuild/luntbuild/contrib/anttask/src/java/net/mccg/lunt/LuntDeployTask.java] = 8
+pj1[https://github.com/codefireX/platform_libcore/luni/src/test/java/libcore/java/net/URLConnectionTest.java] = 124
 pj1[https://github.com/codefireX/platform_libcore/luni/src/test/java/libcore/net/http/HttpResponseCacheTest.java] = 124
 pj1[https://github.com/ctiao/DanmakuFlameMaster/DanmakuFlameMaster/src/main/java/master/flame/danmaku/danmaku/parser/android/AndroidFileSource.java] = 7
 pj1[https://github.com/cytoscape/cytoscape-impl/ding-impl/ding-presentation-impl/src/main/java/org/cytoscape/ding/customgraphics/CustomGraphicsTranslator.java] = 31
@@ -139,7 +149,10 @@ pj1[https://github.com/guoliqiang/coding/third_part/hadoop_src/hadoop-2.0.5-alph
 pj1[https://github.com/gxa/gxa/atlas-loader/src/main/java/uk/ac/ebi/gxa/loader/steps/ArrayDataStep.java] = 31
 pj1[https://github.com/hex705/tiles/eclipse/labels/src/labelsANDgraph.java] = 4
 pj1[https://github.com/iansealy/picard-detct/src/java/net/sf/samtools/seekablestream/SeekableHTTPStream.java] = 27
+pj1[https://github.com/ikeji/openjdk7-jdk/test/java/net/URL/OpenConnection.java] = 127
 pj1[https://github.com/ikeji/openjdk7-jdk/test/sun/net/www/protocol/http/Finalizer.java] = 127
+pj1[https://github.com/ikeji/openjdk7-jdk/test/sun/security/ssl/sun/net/www/protocol/https/HttpsURLConnection/HttpsCreateSockTest.java] = 127
+pj1[https://github.com/ikeji/openjdk7-jdk/test/sun/security/ssl/sun/net/www/protocol/https/HttpsURLConnection/Identities.java] = 127
 pj1[https://github.com/jblaya/openmrs-core/api/src/main/java/org/openmrs/scheduler/tasks/CheckInternetConnectivityTask.java] = 45
 pj1[https://github.com/jbossas/jboss-vfs/src/test/java/org/jboss/test/vfs/URLConnectionUnitTestCase.java] = 18
 pj1[https://github.com/johnugeorge/Hadoop-mdfs/hadoop-1.2.1/src/test/org/apache/hadoop/security/authentication/client/TestPseudoAuthenticator.java] = 3
@@ -162,6 +175,7 @@ pj1[https://github.com/pankajc-optimus/android-lib/OAuth/Code/FaceBookApp/src/co
 pj1[https://github.com/paypal/sdk-core-java/src/main/java/com/paypal/core/DefaultHttpConnection.java] = 15
 pj1[https://github.com/payutc/pauline/src/fr/utc/assos/payutc/api/JsonApiClient.java] = 3
 pj1[https://github.com/penSecIT/commons-vfs/tags/vfs-1.0-RC/core/src/main/java/org/apache/commons/vfs/impl/URLStreamHandlerProxy.java] = 14
+pj1[https://github.com/penSecIT/commons-vfs/tags/vfs-1.0-RC7/src/test/org/apache/commons/vfs/impl/test/VfsClassLoaderTests.java] = 14
 pj1[https://github.com/plushdevelopment/Frienemy---Android/src/com/facebook/android/Util.java] = 2
 pj1[https://github.com/prsebastian/gwt-issue-8215/dev/core/src/com/google/gwt/dev/util/Util.java] = 221
 pj1[https://github.com/seasarorg/mobylet/mobylet-core/src/main/java/org/mobylet/core/util/HttpUtils.java] = 3

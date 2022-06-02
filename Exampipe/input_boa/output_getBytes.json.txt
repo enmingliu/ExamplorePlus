@@ -5,6 +5,7 @@ pj[https://github.com/BullShark/IRCBlit/tree/master/src/main/java/com/gitblit/fa
 pj[https://github.com/GargoyleSoftware/volley/tree/master/src/com/android/volley/toolbox/DiskBasedCache.java] = 1372202823000000
 pj[https://github.com/GeniusWiki/GeniusWiki/tree/master/src/wiki/java/com/edgenius/wiki/webapp/servlet/UploadServlet.java] = 1347962860000000
 pj[https://github.com/IISI/cdic/tree/master/server/batch/src/main/java/tw/com/citi/cdic/batch/utils/Big5StringUtil.java] = 1293508180000000
+pj[https://github.com/MiniSEC/adito_reload/tree/master/adito/tags/release-0.9.1/adito/src/com/adito/security/pki/Base64EncodedFileFormat.java] = 1231421683000000
 pj[https://github.com/MiniSEC/adito_reload/tree/master/adito/tags/release-0.9.1/maverick-util/src/com/maverick/util/Base64.java] = 1231421683000000
 pj[https://github.com/NCIP/cadsr-cgmdr/tree/master/src/org/exist/xmldb/RemoteXMLResource.java] = 1375412618000000
 pj[https://github.com/Starlink/starjava/tree/master/table/src/main/uk/ac/starlink/table/formats/HTMLTableWriter.java] = 1285590793000000
@@ -22,6 +23,7 @@ pj[https://github.com/apache/tika/tree/master/tika-parsers/src/test/java/org/apa
 pj[https://github.com/aslakknutsen/jsfunit/tree/master/jboss-jsfunit-analysis/src/test/java/org/jboss/jsfunit/analysis/Utilities.java] = 1263372052000000
 pj[https://github.com/bcgit/bc-java/tree/master/pkix/src/test/java/org/bouncycastle/cms/test/NewSignedDataStreamTest.java] = 1384119794000000
 pj[https://github.com/benh/twesos/tree/master/third_party/zookeeper-3.3.1/recipes/queue/test/org/apache/zookeeper/recipes/queue/DistributedQueueTest.java] = 1281473723000000
+pj[https://github.com/benh/twesos/tree/master/third_party/zookeeper-3.3.1/recipes/queue/test/org/apache/zookeeper/recipes/queue/DistributedQueueTest.java] = 1281473723000000
 pj[https://github.com/bmcdorman/CBCJVM/tree/master/eclipse/src/cbcdownloader/USBDownloader.java] = 1277347395000000
 pj[https://github.com/box/bluetooth-authenticator/tree/master/mobile/ios/externals/zxing/core/src/com/google/zxing/qrcode/encoder/Encoder.java] = 1360534328000000
 pj[https://github.com/brachior/platform_libcore/tree/master/luni/src/test/java/tests/api/javax/net/ssl/HandshakeCompletedEventTest.java] = 1316010181000000
@@ -38,6 +40,7 @@ pj[https://github.com/elbenj/ICS-Exchange/tree/master/src/com/android/exchange/a
 pj[https://github.com/escidoc/escidoc-core/tree/master/om/src/main/java/de/escidoc/core/om/business/fedora/item/ItemHandlerUpdate.java] = 1348839610000000
 pj[https://github.com/fbierhaus/hackathon/tree/master/common/src/com/vzw/util/CryptoUtils.java] = 1373998229000000
 pj[https://github.com/funambol-mirror/funambol-client-sdk/tree/master/us8528/sync/src/test/com/funambol/sync/client/OTAConfigParserTest.java] = 1305611322000000
+pj[https://github.com/funambol-mirror/funambol-client-sdk/tree/master/us8885/common/src/test/java-me/com/funambol/TestServerHttpTransportAgent.java] = 1309437785000000
 pj[https://github.com/gerritjvv/SimpleSQL/tree/master/parser/src/main/java/org/simplesql/util/Bytes.java] = 1337645681000000
 pj[https://github.com/halset/openmap/tree/master/src/main/java/com/bbn/openmap/layer/link/Link.java] = 1383639681000000
 pj[https://github.com/heskew-riotapps/WordSmash/tree/master/src/com/riotapps/word/billing/Security.java] = 1373223720000000
@@ -51,8 +54,10 @@ pj[https://github.com/jetty-project/jetty-plugin-support/tree/master/jetty-serve
 pj[https://github.com/jonnyzzz/maragogype/tree/master/tags/v1.4.1/java/com/xerox/amazonws/sqs2/MessageQueue.java] = 1299597605000000
 pj[https://github.com/justinliucs/haflow/tree/master/src/main/java/haflow/ui/controller/HdfsController.java] = 1389943942000000
 pj[https://github.com/justinsb/android-libcore/tree/master/luni/src/test/java/org/apache/harmony/xnet/provider/jsse/ChainStrengthAnalyzerTest.java] = 1354033282000000
+pj[https://github.com/justinsb/android-libcore/tree/master/support/src/test/java/tests/security/MessageDigestTest.java] = 1316010181000000
 pj[https://github.com/kabir/connectbot/tree/master/src/de/mud/telnet/TelnetProtocolHandler.java] = 1245871115000000
 pj[https://github.com/kaspervandenberg/aida/tree/master/Learning/TestModel/build/web/WEB-INF/classes/katrenko/ws/TestModel.java] = 1357917058000000
+pj[https://github.com/macarthy/js-test-driver-qunit/tree/master/JsTestDriver/src-test/com/google/jstestdriver/ConfigurationParserTest.java] = 1276135769000000
 pj[https://github.com/macarthy/js-test-driver-qunit/tree/master/JsTestDriver/src-test/com/google/jstestdriver/ConfigurationParserTest.java] = 1276135769000000
 pj[https://github.com/mathieupedrero/eclihand/tree/master/eclihand/rest-server/src/test/java/com/pedrero/eclihand/rest/security/AuthenticationSimulator.java] = 1428477184000000
 pj[https://github.com/niles2005/visitors/tree/master/src/com/inesazt/visitors/manager/action/LogoutAction.java] = 1390894795000000
@@ -71,10 +76,12 @@ pj[https://github.com/s4/s4/tree/master/s4-driver/java/src/main/java/org/apache/
 pj[https://github.com/sakai-mirror/content/tree/master/content-tool/tool/src/java/org/sakaiproject/content/tool/AttachmentAction.java] = 1330124891000000
 pj[https://github.com/sake/bouncycastle-java/tree/master/test/jdk1.3/org/bouncycastle/cms/test/SignedDataStreamTest.java] = 1331259660000000
 pj[https://github.com/samthiriot/genlab/tree/master/genlab.graphstream.corejar/src/org/graphstream/stream/netstream/packing/Base64.java] = 1431524380000000
+pj[https://github.com/sisbell/jxta/tree/master/j2se/core/src/test/java/net/jxta/endpoint/InputStreamMessageElementTest.java] = 1341290191000000
 pj[https://github.com/sisbell/jxta/tree/master/j2se/tutorials/src/main/java/Examples/K_Service/_710_Astrology_Service_Example.java] = 1341424302000000
 pj[https://github.com/societies/SOCIETIES-Platform/tree/master/platform-infrastructure/security/SecurityServices/src/main/java/org/societies/security/digsig/util/StreamUtil.java] = 1354102838000000
 pj[https://github.com/suntinghui/LinkedInApp4Android/tree/master/src/com/hmd/util/FileAccess.java] = 1386044491000000
 pj[https://github.com/svn2github/plantuml/tree/master/tags/plantuml-6939/src/net/sourceforge/plantuml/SignatureUtils.java] = 1312826508000000
+pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.2.0-rc08/kernel-util/src/main/java/org/sakaiproject/util/Xml.java] = 1296009694000000
 pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.3.0-b04/kernel-util/src/main/java/org/sakaiproject/util/Xml.java] = 1334067495000000
 pj[https://github.com/teamblueridge/gerrit/tree/master/gerrit-sshd/src/main/java/com/google/gerrit/sshd/AliasCommand.java] = 1362671132000000
 pj[https://github.com/thest1/Android-VKontakte-SDK/tree/master/AndroidVkSdk/src/com/perm/kate/api/Api.java] = 1388643294000000
@@ -85,6 +92,7 @@ pj[https://github.com/um104/C4PPMobileMetrics/tree/master/SalesforceNativeSDK/sr
 pj[https://github.com/visit/spark-svn-mirror/tree/master/src/java/org/jivesoftware/spark/util/StringUtils.java] = 1305706638000000
 pj[https://github.com/vista-novo/fhir/tree/master/build/tools/java/org.hl7.fhir.tools.core/src/org/hl7/fhir/tools/validator/Validator.java] = 1372827446000000
 pj[https://github.com/wf1768/archive/tree/master/src/java/com/yapu/system/util/FtpUtil.java] = 1362819130000000
+pj[https://github.com/willemv/js-test-driver/tree/master/JsTestDriver/src-test/com/google/jstestdriver/config/PathResolverTest.java] = 1335291082000000
 pj[https://github.com/willemv/js-test-driver/tree/master/JsTestDriver/src-test/com/google/jstestdriver/config/PathResolverTest.java] = 1335291082000000
 pj[https://github.com/wsot/platform_libcore/tree/master/luni/src/test/java/libcore/java/sql/OldResultSetGetterTests.java] = 1316010181000000
 pj[https://github.com/zeromq/jzmq3-x/tree/master/src/org/zeromq/ZMQ.java] = 1381246711000000
@@ -97,6 +105,7 @@ pj1[https://github.com/BullShark/IRCBlit/src/main/java/com/gitblit/fanout/Fanout
 pj1[https://github.com/GargoyleSoftware/volley/src/com/android/volley/toolbox/DiskBasedCache.java] = 22
 pj1[https://github.com/GeniusWiki/GeniusWiki/src/wiki/java/com/edgenius/wiki/webapp/servlet/UploadServlet.java] = 3
 pj1[https://github.com/IISI/cdic/server/batch/src/main/java/tw/com/citi/cdic/batch/utils/Big5StringUtil.java] = 3
+pj1[https://github.com/MiniSEC/adito_reload/adito/tags/release-0.9.1/adito/src/com/adito/security/pki/Base64EncodedFileFormat.java] = 22
 pj1[https://github.com/MiniSEC/adito_reload/adito/tags/release-0.9.1/maverick-util/src/com/maverick/util/Base64.java] = 22
 pj1[https://github.com/NCIP/cadsr-cgmdr/src/org/exist/xmldb/RemoteXMLResource.java] = 5
 pj1[https://github.com/Starlink/starjava/table/src/main/uk/ac/starlink/table/formats/HTMLTableWriter.java] = 16
@@ -113,7 +122,7 @@ pj1[https://github.com/andreasb242/Simulation/ImportFilter.Madonna/src/ch/zhaw/s
 pj1[https://github.com/apache/tika/tika-parsers/src/test/java/org/apache/tika/parser/txt/TXTParserTest.java] = 19
 pj1[https://github.com/aslakknutsen/jsfunit/jboss-jsfunit-analysis/src/test/java/org/jboss/jsfunit/analysis/Utilities.java] = 7
 pj1[https://github.com/bcgit/bc-java/pkix/src/test/java/org/bouncycastle/cms/test/NewSignedDataStreamTest.java] = 11
-pj1[https://github.com/benh/twesos/third_party/zookeeper-3.3.1/recipes/queue/test/org/apache/zookeeper/recipes/queue/DistributedQueueTest.java] = 10
+pj1[https://github.com/benh/twesos/third_party/zookeeper-3.3.1/recipes/queue/test/org/apache/zookeeper/recipes/queue/DistributedQueueTest.java] = 20
 pj1[https://github.com/bmcdorman/CBCJVM/eclipse/src/cbcdownloader/USBDownloader.java] = 6
 pj1[https://github.com/box/bluetooth-authenticator/mobile/ios/externals/zxing/core/src/com/google/zxing/qrcode/encoder/Encoder.java] = 14
 pj1[https://github.com/brachior/platform_libcore/luni/src/test/java/tests/api/javax/net/ssl/HandshakeCompletedEventTest.java] = 116
@@ -130,6 +139,7 @@ pj1[https://github.com/elbenj/ICS-Exchange/src/com/android/exchange/adapter/Seri
 pj1[https://github.com/escidoc/escidoc-core/om/src/main/java/de/escidoc/core/om/business/fedora/item/ItemHandlerUpdate.java] = 17
 pj1[https://github.com/fbierhaus/hackathon/common/src/com/vzw/util/CryptoUtils.java] = 6
 pj1[https://github.com/funambol-mirror/funambol-client-sdk/us8528/sync/src/test/com/funambol/sync/client/OTAConfigParserTest.java] = 6
+pj1[https://github.com/funambol-mirror/funambol-client-sdk/us8885/common/src/test/java-me/com/funambol/TestServerHttpTransportAgent.java] = 6
 pj1[https://github.com/gerritjvv/SimpleSQL/parser/src/main/java/org/simplesql/util/Bytes.java] = 4
 pj1[https://github.com/halset/openmap/src/main/java/com/bbn/openmap/layer/link/Link.java] = 24
 pj1[https://github.com/heskew-riotapps/WordSmash/src/com/riotapps/word/billing/Security.java] = 3
@@ -143,9 +153,10 @@ pj1[https://github.com/jetty-project/jetty-plugin-support/jetty-server/src/test/
 pj1[https://github.com/jonnyzzz/maragogype/tags/v1.4.1/java/com/xerox/amazonws/sqs2/MessageQueue.java] = 8
 pj1[https://github.com/justinliucs/haflow/src/main/java/haflow/ui/controller/HdfsController.java] = 7
 pj1[https://github.com/justinsb/android-libcore/luni/src/test/java/org/apache/harmony/xnet/provider/jsse/ChainStrengthAnalyzerTest.java] = 130
+pj1[https://github.com/justinsb/android-libcore/support/src/test/java/tests/security/MessageDigestTest.java] = 130
 pj1[https://github.com/kabir/connectbot/src/de/mud/telnet/TelnetProtocolHandler.java] = 8
 pj1[https://github.com/kaspervandenberg/aida/Learning/TestModel/build/web/WEB-INF/classes/katrenko/ws/TestModel.java] = 3
-pj1[https://github.com/macarthy/js-test-driver-qunit/JsTestDriver/src-test/com/google/jstestdriver/ConfigurationParserTest.java] = 11
+pj1[https://github.com/macarthy/js-test-driver-qunit/JsTestDriver/src-test/com/google/jstestdriver/ConfigurationParserTest.java] = 22
 pj1[https://github.com/mathieupedrero/eclihand/eclihand/rest-server/src/test/java/com/pedrero/eclihand/rest/security/AuthenticationSimulator.java] = 6
 pj1[https://github.com/niles2005/visitors/src/com/inesazt/visitors/manager/action/LogoutAction.java] = 3
 pj1[https://github.com/oobium/framework/org.oobium.app/src/org/oobium/app/server/netty4/HttpPostRequestEncoder.java] = 5
@@ -163,10 +174,12 @@ pj1[https://github.com/s4/s4/s4-driver/java/src/main/java/org/apache/s4/client/D
 pj1[https://github.com/sakai-mirror/content/content-tool/tool/src/java/org/sakaiproject/content/tool/AttachmentAction.java] = 45
 pj1[https://github.com/sake/bouncycastle-java/test/jdk1.3/org/bouncycastle/cms/test/SignedDataStreamTest.java] = 1
 pj1[https://github.com/samthiriot/genlab/genlab.graphstream.corejar/src/org/graphstream/stream/netstream/packing/Base64.java] = 3
+pj1[https://github.com/sisbell/jxta/j2se/core/src/test/java/net/jxta/endpoint/InputStreamMessageElementTest.java] = 15
 pj1[https://github.com/sisbell/jxta/j2se/tutorials/src/main/java/Examples/K_Service/_710_Astrology_Service_Example.java] = 15
 pj1[https://github.com/societies/SOCIETIES-Platform/platform-infrastructure/security/SecurityServices/src/main/java/org/societies/security/digsig/util/StreamUtil.java] = 84
 pj1[https://github.com/suntinghui/LinkedInApp4Android/src/com/hmd/util/FileAccess.java] = 2
 pj1[https://github.com/svn2github/plantuml/tags/plantuml-6939/src/net/sourceforge/plantuml/SignatureUtils.java] = 1
+pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.2.0-rc08/kernel-util/src/main/java/org/sakaiproject/util/Xml.java] = 37
 pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.3.0-b04/kernel-util/src/main/java/org/sakaiproject/util/Xml.java] = 37
 pj1[https://github.com/teamblueridge/gerrit/gerrit-sshd/src/main/java/com/google/gerrit/sshd/AliasCommand.java] = 117
 pj1[https://github.com/thest1/Android-VKontakte-SDK/AndroidVkSdk/src/com/perm/kate/api/Api.java] = 6
@@ -177,7 +190,7 @@ pj1[https://github.com/um104/C4PPMobileMetrics/SalesforceNativeSDK/src/com/sales
 pj1[https://github.com/visit/spark-svn-mirror/src/java/org/jivesoftware/spark/util/StringUtils.java] = 22
 pj1[https://github.com/vista-novo/fhir/build/tools/java/org.hl7.fhir.tools.core/src/org/hl7/fhir/tools/validator/Validator.java] = 17
 pj1[https://github.com/wf1768/archive/src/java/com/yapu/system/util/FtpUtil.java] = 3
-pj1[https://github.com/willemv/js-test-driver/JsTestDriver/src-test/com/google/jstestdriver/config/PathResolverTest.java] = 19
+pj1[https://github.com/willemv/js-test-driver/JsTestDriver/src-test/com/google/jstestdriver/config/PathResolverTest.java] = 38
 pj1[https://github.com/wsot/platform_libcore/luni/src/test/java/libcore/java/sql/OldResultSetGetterTests.java] = 127
 pj1[https://github.com/zeromq/jzmq3-x/src/org/zeromq/ZMQ.java] = 62
 pj1[https://github.com/zewt/smack/source/org/jivesoftware/smack/util/Base64.java] = 31

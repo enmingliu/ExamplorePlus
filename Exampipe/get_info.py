@@ -32,15 +32,21 @@ def extract_info(github_URL):
 
     # GET number of stars
     try:
-        ret["num_stars"] = data['stargazers_count']
-    except KeyError:
+        ret["num_stars"] = int(data['stargazers_count'])
+    except:
         ret["num_stars"] = 0
 
     # GET number of forks
-    ret["num_forks"] = data['forks_count']
+    try:
+        ret["num_forks"] = int(data['forks_count'])
+    except:
+        ret["num_forks"] = 0
 
     # GET number of open issues
-    ret["num_open_issues"] = data['open_issues_count']
+    try:
+        ret["num_open_issues"] = int(data['open_issues_count'])
+    except:
+        ret["num_open_issues"] = 0
     # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
 
     # SECOND REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,30 +82,19 @@ def extract_info(github_URL):
 
     # GET time of last commit
     data = r.json()
-    last_commit = data['commit']['commit']['author']['date']
-    # convert to UTC
-    datetime_object = datetime.strptime(last_commit, "%Y-%m-%dT%H:%M:%SZ")
-    converted = datetime_object.astimezone(timezone('UTC'))
-    converted = converted.strftime("%Y-%m-%dT%H:%M:%SZ")
-    utc_time = time.strptime(converted, "%Y-%m-%dT%H:%M:%SZ")
-    epoch_time = timegm(utc_time)
-    # add to dictionary
-    ret["last_commit"] = epoch_time
+    try: 
+        last_commit = data['commit']['commit']['author']['date']
+        # convert to UTC
+        datetime_object = datetime.strptime(last_commit, "%Y-%m-%dT%H:%M:%SZ")
+        converted = datetime_object.astimezone(timezone('UTC'))
+        converted = converted.strftime("%Y-%m-%dT%H:%M:%SZ")
+        utc_time = time.strptime(converted, "%Y-%m-%dT%H:%M:%SZ")
+        epoch_time = timegm(utc_time)
+        # add to dictionary
+        ret["last_commit"] = epoch_time
+    except:
+        ret["last_commit"] = 0
 
-    # Gets the authors' usernames and number of followers from a given repo URL (note: some public repo URLs doesn't have username included in the link)
-    # list_of_authors = get_authors_info(owner,repo,api_token)
-    # ret["authors_info"] = [];
-    # for item in list_of_authors:
-    #     num_of_contributions = get_contribution_last_year("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", item['username'])
-    #     ret["authors_info"].append({
-    #         'username' : item['username'],
-    #         'metric' : {
-    #             "num_of_contributions_last_yr" : num_of_contributions,
-    #             "num_of_followers" : item['num_of_followers'],
-    #             'num_of_contri_for_cur_repo' : item['num_of_contri_for_cur_repo']
-    #         }
-    #     })
-    # return dictionary of values
     return ret
 
 

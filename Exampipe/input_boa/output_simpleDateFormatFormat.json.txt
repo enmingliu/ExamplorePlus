@@ -33,9 +33,12 @@ pj[https://github.com/ciaranj/luntbuild/tree/master/luntbuild-prototype-core/src
 pj[https://github.com/cnyangyifeng/otp/tree/master/src/main/java/cn/xdf/me/otp/common/utils/TimeUtils.java] = 1362386459000000
 pj[https://github.com/codehaus/izpack/tree/master/izpack-util/src/main/java/com/izforge/izpack/util/SelfModifier.java] = 1344858512000000
 pj[https://github.com/czarneckid/blojsom-sourceforge/tree/master/branches/blojsom-2_09-final/blojsom-2.0/src/org/blojsom/blog/BlogEntry.java] = 1293485736000000
+pj[https://github.com/czarneckid/blojsom-sourceforge/tree/master/branches/blojsom-2_19-FINAL/blojsom-2.0/src/org/blojsom/blog/Trackback.java] = 1293485736000000
+pj[https://github.com/czarneckid/blojsom-sourceforge/tree/master/tags/blojsom-1_6-RC1/blojsom/src/org/ignition/blojsom/util/BlojsomUtils.java] = 1293485736000000
 pj[https://github.com/dayana7789/apprhc/tree/master/src/com/nahmens/rhcimax/utils/FormatoFecha.java] = 1374171593000000
 pj[https://github.com/dbstar/dbstar/tree/master/DbstarLauncher/src/com/dbstar/util/DateUtil.java] = 1374478903000000
 pj[https://github.com/dekellum/iudex/tree/master/iudex-http/src/main/java/iudex/http/Headers.java] = 1391060826000000
+pj[https://github.com/derekqian/coDoc/tree/master/edu.pdx.svl.coDoc.cdc/src/edu/pdx/svl/coDoc/cdc/datacenter/CDCModelV2.java] = 1345952675000000
 pj[https://github.com/derekqian/coDoc/tree/master/edu.pdx.svl.coDoc.cdc/src/edu/pdx/svl/coDoc/cdc/datacenter/CDCModelV2.java] = 1345952675000000
 pj[https://github.com/dexafree/Incidencias/tree/master/src/com/dexafree/incidencias/MainActivity.java] = 1387641530000000
 pj[https://github.com/dlitvinov/FastEMFStore.core/tree/master/org.eclipse.emf.emfstore.client.ui/src/org/eclipse/emf/emfstore/client/ui/views/scm/SCMLabelProvider.java] = 1336108601000000
@@ -130,10 +133,12 @@ pj1[https://github.com/ciaranj/luntbuild/luntbuild-prototype-core/src/com/luntsy
 pj1[https://github.com/cnyangyifeng/otp/src/main/java/cn/xdf/me/otp/common/utils/TimeUtils.java] = 10
 pj1[https://github.com/codehaus/izpack/izpack-util/src/main/java/com/izforge/izpack/util/SelfModifier.java] = 70
 pj1[https://github.com/czarneckid/blojsom-sourceforge/branches/blojsom-2_09-final/blojsom-2.0/src/org/blojsom/blog/BlogEntry.java] = 8
+pj1[https://github.com/czarneckid/blojsom-sourceforge/branches/blojsom-2_19-FINAL/blojsom-2.0/src/org/blojsom/blog/Trackback.java] = 8
+pj1[https://github.com/czarneckid/blojsom-sourceforge/tags/blojsom-1_6-RC1/blojsom/src/org/ignition/blojsom/util/BlojsomUtils.java] = 8
 pj1[https://github.com/dayana7789/apprhc/src/com/nahmens/rhcimax/utils/FormatoFecha.java] = 3
 pj1[https://github.com/dbstar/dbstar/DbstarLauncher/src/com/dbstar/util/DateUtil.java] = 10
 pj1[https://github.com/dekellum/iudex/iudex-http/src/main/java/iudex/http/Headers.java] = 4
-pj1[https://github.com/derekqian/coDoc/edu.pdx.svl.coDoc.cdc/src/edu/pdx/svl/coDoc/cdc/datacenter/CDCModelV2.java] = 2
+pj1[https://github.com/derekqian/coDoc/edu.pdx.svl.coDoc.cdc/src/edu/pdx/svl/coDoc/cdc/datacenter/CDCModelV2.java] = 4
 pj1[https://github.com/dexafree/Incidencias/src/com/dexafree/incidencias/MainActivity.java] = 2
 pj1[https://github.com/dlitvinov/FastEMFStore.core/org.eclipse.emf.emfstore.client.ui/src/org/eclipse/emf/emfstore/client/ui/views/scm/SCMLabelProvider.java] = 8
 pj1[https://github.com/eclipse/emf.texo/core/org.eclipse.emf.texo/src/org/eclipse/emf/texo/utils/ModelUtils.java] = 1

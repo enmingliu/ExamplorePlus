@@ -22,7 +22,9 @@ pj[https://github.com/android/platform_frameworks_policies_base/tree/master/phon
 pj[https://github.com/androideveloper/RAVA-Voting/tree/master/RavaVotingAndroid/libraries/facebook/src/com/facebook/internal/NativeProtocol.java] = 1399839048000000
 pj[https://github.com/ax003d/sichu_android/tree/master/submodules/android/src/com/google/zxing/client/android/result/ResultHandler.java] = 1366994545000000
 pj[https://github.com/bedmondmark/redbus/tree/master/src/org/redbus/ui/alert/TemporalAlert.java] = 1368885164000000
+pj[https://github.com/bedmondmark/redbus/tree/master/src/org/redbus/ui/arrivaltime/ArrivalTimeActivity.java] = 1315427162000000
 pj[https://github.com/ben7th/pin-2010/tree/master/android/mindpin/src/com/mindpin/receiver/SynDataBroadcastReceiver.java] = 1320944883000000
+pj[https://github.com/bfazen/AccessMRS/tree/master/src/com/alphabetbloc/accessmrs/services/SyncAdapter.java] = 1381298473000000
 pj[https://github.com/bfazen/AccessMRS/tree/master/src/com/alphabetbloc/accessmrs/utilities/LauncherUtil.java] = 1381298473000000
 pj[https://github.com/bi2one/Matji_Sandwich/tree/master/android/src/com/matji/sandwich/listener/GotoPostMainAction.java] = 1323174172000000
 pj[https://github.com/bkrieger/fruity/tree/master/src/edu/upenn/cis/fruity/SalesSelectionActivity.java] = 1366804907000000
@@ -34,10 +36,13 @@ pj[https://github.com/clarabayarri/meetme/tree/master/src/com/meetme/profile/Pro
 pj[https://github.com/cnaut/considerateapp/tree/master/mobilecombat-frontend/frontend-android/src/com/facebook/android/Facebook.java] = 1335218423000000
 pj[https://github.com/cstdr/cstdr.ningningcat/tree/master/src/cstdr/ningningcat/util/ShareUtil.java] = 1385652654000000
 pj[https://github.com/cytown/Phone_ics/tree/master/src/com/android/phone/EmergencyCallHelper.java] = 1313454827000000
+pj[https://github.com/cytown/Phone_ics/tree/master/src/com/android/phone/EmergencyCallbackModeExitDialog.java] = 1312508779000000
+pj[https://github.com/cytown/Phone_ics/tree/master/src/com/android/phone/EmergencyCallbackModeExitDialog.java] = 1312508779000000
 pj[https://github.com/davros-/platform_frameworks_base/tree/master/core/tests/coretests/src/android/app/DownloadManagerBaseTest.java] = 1345145612000000
 pj[https://github.com/dbstar/dbstar/tree/master/DbstarLauncher/src/com/dbstar/app/launcher/GDLauncherActivity.java] = 1382088489000000
 pj[https://github.com/dichro/Fe-Fi/tree/master/src/to/rcpt/fefi/EyefiCardListActivity.java] = 1324348441000000
 pj[https://github.com/dzo/packages_apps_settings/tree/master/src/com/android/settings/ChooseLockGeneric.java] = 1325033076000000
+pj[https://github.com/faux123/android_frameworks_base/tree/master/packages/SystemUI/src/com/android/systemui/usb/StorageNotification.java] = 1314764424000000
 pj[https://github.com/faux123/android_frameworks_base/tree/master/services/java/com/android/server/AppWidgetService.java] = 1309633897000000
 pj[https://github.com/ferquies/2dam/tree/master/PMUL/Examen/src/com/fernando/examen/MainActivity.java] = 1394223097000000
 pj[https://github.com/filip-jovanovic/chase_game/tree/master/src/edu/elfak/chasegame/GameService.java] = 1360622432000000
@@ -51,6 +56,7 @@ pj[https://github.com/guhl/platform_frameworks_opt_telephony/tree/master/src/jav
 pj[https://github.com/hagemt/libalexandria/tree/master/android/src/lib/alexandria/lannister/Lannister.java] = 1350929432000000
 pj[https://github.com/huskysoft/403Interviewer/tree/master/InterviewAnnihilator/src/com/huskysoft/interviewannihilator/ui/MainActivity.java] = 1370762878000000
 pj[https://github.com/interdroid/interdroid-swan/tree/master/src/interdroid/swan/SensorInfo.java] = 1377589536000000
+pj[https://github.com/ischweizer/MoSeS--Client-/tree/master/moses/libs/sources-support-v4/src/java/android/support/v4/app/ShareCompat.java] = 1376175975000000
 pj[https://github.com/ischweizer/MoSeS--Client-/tree/master/moses/libs/sources-support-v4/src/java/android/support/v4/app/ShareCompat.java] = 1376175975000000
 pj[https://github.com/jmorille/androGister/tree/master/cash-register/src/main/java/eu/ttbox/androgister/sync/authenticator/AuthenticatorActivity.java] = 1373429224000000
 pj[https://github.com/johnnyman727/NextUp-Android/tree/master/src/com/dotcom/nextup/activities/Home.java] = 1304716911000000
@@ -82,6 +88,7 @@ pj[https://github.com/teamgummy/frameworks_base/tree/master/services/java/com/an
 pj[https://github.com/telecapoland/jamendo-android/tree/master/src/com/teleca/jamendo/util/Helper.java] = 1302698954000000
 pj[https://github.com/todoroo/astrid/tree/master/astrid/src/com/todoroo/astrid/activity/FilterShortcutActivity.java] = 1345249703000000
 pj[https://github.com/travp624/packages_apps_BlackICEControl/tree/master/src/com/blackice/control/service/WeatherRefreshService.java] = 1339855844000000
+pj[https://github.com/ushahidi/Ushahidi_Android/tree/master/Core/src/com/ushahidi/android/app/activities/BaseActivity.java] = 1375162466000000
 pj[https://github.com/ushahidi/Ushahidi_Android/tree/master/Libraries/abs/src/com/actionbarsherlock/widget/SearchView.java] = 1365356006000000
 pj[https://github.com/vogtp/android-CPU-tuner/tree/master/src/ch/amana/android/cputuner/service/ConfigurationAutoloadService.java] = 1354305218000000
 pj[https://github.com/vyloy/lnvc/tree/master/stb/lorent_video/src/io/vov/vitamio/widget/VideoView.java] = 1355212504000000
@@ -115,7 +122,9 @@ pj1[https://github.com/android/platform_frameworks_policies_base/phone/com/andro
 pj1[https://github.com/androideveloper/RAVA-Voting/RavaVotingAndroid/libraries/facebook/src/com/facebook/internal/NativeProtocol.java] = 6
 pj1[https://github.com/ax003d/sichu_android/submodules/android/src/com/google/zxing/client/android/result/ResultHandler.java] = 2
 pj1[https://github.com/bedmondmark/redbus/src/org/redbus/ui/alert/TemporalAlert.java] = 6
+pj1[https://github.com/bedmondmark/redbus/src/org/redbus/ui/arrivaltime/ArrivalTimeActivity.java] = 6
 pj1[https://github.com/ben7th/pin-2010/android/mindpin/src/com/mindpin/receiver/SynDataBroadcastReceiver.java] = 4
+pj1[https://github.com/bfazen/AccessMRS/src/com/alphabetbloc/accessmrs/services/SyncAdapter.java] = 2
 pj1[https://github.com/bfazen/AccessMRS/src/com/alphabetbloc/accessmrs/utilities/LauncherUtil.java] = 2
 pj1[https://github.com/bi2one/Matji_Sandwich/android/src/com/matji/sandwich/listener/GotoPostMainAction.java] = 8
 pj1[https://github.com/bkrieger/fruity/src/edu/upenn/cis/fruity/SalesSelectionActivity.java] = 5
@@ -127,10 +136,12 @@ pj1[https://github.com/clarabayarri/meetme/src/com/meetme/profile/ProfileActivit
 pj1[https://github.com/cnaut/considerateapp/mobilecombat-frontend/frontend-android/src/com/facebook/android/Facebook.java] = 9
 pj1[https://github.com/cstdr/cstdr.ningningcat/src/cstdr/ningningcat/util/ShareUtil.java] = 4
 pj1[https://github.com/cytown/Phone_ics/src/com/android/phone/EmergencyCallHelper.java] = 89
+pj1[https://github.com/cytown/Phone_ics/src/com/android/phone/EmergencyCallbackModeExitDialog.java] = 178
 pj1[https://github.com/davros-/platform_frameworks_base/core/tests/coretests/src/android/app/DownloadManagerBaseTest.java] = 2
 pj1[https://github.com/dbstar/dbstar/DbstarLauncher/src/com/dbstar/app/launcher/GDLauncherActivity.java] = 10
 pj1[https://github.com/dichro/Fe-Fi/src/to/rcpt/fefi/EyefiCardListActivity.java] = 3
 pj1[https://github.com/dzo/packages_apps_settings/src/com/android/settings/ChooseLockGeneric.java] = 154
+pj1[https://github.com/faux123/android_frameworks_base/packages/SystemUI/src/com/android/systemui/usb/StorageNotification.java] = 1
 pj1[https://github.com/faux123/android_frameworks_base/services/java/com/android/server/AppWidgetService.java] = 1
 pj1[https://github.com/ferquies/2dam/PMUL/Examen/src/com/fernando/examen/MainActivity.java] = 5
 pj1[https://github.com/filip-jovanovic/chase_game/src/edu/elfak/chasegame/GameService.java] = 4
@@ -144,7 +155,7 @@ pj1[https://github.com/guhl/platform_frameworks_opt_telephony/src/java/com/andro
 pj1[https://github.com/hagemt/libalexandria/android/src/lib/alexandria/lannister/Lannister.java] = 1
 pj1[https://github.com/huskysoft/403Interviewer/InterviewAnnihilator/src/com/huskysoft/interviewannihilator/ui/MainActivity.java] = 8
 pj1[https://github.com/interdroid/interdroid-swan/src/interdroid/swan/SensorInfo.java] = 7
-pj1[https://github.com/ischweizer/MoSeS--Client-/moses/libs/sources-support-v4/src/java/android/support/v4/app/ShareCompat.java] = 10
+pj1[https://github.com/ischweizer/MoSeS--Client-/moses/libs/sources-support-v4/src/java/android/support/v4/app/ShareCompat.java] = 20
 pj1[https://github.com/jmorille/androGister/cash-register/src/main/java/eu/ttbox/androgister/sync/authenticator/AuthenticatorActivity.java] = 2
 pj1[https://github.com/johnnyman727/NextUp-Android/src/com/dotcom/nextup/activities/Home.java] = 3
 pj1[https://github.com/jstakun/gms-world-client/GMSLib/src/com/jstakun/gms/android/ui/LayerListActivity.java] = 1
@@ -175,6 +186,7 @@ pj1[https://github.com/teamgummy/frameworks_base/services/java/com/android/serve
 pj1[https://github.com/telecapoland/jamendo-android/src/com/teleca/jamendo/util/Helper.java] = 12
 pj1[https://github.com/todoroo/astrid/astrid/src/com/todoroo/astrid/activity/FilterShortcutActivity.java] = 23
 pj1[https://github.com/travp624/packages_apps_BlackICEControl/src/com/blackice/control/service/WeatherRefreshService.java] = 4
+pj1[https://github.com/ushahidi/Ushahidi_Android/Core/src/com/ushahidi/android/app/activities/BaseActivity.java] = 18
 pj1[https://github.com/ushahidi/Ushahidi_Android/Libraries/abs/src/com/actionbarsherlock/widget/SearchView.java] = 18
 pj1[https://github.com/vogtp/android-CPU-tuner/src/ch/amana/android/cputuner/service/ConfigurationAutoloadService.java] = 3
 pj1[https://github.com/vyloy/lnvc/stb/lorent_video/src/io/vov/vitamio/widget/VideoView.java] = 7

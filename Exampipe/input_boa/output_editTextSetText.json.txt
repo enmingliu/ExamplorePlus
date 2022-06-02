@@ -8,6 +8,7 @@ pj[https://github.com/Grupp1/Raddargruppen/tree/master/Raddargruppen/src/raddar/
 pj[https://github.com/HUSTDAVID/wuhan-dm/tree/master/src/src/com/wh/dm/activity/NewsMoreReplyActivity.java] = 1359119573000000
 pj[https://github.com/InsomniaROM/packages_apps_ROMSettings/tree/master/src/com/aokp/romcontrol/fragments/UserInterface.java] = 1381416875000000
 pj[https://github.com/JCERTIFLab/m-domotique/tree/master/mdomotique-android/src/com/jcertif/mdomotique/ihm/Authentification.java] = 1377041801000000
+pj[https://github.com/JCERTIFLab/m-domotique/tree/master/mdomotique-android/src/com/jcertif/mdomotique/ihm/ManagementRooms.java] = 1377041801000000
 pj[https://github.com/JiangYouxin/vnotepad/tree/master/android/src/net/jiangyouxin/vnotepad/MainActivity.java] = 1362990310000000
 pj[https://github.com/JohnMurray/smilcloud/tree/master/src/edu/nku/cs/csc440/team2/uploader/Uploader.java] = 1303869698000000
 pj[https://github.com/JoshTsang/cnk-orderPad/tree/master/src/com/htb/cnk/LoginDlg.java] = 1348638631000000
@@ -15,6 +16,7 @@ pj[https://github.com/LUEshi/Trace2Learn/tree/master/src/edu/upenn/cis350/Trace2
 pj[https://github.com/Liechtathlet/citr/tree/master/citr-app/src/main/java/ch/zhaw/mdp/lhb/citr/activities/GroupCreateActivity.java] = 1389125573000000
 pj[https://github.com/Mikuz/Boarder/tree/master/src/fi/mikuz/boarder/gui/FileExplorer.java] = 1372561188000000
 pj[https://github.com/MinionApp/minion/tree/master/MinionApp/src/uw/cse403/minion/BasicInfoActivity.java] = 1370825619000000
+pj[https://github.com/NEXUS-EVO/frameworks_base/tree/master/core/java/android/webkit/FindActionModeCallback.java] = 1354419589000000
 pj[https://github.com/NEXUS-EVO/frameworks_base/tree/master/tests/HwAccelerationTest/src/com/android/test/hwui/SimplePathsActivity.java] = 1354419589000000
 pj[https://github.com/Nemisis/Sms2HoneyComb/tree/master/src/com/asa/texttotab/tablet/RegisterActivityTab.java] = 1327818529000000
 pj[https://github.com/Q42/hue2/tree/master/hue2/src/main/java/nl/q42/huelimitededition/activities/LightActivity.java] = 1390841599000000
@@ -30,6 +32,7 @@ pj[https://github.com/arlyxiao/spanish_talk_android/tree/master/src/com/example/
 pj[https://github.com/ax003d/sichu_android/tree/master/submodules/android/src/com/google/zxing/client/android/book/SearchBookContentsActivity.java] = 1366994545000000
 pj[https://github.com/ben7th/pin-2010/tree/master/android/mindpin/src/com/mindpin/widget/adapter/CollectionListAdapter.java] = 1324018940000000
 pj[https://github.com/cangevine/STEAMnet/tree/master/android/src/org/friendscentral/steamnet/Activities/IdeaDetailActivity.java] = 1378398019000000
+pj[https://github.com/carnero/cgeo-original/tree/master/src/carnero/cgeo/original/cacheLog.java] = 1309286763000000
 pj[https://github.com/carnero/cgeo-original/tree/master/src/carnero/cgeo/original/cacheLog.java] = 1309286763000000
 pj[https://github.com/chgenly/experiment/tree/master/OsmAnd/src/net/osmand/plus/activities/DownloadIndexActivity.java] = 1346363975000000
 pj[https://github.com/cookyt/DiceRoller/tree/master/src/com/group5/diceroller/EditSetActivity.java] = 1366153207000000
@@ -68,13 +71,16 @@ pj[https://github.com/nebogeo/borrowed-scenery/tree/master/zizim/zizim-android/s
 pj[https://github.com/nhvtgd/MITBAY/tree/master/src/com/login/LogIn.java] = 1359462250000000
 pj[https://github.com/pankajc-optimus/android-lib/tree/master/FacebookIntegration/Code/FaceBookApp/src/com/optimus/mobile/GraphInterfaceDialog.java] = 1350915090000000
 pj[https://github.com/pingpongboss/Blind.ly-Messenger/tree/master/src/edu/berkeley/cs169/activity/RecipientInputActivity.java] = 1323085927000000
+pj[https://github.com/pingpongboss/Blind.ly-Messenger/tree/master/src/edu/berkeley/cs169/activity/RecipientInputActivity.java] = 1323085927000000
 pj[https://github.com/remi/andrake/tree/master/examples/android/WikiNotes/src/com/google/android/wikinotes/WikiNoteEditor.java] = 1232591225000000
 pj[https://github.com/rillian/webrtc/tree/master/webrtc/voice_engine/test/android/android_test/src/org/webrtc/voiceengine/test/AndroidTest.java] = 1350929963000000
 pj[https://github.com/ritnorthstar/Minimap-Client/tree/master/Code/Minimap/src/main/java/com/northstar/minimap/MainActivity.java] = 1398454234000000
 pj[https://github.com/rogerhzh/linphone_XIA/tree/master/src/org/linphone/ChatFragment.java] = 1370856671000000
+pj[https://github.com/rogerhzh/linphone_XIA/tree/master/src/org/linphone/setup/WizardFragment.java] = 1371562319000000
 pj[https://github.com/rtyley/agit/tree/master/agit/src/main/java/com/madgag/agit/prompts/DialogPromptUIBehaviour.java] = 1344621564000000
 pj[https://github.com/serious198706/DFCarCheckerProject/tree/master/DFCarChecker/src/main/java/com/df/service/Helper.java] = 1385028343000000
 pj[https://github.com/sharenav/sharenav/tree/master/src/net/sharenav/sharenav/ui/TextEditField.java] = 1347233091000000
+pj[https://github.com/sisbell/email/tree/master/tests/src/com/android/email/activity/setup/AccountSetupIncomingTests.java] = 1308241919000000
 pj[https://github.com/sisbell/email/tree/master/tests/src/com/android/email/activity/setup/AccountSetupOutgoingTests.java] = 1308241919000000
 pj[https://github.com/sng/gb/tree/master/branches/robertlipe/GeoBeagleTest/test/com/google/code/geobeagle/ui/EditCacheActivityDelegateTest.java] = 1238799617000000
 pj[https://github.com/socialpercon/anki/tree/master/src/com/ichi2/anki/DeckPicker.java] = 1359584340000000
@@ -83,9 +89,11 @@ pj[https://github.com/specialforest/apv/tree/master/pdfview/src/cx/hell/android/
 pj[https://github.com/sunriver/projects/tree/master/android/eoecn/src/cn/eoe/app/ui/UserLoginActivity.java] = 1392022430000000
 pj[https://github.com/t2health/T2-Mood-Tracker-Android/tree/master/MoodTracker/src/com/t2/vas/activity/editor/GroupActivity.java] = 1349900043000000
 pj[https://github.com/teamgummy/packages_apps_Settings/tree/master/src/com/android/settings/SystemUITweaksNS.java] = 1331182995000000
+pj[https://github.com/thiendamvam/WhyQ/tree/master/Code/src/whyq/activity/NewWhyqActivity.java] = 1381747882000000
 pj[https://github.com/thiendamvam/WhyQ/tree/master/Code/src/whyq/activity/WhyqShareActivity.java] = 1386842422000000
 pj[https://github.com/vogtp/android-CPU-tuner/tree/master/src/ch/amana/android/cputuner/view/activity/ProfileEditor.java] = 1353356238000000
 pj[https://github.com/wanglu0919/chianwuxi_android/tree/master/chinaw/src/com/wuxi/app/activity/homepage/goversaloon/GoverSaloonDetailQZActivity.java] = 1378276080000000
+pj[https://github.com/wanglu0919/chianwuxi_android/tree/master/chinaw/src/com/wuxi/app/fragment/homepage/mygoverinteractpeople/GoverInterPeoplePublicSuperviseFragment.java] = 1378100964000000
 pj[https://github.com/wkrupchenko/swe2/tree/master/ShopApp/src/de/shop/ui/artikel/ArtikelEdit.java] = 1372278954000000
 pj[https://github.com/wuggi/softwareengineering/tree/master/numpicker/src/net/simonvt/numberpicker/NumberPicker.java] = 1369598531000000
 pj[https://github.com/xiamike/parcupine/tree/master/PARQme/src/com/test/MainActivity.java] = 1327887433000000
@@ -100,6 +108,7 @@ pj1[https://github.com/Grupp1/Raddargruppen/Raddargruppen/src/raddar/views/EditC
 pj1[https://github.com/HUSTDAVID/wuhan-dm/src/src/com/wh/dm/activity/NewsMoreReplyActivity.java] = 7
 pj1[https://github.com/InsomniaROM/packages_apps_ROMSettings/src/com/aokp/romcontrol/fragments/UserInterface.java] = 40
 pj1[https://github.com/JCERTIFLab/m-domotique/mdomotique-android/src/com/jcertif/mdomotique/ihm/Authentification.java] = 10
+pj1[https://github.com/JCERTIFLab/m-domotique/mdomotique-android/src/com/jcertif/mdomotique/ihm/ManagementRooms.java] = 10
 pj1[https://github.com/JiangYouxin/vnotepad/android/src/net/jiangyouxin/vnotepad/MainActivity.java] = 2
 pj1[https://github.com/JohnMurray/smilcloud/src/edu/nku/cs/csc440/team2/uploader/Uploader.java] = 7
 pj1[https://github.com/JoshTsang/cnk-orderPad/src/com/htb/cnk/LoginDlg.java] = 3
@@ -107,6 +116,7 @@ pj1[https://github.com/LUEshi/Trace2Learn/src/edu/upenn/cis350/Trace2Learn/TagAc
 pj1[https://github.com/Liechtathlet/citr/citr-app/src/main/java/ch/zhaw/mdp/lhb/citr/activities/GroupCreateActivity.java] = 5
 pj1[https://github.com/Mikuz/Boarder/src/fi/mikuz/boarder/gui/FileExplorer.java] = 3
 pj1[https://github.com/MinionApp/minion/MinionApp/src/uw/cse403/minion/BasicInfoActivity.java] = 9
+pj1[https://github.com/NEXUS-EVO/frameworks_base/core/java/android/webkit/FindActionModeCallback.java] = 2
 pj1[https://github.com/NEXUS-EVO/frameworks_base/tests/HwAccelerationTest/src/com/android/test/hwui/SimplePathsActivity.java] = 2
 pj1[https://github.com/Nemisis/Sms2HoneyComb/src/com/asa/texttotab/tablet/RegisterActivityTab.java] = 4
 pj1[https://github.com/Q42/hue2/hue2/src/main/java/nl/q42/huelimitededition/activities/LightActivity.java] = 2
@@ -122,7 +132,7 @@ pj1[https://github.com/arlyxiao/spanish_talk_android/src/com/example/spanishtalk
 pj1[https://github.com/ax003d/sichu_android/submodules/android/src/com/google/zxing/client/android/book/SearchBookContentsActivity.java] = 2
 pj1[https://github.com/ben7th/pin-2010/android/mindpin/src/com/mindpin/widget/adapter/CollectionListAdapter.java] = 4
 pj1[https://github.com/cangevine/STEAMnet/android/src/org/friendscentral/steamnet/Activities/IdeaDetailActivity.java] = 9
-pj1[https://github.com/carnero/cgeo-original/src/carnero/cgeo/original/cacheLog.java] = 15
+pj1[https://github.com/carnero/cgeo-original/src/carnero/cgeo/original/cacheLog.java] = 30
 pj1[https://github.com/chgenly/experiment/OsmAnd/src/net/osmand/plus/activities/DownloadIndexActivity.java] = 79
 pj1[https://github.com/cookyt/DiceRoller/src/com/group5/diceroller/EditSetActivity.java] = 4
 pj1[https://github.com/criseyes/crescendo/CLIENT/src/com/kaist/crescendo/activity/PlanEditorActivity.java] = 5
@@ -159,14 +169,16 @@ pj1[https://github.com/msi88/Popya/Popya/src/at/fhv/popya/application/view/SendM
 pj1[https://github.com/nebogeo/borrowed-scenery/zizim/zizim-android/src/foam/zizim/android/AddIncident.java] = 4
 pj1[https://github.com/nhvtgd/MITBAY/src/com/login/LogIn.java] = 5
 pj1[https://github.com/pankajc-optimus/android-lib/FacebookIntegration/Code/FaceBookApp/src/com/optimus/mobile/GraphInterfaceDialog.java] = 6
-pj1[https://github.com/pingpongboss/Blind.ly-Messenger/src/edu/berkeley/cs169/activity/RecipientInputActivity.java] = 7
+pj1[https://github.com/pingpongboss/Blind.ly-Messenger/src/edu/berkeley/cs169/activity/RecipientInputActivity.java] = 14
 pj1[https://github.com/remi/andrake/examples/android/WikiNotes/src/com/google/android/wikinotes/WikiNoteEditor.java] = 1
 pj1[https://github.com/rillian/webrtc/webrtc/voice_engine/test/android/android_test/src/org/webrtc/voiceengine/test/AndroidTest.java] = 79
 pj1[https://github.com/ritnorthstar/Minimap-Client/Code/Minimap/src/main/java/com/northstar/minimap/MainActivity.java] = 5
 pj1[https://github.com/rogerhzh/linphone_XIA/src/org/linphone/ChatFragment.java] = 11
+pj1[https://github.com/rogerhzh/linphone_XIA/src/org/linphone/setup/WizardFragment.java] = 11
 pj1[https://github.com/rtyley/agit/agit/src/main/java/com/madgag/agit/prompts/DialogPromptUIBehaviour.java] = 12
 pj1[https://github.com/serious198706/DFCarCheckerProject/DFCarChecker/src/main/java/com/df/service/Helper.java] = 1
 pj1[https://github.com/sharenav/sharenav/src/net/sharenav/sharenav/ui/TextEditField.java] = 11
+pj1[https://github.com/sisbell/email/tests/src/com/android/email/activity/setup/AccountSetupIncomingTests.java] = 80
 pj1[https://github.com/sisbell/email/tests/src/com/android/email/activity/setup/AccountSetupOutgoingTests.java] = 80
 pj1[https://github.com/sng/gb/branches/robertlipe/GeoBeagleTest/test/com/google/code/geobeagle/ui/EditCacheActivityDelegateTest.java] = 7
 pj1[https://github.com/socialpercon/anki/src/com/ichi2/anki/DeckPicker.java] = 75
@@ -175,9 +187,11 @@ pj1[https://github.com/specialforest/apv/pdfview/src/cx/hell/android/pdfview/Ope
 pj1[https://github.com/sunriver/projects/android/eoecn/src/cn/eoe/app/ui/UserLoginActivity.java] = 2
 pj1[https://github.com/t2health/T2-Mood-Tracker-Android/MoodTracker/src/com/t2/vas/activity/editor/GroupActivity.java] = 5
 pj1[https://github.com/teamgummy/packages_apps_Settings/src/com/android/settings/SystemUITweaksNS.java] = 8
+pj1[https://github.com/thiendamvam/WhyQ/Code/src/whyq/activity/NewWhyqActivity.java] = 7
 pj1[https://github.com/thiendamvam/WhyQ/Code/src/whyq/activity/WhyqShareActivity.java] = 7
 pj1[https://github.com/vogtp/android-CPU-tuner/src/ch/amana/android/cputuner/view/activity/ProfileEditor.java] = 3
 pj1[https://github.com/wanglu0919/chianwuxi_android/chinaw/src/com/wuxi/app/activity/homepage/goversaloon/GoverSaloonDetailQZActivity.java] = 7
+pj1[https://github.com/wanglu0919/chianwuxi_android/chinaw/src/com/wuxi/app/fragment/homepage/mygoverinteractpeople/GoverInterPeoplePublicSuperviseFragment.java] = 7
 pj1[https://github.com/wkrupchenko/swe2/ShopApp/src/de/shop/ui/artikel/ArtikelEdit.java] = 4
 pj1[https://github.com/wuggi/softwareengineering/numpicker/src/net/simonvt/numberpicker/NumberPicker.java] = 9
 pj1[https://github.com/xiamike/parcupine/PARQme/src/com/test/MainActivity.java] = 9
