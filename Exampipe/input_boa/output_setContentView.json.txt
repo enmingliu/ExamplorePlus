@@ -12,7 +12,9 @@ pj[https://github.com/MIPS/cts/tree/master/tests/src/android/app/cts/AppStubActi
 pj[https://github.com/MinionApp/minion/tree/master/MinionApp/src/uw/cse403/minion/CombatActivity.java] = 1370827338000000
 pj[https://github.com/Mr-Slash/TrailDevils/tree/master/src/ch/hsr/traildevil/presentation/TrailActivity.java] = 1322171467000000
 pj[https://github.com/NEXUS-EVO/frameworks_base/tree/master/libs/usb/tests/AccessoryChat/src/com/android/accessorychat/AccessoryChat.java] = 1354419589000000
+pj[https://github.com/NEXUS-EVO/frameworks_base/tree/master/tests/StatusBar/src/com/android/statusbartest/NotificationBuilderTest.java] = 1354419589000000
 pj[https://github.com/OMFGB/packages_apps_Mms/tree/master/src/com/android/mms/ui/DeliveryReportActivity.java] = 1274200724000000
+pj[https://github.com/RonnieVandenPoel/SourceFish/tree/master/JakeWharton-ActionBarSherlock-e5c2d1c/samples/demos/src/com/actionbarsherlock/sample/demos/Progress.java] = 1363689108000000
 pj[https://github.com/RonnieVandenPoel/SourceFish/tree/master/JakeWharton-ActionBarSherlock-e5c2d1c/samples/fragments/src/com/actionbarsherlock/sample/fragments/FragmentMenuSupport.java] = 1363689108000000
 pj[https://github.com/Rubusch/android/tree/master/DemoActivityMasterDetailFlow01/src/com/example/demoactivitymasterdetailflow01/ItemListActivity.java] = 1367864347000000
 pj[https://github.com/RudolfWeeber/eyes-free/tree/master/trunk/documentation/RockLockTutorial/RockLock_02/src/com/marvin/rocklock/RockLockActivity.java] = 1267748067000000
@@ -29,6 +31,8 @@ pj[https://github.com/abhishekjain89/androidperformance/tree/master/client/Ping/
 pj[https://github.com/abraxasson/publicGaming/tree/master/House of Fire - Android/House of Fire/src/house/of/fire/LogInActivity.java] = 1343977974000000
 pj[https://github.com/aismail/AndroAR/tree/master/AndroARGUI/src/com/androar/MoveSelectionActivity.java] = 1336543089000000
 pj[https://github.com/amcereijo/trcardmanager/tree/master/src/com/trcardmanager/login/TRCardManagerLoginActivity.java] = 1360010676000000
+pj[https://github.com/andrograph/platform_development/tree/master/samples/ApiDemos/src/com/example/android/apis/app/CustomTitle.java] = 1236137349000000
+pj[https://github.com/andrograph/platform_development/tree/master/samples/ApiDemos/src/com/example/android/apis/media/MediaPlayerDemo.java] = 1252012367000000
 pj[https://github.com/andrograph/platform_development/tree/master/samples/ApiDemos/src/com/example/android/apis/view/ScrollBar3.java] = 1236137349000000
 pj[https://github.com/applications4android/ComicReader/tree/master/ComicReader/src/com/blogspot/applications4android/comicreader/ComicStripViewer.java] = 1355689184000000
 pj[https://github.com/arjunroy/cinder_base/tree/master/tests/appwidgets/AppWidgetHostTest/src/com/android/tests/appwidgethost/TestAppWidgetConfigure.java] = 1236798716000000
@@ -61,6 +65,7 @@ pj[https://github.com/janrain/jump.android/tree/master/Samples/SimpleDemo/src/co
 pj[https://github.com/jcahan/privacy-app/tree/master/src/officialapp/columbiaprivacyapp/MainActivity.java] = 1378654857000000
 pj[https://github.com/jknoxville/raceTrace/tree/master/project/src/uk/ac/cam/jk510/part2project/gui/NewSessionActivityBluetoothMaster.java] = 1358463556000000
 pj[https://github.com/julenka/asui-sp13/tree/master/AUIS-HW3-schwarz-julia/src/homework3/android/WindowGroup.java] = 1366989746000000
+pj[https://github.com/kitkatandroid/JLS36G_base/tree/master/core/tests/coretests/src/android/widget/scroll/RequestRectangleVisible.java] = 1380173574000000
 pj[https://github.com/kitkatandroid/JLS36G_base/tree/master/packages/SystemUI/src/com/android/systemui/recent/RecentsActivity.java] = 1382019491000000
 pj[https://github.com/ktoonsez/AOKP-I777/tree/master/packages/apps/Settings/src/com/android/settings/BatteryInfo.java] = 1342586027000000
 pj[https://github.com/laco0416/SmileEssence-Lite/tree/master/src/net/miz_hi/smileessence/view/activity/LicenseActivity.java] = 1384180845000000
@@ -83,6 +88,7 @@ pj[https://github.com/seniorprojectandroid/seniorproject/tree/master/seniorproje
 pj[https://github.com/sntc06/Icequeen/tree/master/src/com/mis/icequeen/PreTest.java] = 1344175268000000
 pj[https://github.com/sunriver/projects/tree/master/android/weiciyuan/src/org/qii/weiciyuan/ui/browser/BrowserLocalPicActivity.java] = 1367570926000000
 pj[https://github.com/teleportR/TeleportR/tree/master/src/org/teleportr/activity/RideDetails.java] = 1305150764000000
+pj[https://github.com/thiendamvam/WhyQ/tree/master/Code/src/whyq/activity/WhyqFriendsFacebookActivity.java] = 1389170529000000
 pj[https://github.com/thiendamvam/WhyQ/tree/master/Code/src/whyq/view/ImageDetail.java] = 1370216834000000
 pj[https://github.com/tmobile/themes-platform-packages-apps-Email/tree/master/src/com/android/email/activity/Debug.java] = 1265680674000000
 pj[https://github.com/tonnguye/csci498android/tree/master/LunchList/src/csci498/tonnguye/lunchlist/LunchList.java] = 1352860052000000
@@ -106,7 +112,9 @@ pj1[https://github.com/MIPS/cts/tests/src/android/app/cts/AppStubActivity.java] 
 pj1[https://github.com/MinionApp/minion/MinionApp/src/uw/cse403/minion/CombatActivity.java] = 9
 pj1[https://github.com/Mr-Slash/TrailDevils/src/ch/hsr/traildevil/presentation/TrailActivity.java] = 2
 pj1[https://github.com/NEXUS-EVO/frameworks_base/libs/usb/tests/AccessoryChat/src/com/android/accessorychat/AccessoryChat.java] = 2
+pj1[https://github.com/NEXUS-EVO/frameworks_base/tests/StatusBar/src/com/android/statusbartest/NotificationBuilderTest.java] = 2
 pj1[https://github.com/OMFGB/packages_apps_Mms/src/com/android/mms/ui/DeliveryReportActivity.java] = 64
+pj1[https://github.com/RonnieVandenPoel/SourceFish/JakeWharton-ActionBarSherlock-e5c2d1c/samples/demos/src/com/actionbarsherlock/sample/demos/Progress.java] = 5
 pj1[https://github.com/RonnieVandenPoel/SourceFish/JakeWharton-ActionBarSherlock-e5c2d1c/samples/fragments/src/com/actionbarsherlock/sample/fragments/FragmentMenuSupport.java] = 5
 pj1[https://github.com/Rubusch/android/DemoActivityMasterDetailFlow01/src/com/example/demoactivitymasterdetailflow01/ItemListActivity.java] = 1
 pj1[https://github.com/RudolfWeeber/eyes-free/trunk/documentation/RockLockTutorial/RockLock_02/src/com/marvin/rocklock/RockLockActivity.java] = 20
@@ -123,6 +131,8 @@ pj1[https://github.com/abhishekjain89/androidperformance/client/Ping/src/com/num
 pj1[https://github.com/abraxasson/publicGaming/House of Fire - Android/House of Fire/src/house/of/fire/LogInActivity.java] = 7
 pj1[https://github.com/aismail/AndroAR/AndroARGUI/src/com/androar/MoveSelectionActivity.java] = 4
 pj1[https://github.com/amcereijo/trcardmanager/src/com/trcardmanager/login/TRCardManagerLoginActivity.java] = 1
+pj1[https://github.com/andrograph/platform_development/samples/ApiDemos/src/com/example/android/apis/app/CustomTitle.java] = 136
+pj1[https://github.com/andrograph/platform_development/samples/ApiDemos/src/com/example/android/apis/media/MediaPlayerDemo.java] = 136
 pj1[https://github.com/andrograph/platform_development/samples/ApiDemos/src/com/example/android/apis/view/ScrollBar3.java] = 136
 pj1[https://github.com/applications4android/ComicReader/ComicReader/src/com/blogspot/applications4android/comicreader/ComicStripViewer.java] = 16
 pj1[https://github.com/arjunroy/cinder_base/tests/appwidgets/AppWidgetHostTest/src/com/android/tests/appwidgethost/TestAppWidgetConfigure.java] = 101
@@ -155,6 +165,7 @@ pj1[https://github.com/janrain/jump.android/Samples/SimpleDemo/src/com/janrain/a
 pj1[https://github.com/jcahan/privacy-app/src/officialapp/columbiaprivacyapp/MainActivity.java] = 2
 pj1[https://github.com/jknoxville/raceTrace/project/src/uk/ac/cam/jk510/part2project/gui/NewSessionActivityBluetoothMaster.java] = 1
 pj1[https://github.com/julenka/asui-sp13/AUIS-HW3-schwarz-julia/src/homework3/android/WindowGroup.java] = 2
+pj1[https://github.com/kitkatandroid/JLS36G_base/core/tests/coretests/src/android/widget/scroll/RequestRectangleVisible.java] = 2
 pj1[https://github.com/kitkatandroid/JLS36G_base/packages/SystemUI/src/com/android/systemui/recent/RecentsActivity.java] = 2
 pj1[https://github.com/ktoonsez/AOKP-I777/packages/apps/Settings/src/com/android/settings/BatteryInfo.java] = 2
 pj1[https://github.com/laco0416/SmileEssence-Lite/src/net/miz_hi/smileessence/view/activity/LicenseActivity.java] = 2
@@ -177,6 +188,7 @@ pj1[https://github.com/seniorprojectandroid/seniorproject/seniorproject/src/edu/
 pj1[https://github.com/sntc06/Icequeen/src/com/mis/icequeen/PreTest.java] = 7
 pj1[https://github.com/sunriver/projects/android/weiciyuan/src/org/qii/weiciyuan/ui/browser/BrowserLocalPicActivity.java] = 2
 pj1[https://github.com/teleportR/TeleportR/src/org/teleportr/activity/RideDetails.java] = 5
+pj1[https://github.com/thiendamvam/WhyQ/Code/src/whyq/activity/WhyqFriendsFacebookActivity.java] = 7
 pj1[https://github.com/thiendamvam/WhyQ/Code/src/whyq/view/ImageDetail.java] = 7
 pj1[https://github.com/tmobile/themes-platform-packages-apps-Email/src/com/android/email/activity/Debug.java] = 37
 pj1[https://github.com/tonnguye/csci498android/LunchList/src/csci498/tonnguye/lunchlist/LunchList.java] = 1

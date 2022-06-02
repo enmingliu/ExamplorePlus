@@ -3,6 +3,8 @@ pj[https://github.com/Blakez/android_frameworks_base/tree/master/media/java/andr
 pj[https://github.com/CMUCognisense/Cognisense/tree/master/Android-Apps/DoorBell/src/com/example/doorbell/DoorBellConfigurationService.java] = 1374799239000000
 pj[https://github.com/CommanderAlchemy/SmartPark/tree/master/SmartParkAndroid/src/com/smartpark/activities/MainActivity.java] = 1370369568000000
 pj[https://github.com/DroidJunk/android_packages_apps_settings/tree/master/src/com/android/settings/AccessibilitySettings.java] = 1323368761000000
+pj[https://github.com/DroidJunk/android_packages_apps_settings/tree/master/src/com/android/settings/bluetooth/DockService.java] = 1323368761000000
+pj[https://github.com/DroidJunk/droidjunk_packages_apps_Contacts/tree/master/src/com/android/contacts/editor/ContactEditorUtils.java] = 1339542258000000
 pj[https://github.com/DroidJunk/droidjunk_packages_apps_Contacts/tree/master/src/com/android/contacts/list/ContactListFilter.java] = 1339542258000000
 pj[https://github.com/Dustinmj/Froyo_Email/tree/master/src/com/android/email/Preferences.java] = 1286732978000000
 pj[https://github.com/JackWoot/CSC2015/tree/master/FacebookSDK/src/com/facebook/SharedPreferencesTokenCachingStrategy.java] = 1364983184000000
@@ -13,6 +15,7 @@ pj[https://github.com/OSAStudio/newshub/tree/master/src/com/osastudio/newshub/li
 pj[https://github.com/OSLL/geo2tag/tree/master/services/gds/android-client/src/ru/spb/osll/GDS/preferences/Settings.java] = 1338438284000000
 pj[https://github.com/Proyecto-UTN-2012/Proyecto-UTN-2012/tree/master/integrar-t-android/src/main/java/org/utn/proyecto/helpful/integrart/integrar_t_android/services/DataStorageServiceImpl.java] = 1349483757000000
 pj[https://github.com/RudolfWeeber/eyes-free/tree/master/trunk/archived/WebVox/src/com/marvin/webvox/BrowserSettings.java] = 1334251861000000
+pj[https://github.com/Skylark95/Amazon-App-Notifier/tree/master/app/src/test/java/com/skylark95/amazonfreenotify/notification/AppDataNotificationTest.java] = 1367811716000000
 pj[https://github.com/Skylark95/Amazon-App-Notifier/tree/master/app/src/test/java/com/skylark95/amazonfreenotify/settings/SettingsUtilsTest.java] = 1367811716000000
 pj[https://github.com/SummerAndroid/Summer/tree/master/Summer-Android/src/summer/android/Login.java] = 1374021591000000
 pj[https://github.com/TeamNyx/packages_apps_Contacts/tree/master/src/com/android/contacts/editor/ContactEditorUtils.java] = 1339542258000000
@@ -32,6 +35,7 @@ pj[https://github.com/chgenly/experiment/tree/master/OsmAnd/src/net/osmand/plus/
 pj[https://github.com/comsince/myappweixin/tree/master/musicPlayer/src/com/comsince/knowledge/preferences/MusicPreference.java] = 1383632521000000
 pj[https://github.com/craining/android-ringforyou/tree/master/src/com/zgy/ringforu/util/PreferenceUtil.java] = 1377168366000000
 pj[https://github.com/ddnbrowser/Diva.NetBrowser/tree/master/src/net/diva/browser/DownloadRankingService.java] = 1320845493000000
+pj[https://github.com/delleceste/it.giacomos.android.osmer/tree/master/Osmer/src/it/giacomos/android/osmer/preferences/Settings.java] = 1432542944000000
 pj[https://github.com/delleceste/it.giacomos.android.osmer/tree/master/Osmer/src/it/giacomos/android/osmer/preferences/Settings.java] = 1432542944000000
 pj[https://github.com/digitalica/skydivekompasroos/tree/master/app/src/nl/digitalica/skydivekompasroos/Skr.java] = 1393951363000000
 pj[https://github.com/foxykeep/DataDroid/tree/master/DataDroidPoC/src/com/foxykeep/datadroidpoc/util/UserManager.java] = 1364200460000000
@@ -55,6 +59,7 @@ pj[https://github.com/mitchtech/android-context/tree/master/src/edu/fsu/cs/conte
 pj[https://github.com/mlegenhausen/mdcf/tree/master/MobileDataCollector/src/de/uniluebeck/itm/mdc/service/PluginService.java] = 1318334080000000
 pj[https://github.com/mobilis/mobilis/tree/master/MXA/src/de/tudresden/inf/rn/mobilis/mxa/MXAController.java] = 1367938870000000
 pj[https://github.com/monaca/monaca-framework-android/tree/master/BarcodeScannerLibrary/src/com/google/zxing/client/android/CaptureActivity.java] = 1375421735000000
+pj[https://github.com/monaca/monaca-framework-android/tree/master/MonacaUtils/src/mobi/monaca/utils/MonacaDevice.java] = 1375421735000000
 pj[https://github.com/mortenpi/ebookdroid/tree/master/src/org/emdev/common/settings/base/StringPreferenceDefinition.java] = 1342613258000000
 pj[https://github.com/mozilla-services/android-sync/tree/master/src/main/java/org/mozilla/gecko/sync/config/ConfigurationMigrator.java] = 1362009573000000
 pj[https://github.com/mtwebster/IEmail/tree/master/src/com/mwebster/iemail/Preferences.java] = 1287907992000000
@@ -74,11 +79,13 @@ pj[https://github.com/sng/gb/tree/master/trunk/GeoBeagleTest/test/com/google/cod
 pj[https://github.com/sniderzero/UTPRO/tree/master/UltitrackPro/src/com/appsmarttech/ut90/Days_Fragment.java] = 1349145077000000
 pj[https://github.com/snooplsm/njtransit/tree/master/scheduler/src/com/njtransit/Root.java] = 1292733304000000
 pj[https://github.com/socialpercon/anki/tree/master/src/com/ichi2/anki/DeckPicker.java] = 1359584340000000
+pj[https://github.com/socialpercon/anki/tree/master/src/com/ichi2/async/DeckTask.java] = 1359584340000000
 pj[https://github.com/stevegaron/Synodroid/tree/master/src/com/bigpupdev/synodroid/ui/DownloadPreferenceActivity.java] = 1393028152000000
 pj[https://github.com/stubma/WiEngine/tree/master/src/com/wiyun/engine/utils/PrefUtil.java] = 1349003069000000
 pj[https://github.com/t2health/T2-Mood-Tracker-Android/tree/master/MoodTracker/src/com/t2/vas/SharedPref.java] = 1349900043000000
 pj[https://github.com/telgniw/BukuDroid/tree/master/Mobile/ZXing/src/com/google/zxing/client/android/result/ResultHandler.java] = 1325581974000000
 pj[https://github.com/tinrap/SiQuoia/tree/master/src/com/sjsu/siquoia/SiQuoiaHomeActivity.java] = 1407607641000000
+pj[https://github.com/tmobile/themes-platform-packages-apps-Email/tree/master/src/com/android/email/Preferences.java] = 1265680674000000
 pj[https://github.com/tmobile/themes-platform-packages-apps-Email/tree/master/src/com/android/email/Preferences.java] = 1265680674000000
 pj[https://github.com/todoroo/astrid/tree/master/api/src/com/todoroo/andlib/utility/Preferences.java] = 1357756425000000
 pj[https://github.com/turbo-lover/tagil/tree/master/NewsTagil/src/main/java/ru/news/tagil/utility/myPreferencesWorker.java] = 1376480660000000
@@ -96,6 +103,8 @@ pj1[https://github.com/Blakez/android_frameworks_base/media/java/android/mtp/Mtp
 pj1[https://github.com/CMUCognisense/Cognisense/Android-Apps/DoorBell/src/com/example/doorbell/DoorBellConfigurationService.java] = 6
 pj1[https://github.com/CommanderAlchemy/SmartPark/SmartParkAndroid/src/com/smartpark/activities/MainActivity.java] = 3
 pj1[https://github.com/DroidJunk/android_packages_apps_settings/src/com/android/settings/AccessibilitySettings.java] = 131
+pj1[https://github.com/DroidJunk/android_packages_apps_settings/src/com/android/settings/bluetooth/DockService.java] = 131
+pj1[https://github.com/DroidJunk/droidjunk_packages_apps_Contacts/src/com/android/contacts/editor/ContactEditorUtils.java] = 107
 pj1[https://github.com/DroidJunk/droidjunk_packages_apps_Contacts/src/com/android/contacts/list/ContactListFilter.java] = 107
 pj1[https://github.com/Dustinmj/Froyo_Email/src/com/android/email/Preferences.java] = 38
 pj1[https://github.com/JackWoot/CSC2015/FacebookSDK/src/com/facebook/SharedPreferencesTokenCachingStrategy.java] = 6
@@ -106,6 +115,7 @@ pj1[https://github.com/OSAStudio/newshub/src/com/osastudio/newshub/library/Prefe
 pj1[https://github.com/OSLL/geo2tag/services/gds/android-client/src/ru/spb/osll/GDS/preferences/Settings.java] = 27
 pj1[https://github.com/Proyecto-UTN-2012/Proyecto-UTN-2012/integrar-t-android/src/main/java/org/utn/proyecto/helpful/integrart/integrar_t_android/services/DataStorageServiceImpl.java] = 4
 pj1[https://github.com/RudolfWeeber/eyes-free/trunk/archived/WebVox/src/com/marvin/webvox/BrowserSettings.java] = 20
+pj1[https://github.com/Skylark95/Amazon-App-Notifier/app/src/test/java/com/skylark95/amazonfreenotify/notification/AppDataNotificationTest.java] = 2
 pj1[https://github.com/Skylark95/Amazon-App-Notifier/app/src/test/java/com/skylark95/amazonfreenotify/settings/SettingsUtilsTest.java] = 2
 pj1[https://github.com/SummerAndroid/Summer/Summer-Android/src/summer/android/Login.java] = 6
 pj1[https://github.com/TeamNyx/packages_apps_Contacts/src/com/android/contacts/editor/ContactEditorUtils.java] = 107
@@ -125,7 +135,7 @@ pj1[https://github.com/chgenly/experiment/OsmAnd/src/net/osmand/plus/OsmandSetti
 pj1[https://github.com/comsince/myappweixin/musicPlayer/src/com/comsince/knowledge/preferences/MusicPreference.java] = 1
 pj1[https://github.com/craining/android-ringforyou/src/com/zgy/ringforu/util/PreferenceUtil.java] = 2
 pj1[https://github.com/ddnbrowser/Diva.NetBrowser/src/net/diva/browser/DownloadRankingService.java] = 1
-pj1[https://github.com/delleceste/it.giacomos.android.osmer/Osmer/src/it/giacomos/android/osmer/preferences/Settings.java] = 3
+pj1[https://github.com/delleceste/it.giacomos.android.osmer/Osmer/src/it/giacomos/android/osmer/preferences/Settings.java] = 6
 pj1[https://github.com/digitalica/skydivekompasroos/app/src/nl/digitalica/skydivekompasroos/Skr.java] = 2
 pj1[https://github.com/foxykeep/DataDroid/DataDroidPoC/src/com/foxykeep/datadroidpoc/util/UserManager.java] = 8
 pj1[https://github.com/freshdocs/cmsandroid/src/com/zia/freshdocs/preference/CMISPreferencesManager.java] = 4
@@ -148,6 +158,7 @@ pj1[https://github.com/mitchtech/android-context/src/edu/fsu/cs/contextprovider/
 pj1[https://github.com/mlegenhausen/mdcf/MobileDataCollector/src/de/uniluebeck/itm/mdc/service/PluginService.java] = 1
 pj1[https://github.com/mobilis/mobilis/MXA/src/de/tudresden/inf/rn/mobilis/mxa/MXAController.java] = 19
 pj1[https://github.com/monaca/monaca-framework-android/BarcodeScannerLibrary/src/com/google/zxing/client/android/CaptureActivity.java] = 15
+pj1[https://github.com/monaca/monaca-framework-android/MonacaUtils/src/mobi/monaca/utils/MonacaDevice.java] = 15
 pj1[https://github.com/mortenpi/ebookdroid/src/org/emdev/common/settings/base/StringPreferenceDefinition.java] = 9
 pj1[https://github.com/mozilla-services/android-sync/src/main/java/org/mozilla/gecko/sync/config/ConfigurationMigrator.java] = 11
 pj1[https://github.com/mtwebster/IEmail/src/com/mwebster/iemail/Preferences.java] = 51
@@ -167,12 +178,13 @@ pj1[https://github.com/sng/gb/trunk/GeoBeagleTest/test/com/google/code/geobeagle
 pj1[https://github.com/sniderzero/UTPRO/UltitrackPro/src/com/appsmarttech/ut90/Days_Fragment.java] = 2
 pj1[https://github.com/snooplsm/njtransit/scheduler/src/com/njtransit/Root.java] = 4
 pj1[https://github.com/socialpercon/anki/src/com/ichi2/anki/DeckPicker.java] = 75
+pj1[https://github.com/socialpercon/anki/src/com/ichi2/async/DeckTask.java] = 75
 pj1[https://github.com/stevegaron/Synodroid/src/com/bigpupdev/synodroid/ui/DownloadPreferenceActivity.java] = 4
 pj1[https://github.com/stubma/WiEngine/src/com/wiyun/engine/utils/PrefUtil.java] = 2
 pj1[https://github.com/t2health/T2-Mood-Tracker-Android/MoodTracker/src/com/t2/vas/SharedPref.java] = 5
 pj1[https://github.com/telgniw/BukuDroid/Mobile/ZXing/src/com/google/zxing/client/android/result/ResultHandler.java] = 4
 pj1[https://github.com/tinrap/SiQuoia/src/com/sjsu/siquoia/SiQuoiaHomeActivity.java] = 5
-pj1[https://github.com/tmobile/themes-platform-packages-apps-Email/src/com/android/email/Preferences.java] = 37
+pj1[https://github.com/tmobile/themes-platform-packages-apps-Email/src/com/android/email/Preferences.java] = 74
 pj1[https://github.com/todoroo/astrid/api/src/com/todoroo/andlib/utility/Preferences.java] = 23
 pj1[https://github.com/turbo-lover/tagil/NewsTagil/src/main/java/ru/news/tagil/utility/myPreferencesWorker.java] = 3
 pj1[https://github.com/unidevel/android/WhereAreYou/src/com/unidevel/whereareyou/LogonActivity.java] = 5

@@ -2,11 +2,15 @@ pj[https://github.com/AndrewChanChina/ppc1/tree/master/src/com/smit/rssreader/RS
 pj[https://github.com/Blakez/android_frameworks_base/tree/master/media/java/android/media/RingtoneManager.java] = 1362355663000000
 pj[https://github.com/Blakez/android_packages_apps_Settings/tree/master/src/com/android/settings/inputmethod/UserDictionaryAddWordContents.java] = 1362357409000000
 pj[https://github.com/BobEvans/omgpaco/tree/master/Paco/src/com/google/android/apps/paco/ExperimentProviderUtil.java] = 1339527557000000
+pj[https://github.com/BobEvans/omgpaco/tree/master/Paco/src/com/google/android/apps/paco/ExperimentProviderUtil.java] = 1339527557000000
 pj[https://github.com/DVDPT/PDM/tree/master/code/src/pt/isel/adeetc/meic/pdm/controllers/TimelineContentProviderClient.java] = 1339264330000000
 pj[https://github.com/DroidJunk/android_packages_apps_Mms/tree/master/src/com/android/mms/data/Contact.java] = 1326933509000000
+pj[https://github.com/DroidJunk/android_packages_apps_Mms/tree/master/src/com/android/mms/data/RecipientIdCache.java] = 1317331519000000
 pj[https://github.com/DroidJunk/droidjunk_packages_apps_Contacts/tree/master/src/com/android/contacts/detail/PhotoSelectionHandler.java] = 1340287413000000
 pj[https://github.com/GrioSF/facebook-android-sdk/tree/master/samples/Hackbook/src/com/facebook/android/Utility.java] = 1363811866000000
+pj[https://github.com/MIPS/packages-apps-Gallery2/tree/master/gallerycommon/src/com/android/gallery3d/common/FileCache.java] = 1313645630000000
 pj[https://github.com/MIPS/packages-apps-Gallery2/tree/master/src/com/android/gallery3d/data/DownloadCache.java] = 1313645630000000
+pj[https://github.com/MythTV-Clients/MythTV-Android-Frontend/tree/master/src/org/mythtv/db/dvr/programGroup/ProgramGroupDaoHelper.java] = 1379340009000000
 pj[https://github.com/MythTV-Clients/MythTV-Android-Frontend/tree/master/src/org/mythtv/service/content/v25/LiveStreamHelperV25.java] = 1386211385000000
 pj[https://github.com/OMFGB/packages_apps_Mms/tree/master/src/com/android/mms/ui/ManageSimMessages.java] = 1304479761000000
 pj[https://github.com/OMFGB/packages_providers_ContactsProvider/tree/master/tests/src/com/android/providers/contacts/BaseContactsProvider2Test.java] = 1279303438000000
@@ -28,6 +32,7 @@ pj[https://github.com/btmura/rbb/tree/master/src/com/btmura/android/reddit/datab
 pj[https://github.com/chao-zhou/Lijiang/tree/master/src/com/utopia/lijiang/contacts/BaseContactReader.java] = 1333183813000000
 pj[https://github.com/chrispbailey/ToDo-List-Widget/tree/master/src/org/chrisbailey/todo/db/ToDoDatabase.java] = 1293622085000000
 pj[https://github.com/classicnerd/android_packages_providers_ContactsProvider/tree/master/src/com/android/providers/contacts/DataRowHandlerForGroupMembership.java] = 1311866227000000
+pj[https://github.com/classicnerd/android_packages_providers_ContactsProvider/tree/master/src/com/android/providers/contacts/LegacyContactImporter.java] = 1305926090000000
 pj[https://github.com/cokembel/csci498android/tree/master/LunchList/src/csci498/cokembel/lunchlist/DetailFragment.java] = 1353904041000000
 pj[https://github.com/damonkohler/sl4a/tree/master/android/Common/src/com/googlecode/android_scripting/facade/ContactsFacade.java] = 1301138614000000
 pj[https://github.com/davros-/packages_apps_Mms/tree/master/src/com/android/mms/util/Recycler.java] = 1351891344000000
@@ -37,6 +42,7 @@ pj[https://github.com/dukeboard/kevoree-extra/tree/master/org.kevoree.extra.vold
 pj[https://github.com/dusken/Kulturkalender-Android/tree/master/Barteguiden/src/main/java/com/underdusken/kulturekalendar/data/db/DatabaseManager.java] = 1394990409000000
 pj[https://github.com/elbenj/ICS-Exchange/tree/master/tests/src/com/android/exchange/adapter/FolderSyncParserTests.java] = 1325724164000000
 pj[https://github.com/embest-tech/rowboat-frameworks-base/tree/master/core/java/android/provider/Im.java] = 1236137504000000
+pj[https://github.com/embest-tech/rowboat-frameworks-base/tree/master/core/java/android/webkit/WebViewDatabase.java] = 1236137504000000
 pj[https://github.com/f97one/android_Car-Kei-Bo/tree/master/src/net/formula97/andorid/car_kei_bo/MileageList.java] = 1357381668000000
 pj[https://github.com/faux123/android_packages_apps_SoundRecorder/tree/master/src/com/android/soundrecorder/SoundRecorder.java] = 1307858533000000
 pj[https://github.com/funambol-mirror/funambol-client-sdk/tree/master/us8560/common/src/main/java-se-android/com/funambol/storage/StringKeyValueSQLiteStore.java] = 1306335172000000
@@ -46,6 +52,7 @@ pj[https://github.com/hecao/gallery3d/tree/master/src/com/android/gallery3d/gadg
 pj[https://github.com/iametza/Ihesi/tree/master/platforms/android/src/org/apache/cordova/camera/CameraLauncher.java] = 1412598767000000
 pj[https://github.com/iliasbartolini/AgileDayConferenceApp/tree/master/AgileDayConferenceApp/src/it/agileday/data/SessionRepository.java] = 1289185791000000
 pj[https://github.com/jakenjarvis/Android-OrmLiteContentProvider/tree/master/ormlite-content-provider-library-test/src/com/tojc/ormlite/android/TestOrmLiteSimpleProvider.java] = 1370372712000000
+pj[https://github.com/javroch/android_packages_providers_ContactsProvider/tree/master/src/com/android/providers/contacts/LegacyApiSupport.java] = 1315748546000000
 pj[https://github.com/javroch/android_packages_providers_ContactsProvider/tree/master/tests/src/com/android/providers/contacts/BaseContactsProvider2Test.java] = 1332974686000000
 pj[https://github.com/jca02266/k9mail/tree/master/src/com/fsck/k9/helper/ContactsSdk3_4.java] = 1294717751000000
 pj[https://github.com/kabir/connectbot/tree/master/src/org/connectbot/TerminalView.java] = 1313476964000000
@@ -54,11 +61,13 @@ pj[https://github.com/kitkatandroid/JLS36G_base/tree/master/core/java/android/co
 pj[https://github.com/krtek/Birthday-widget/tree/master/Birthday/src/main/java/cz/krtinec/birthday/data/BirthdayProvider.java] = 1348759117000000
 pj[https://github.com/kvite/astridclone/tree/master/astrid/src-legacy/com/timsu/astrid/utilities/LegacyTasksXmlExporter.java] = 1345249703000000
 pj[https://github.com/kwatson7/ShareBear/tree/master/src/com/instantPhotoShare/Adapters/GroupsAdapter.java] = 1385319480000000
+pj[https://github.com/kwatson7/ShareBear/tree/master/src/com/instantPhotoShare/Adapters/UsersAdapter2.java] = 1340323907000000
 pj[https://github.com/mangachika/weReportRapidAndroid/tree/master/rapidandroid/org.rapidandroid/src/org/rapidandroid/ModelBootstrap.java] = 1371096844000000
 pj[https://github.com/marindijm/data/tree/master/_Mobile_Apps/DispenserInfoAndroidApp/src/com/dsw/dispenserapp/DbHandler.java] = 1358336662000000
 pj[https://github.com/matthew117/DurhamLife-Android/tree/master/DuchessAndroid/src/uk/ac/dur/duchess/io/provider/DatabaseHandler.java] = 1359470489000000
 pj[https://github.com/mbarbon/androidcash/tree/master/src/org/barbon/acash/ExpenseDatabase.java] = 1312921023000000
 pj[https://github.com/mikegr/android-shuffle/tree/master/client/src/org/dodgybits/shuffle/android/list/activity/expandable/ExpandableProjectsActivity.java] = 1298835806000000
+pj[https://github.com/mikegr/android-shuffle/tree/master/client/src/org/dodgybits/shuffle/android/preference/activity/PreferencesRestoreBackupActivity.java] = 1275149000000000
 pj[https://github.com/minstrelsy/servestream/tree/master/src/net/sourceforge/servestream/utils/MusicUtils.java] = 1372647529000000
 pj[https://github.com/mit-cml/appinventor-sources/tree/master/appinventor/components/src/com/google/appinventor/components/runtime/ContactPicker.java] = 1388343949000000
 pj[https://github.com/mozilla-services/android-sync/tree/master/src/main/java/org/mozilla/gecko/sync/repositories/android/AndroidBrowserRepositorySession.java] = 1366947637000000
@@ -68,6 +77,7 @@ pj[https://github.com/nolanlawson/KeepScore/tree/master/KeepScore/src/com/nolanl
 pj[https://github.com/okey666/BBC-News-Reader/tree/master/src/com/digitallizard/bbcnewsreader/data/DatabaseHandler.java] = 1359149574000000
 pj[https://github.com/openintents/filemanager/tree/master/FileManager/src/org/openintents/filemanager/util/MenuUtils.java] = 1392409141000000
 pj[https://github.com/openintents/openintents/tree/master/compatibility/AndroidSupportV2/src/android/support/v2/content/CursorLoader.java] = 1307283111000000
+pj[https://github.com/openintents/openintents/tree/master/widgets/ShoppingWidget/src/org/openintents/provider/Shopping.java] = 1240566625000000
 pj[https://github.com/patzi/foss-andoku/tree/master/Andoku-Tests/src/com/googlecode/andoku/db/AndokuDatabaseSaveGameTest.java] = 1278011735000000
 pj[https://github.com/phini/Android-cybercom/tree/master/RestfulClient/src/com/example/restfulclient/helpers/DatabaseHelper.java] = 1360103874000000
 pj[https://github.com/racamirko/Common-Sense-Net-2/tree/master/RealFarm/src/com/commonsensenet/realfarm/dataaccess/RealFarmProvider.java] = 1349640191000000
@@ -80,6 +90,7 @@ pj[https://github.com/t2health/T2-Mood-Tracker-Android/tree/master/MoodTracker/s
 pj[https://github.com/teamgummy/frameworks_base/tree/master/core/java/android/webkit/WebViewCore.java] = 1332994498000000
 pj[https://github.com/thevoiceless/CSCI498/tree/master/LunchList/src/csci498/thevoiceless/lunchlist/LunchFragment.java] = 1353976424000000
 pj[https://github.com/tinfoilhat/tinfoil-sms/tree/master/src/com/tinfoil/sms/database/DBAccessor.java] = 1389827329000000
+pj[https://github.com/tmobile/themes-platform-packages-apps-Email/tree/master/src/com/android/email/activity/MessageList.java] = 1272435915000000
 pj[https://github.com/tmobile/themes-platform-packages-apps-Email/tree/master/src/com/android/exchange/adapter/FolderSyncParser.java] = 1269148075000000
 pj[https://github.com/tmobile/themes-platform-packages-apps-Mms/tree/master/src/com/android/mms/util/Recycler.java] = 1268094855000000
 pj[https://github.com/tpruvot/android_packages_apps_SQLiteManager/tree/master/src/dk/andsen/asqlitemanager/Database.java] = 1336419750000000
@@ -90,12 +101,15 @@ pj[https://github.com/wangshukunwsk/Inspection/tree/master/SourceCode/src/com/bc
 pj1[https://github.com/AndrewChanChina/ppc1/src/com/smit/rssreader/RSSReaderActivity.java] = 13
 pj1[https://github.com/Blakez/android_frameworks_base/media/java/android/media/RingtoneManager.java] = 1
 pj1[https://github.com/Blakez/android_packages_apps_Settings/src/com/android/settings/inputmethod/UserDictionaryAddWordContents.java] = 1
-pj1[https://github.com/BobEvans/omgpaco/Paco/src/com/google/android/apps/paco/ExperimentProviderUtil.java] = 3
+pj1[https://github.com/BobEvans/omgpaco/Paco/src/com/google/android/apps/paco/ExperimentProviderUtil.java] = 6
 pj1[https://github.com/DVDPT/PDM/code/src/pt/isel/adeetc/meic/pdm/controllers/TimelineContentProviderClient.java] = 3
 pj1[https://github.com/DroidJunk/android_packages_apps_Mms/src/com/android/mms/data/Contact.java] = 79
+pj1[https://github.com/DroidJunk/android_packages_apps_Mms/src/com/android/mms/data/RecipientIdCache.java] = 79
 pj1[https://github.com/DroidJunk/droidjunk_packages_apps_Contacts/src/com/android/contacts/detail/PhotoSelectionHandler.java] = 107
 pj1[https://github.com/GrioSF/facebook-android-sdk/samples/Hackbook/src/com/facebook/android/Utility.java] = 27
+pj1[https://github.com/MIPS/packages-apps-Gallery2/gallerycommon/src/com/android/gallery3d/common/FileCache.java] = 19
 pj1[https://github.com/MIPS/packages-apps-Gallery2/src/com/android/gallery3d/data/DownloadCache.java] = 19
+pj1[https://github.com/MythTV-Clients/MythTV-Android-Frontend/src/org/mythtv/db/dvr/programGroup/ProgramGroupDaoHelper.java] = 9
 pj1[https://github.com/MythTV-Clients/MythTV-Android-Frontend/src/org/mythtv/service/content/v25/LiveStreamHelperV25.java] = 9
 pj1[https://github.com/OMFGB/packages_apps_Mms/src/com/android/mms/ui/ManageSimMessages.java] = 64
 pj1[https://github.com/OMFGB/packages_providers_ContactsProvider/tests/src/com/android/providers/contacts/BaseContactsProvider2Test.java] = 45
@@ -117,6 +131,7 @@ pj1[https://github.com/btmura/rbb/src/com/btmura/android/reddit/database/Subredd
 pj1[https://github.com/chao-zhou/Lijiang/src/com/utopia/lijiang/contacts/BaseContactReader.java] = 1
 pj1[https://github.com/chrispbailey/ToDo-List-Widget/src/org/chrisbailey/todo/db/ToDoDatabase.java] = 2
 pj1[https://github.com/classicnerd/android_packages_providers_ContactsProvider/src/com/android/providers/contacts/DataRowHandlerForGroupMembership.java] = 61
+pj1[https://github.com/classicnerd/android_packages_providers_ContactsProvider/src/com/android/providers/contacts/LegacyContactImporter.java] = 61
 pj1[https://github.com/cokembel/csci498android/LunchList/src/csci498/cokembel/lunchlist/DetailFragment.java] = 1
 pj1[https://github.com/damonkohler/sl4a/android/Common/src/com/googlecode/android_scripting/facade/ContactsFacade.java] = 16
 pj1[https://github.com/davros-/packages_apps_Mms/src/com/android/mms/util/Recycler.java] = 95
@@ -126,6 +141,7 @@ pj1[https://github.com/dukeboard/kevoree-extra/org.kevoree.extra.voldemort/src/m
 pj1[https://github.com/dusken/Kulturkalender-Android/Barteguiden/src/main/java/com/underdusken/kulturekalendar/data/db/DatabaseManager.java] = 4
 pj1[https://github.com/elbenj/ICS-Exchange/tests/src/com/android/exchange/adapter/FolderSyncParserTests.java] = 40
 pj1[https://github.com/embest-tech/rowboat-frameworks-base/core/java/android/provider/Im.java] = 9
+pj1[https://github.com/embest-tech/rowboat-frameworks-base/core/java/android/webkit/WebViewDatabase.java] = 9
 pj1[https://github.com/f97one/android_Car-Kei-Bo/src/net/formula97/andorid/car_kei_bo/MileageList.java] = 1
 pj1[https://github.com/faux123/android_packages_apps_SoundRecorder/src/com/android/soundrecorder/SoundRecorder.java] = 17
 pj1[https://github.com/funambol-mirror/funambol-client-sdk/us8560/common/src/main/java-se-android/com/funambol/storage/StringKeyValueSQLiteStore.java] = 6
@@ -135,6 +151,7 @@ pj1[https://github.com/hecao/gallery3d/src/com/android/gallery3d/gadget/LocalPho
 pj1[https://github.com/iametza/Ihesi/platforms/android/src/org/apache/cordova/camera/CameraLauncher.java] = 1
 pj1[https://github.com/iliasbartolini/AgileDayConferenceApp/AgileDayConferenceApp/src/it/agileday/data/SessionRepository.java] = 7
 pj1[https://github.com/jakenjarvis/Android-OrmLiteContentProvider/ormlite-content-provider-library-test/src/com/tojc/ormlite/android/TestOrmLiteSimpleProvider.java] = 5
+pj1[https://github.com/javroch/android_packages_providers_ContactsProvider/src/com/android/providers/contacts/LegacyApiSupport.java] = 63
 pj1[https://github.com/javroch/android_packages_providers_ContactsProvider/tests/src/com/android/providers/contacts/BaseContactsProvider2Test.java] = 63
 pj1[https://github.com/jca02266/k9mail/src/com/fsck/k9/helper/ContactsSdk3_4.java] = 19
 pj1[https://github.com/kabir/connectbot/src/org/connectbot/TerminalView.java] = 8
@@ -143,11 +160,13 @@ pj1[https://github.com/kitkatandroid/JLS36G_base/core/java/android/content/Curso
 pj1[https://github.com/krtek/Birthday-widget/Birthday/src/main/java/cz/krtinec/birthday/data/BirthdayProvider.java] = 1
 pj1[https://github.com/kvite/astridclone/astrid/src-legacy/com/timsu/astrid/utilities/LegacyTasksXmlExporter.java] = 23
 pj1[https://github.com/kwatson7/ShareBear/src/com/instantPhotoShare/Adapters/GroupsAdapter.java] = 2
+pj1[https://github.com/kwatson7/ShareBear/src/com/instantPhotoShare/Adapters/UsersAdapter2.java] = 2
 pj1[https://github.com/mangachika/weReportRapidAndroid/rapidandroid/org.rapidandroid/src/org/rapidandroid/ModelBootstrap.java] = 5
 pj1[https://github.com/marindijm/data/_Mobile_Apps/DispenserInfoAndroidApp/src/com/dsw/dispenserapp/DbHandler.java] = 7
 pj1[https://github.com/matthew117/DurhamLife-Android/DuchessAndroid/src/uk/ac/dur/duchess/io/provider/DatabaseHandler.java] = 6
 pj1[https://github.com/mbarbon/androidcash/src/org/barbon/acash/ExpenseDatabase.java] = 1
 pj1[https://github.com/mikegr/android-shuffle/client/src/org/dodgybits/shuffle/android/list/activity/expandable/ExpandableProjectsActivity.java] = 3
+pj1[https://github.com/mikegr/android-shuffle/client/src/org/dodgybits/shuffle/android/preference/activity/PreferencesRestoreBackupActivity.java] = 3
 pj1[https://github.com/minstrelsy/servestream/src/net/sourceforge/servestream/utils/MusicUtils.java] = 1
 pj1[https://github.com/mit-cml/appinventor-sources/appinventor/components/src/com/google/appinventor/components/runtime/ContactPicker.java] = 40
 pj1[https://github.com/mozilla-services/android-sync/src/main/java/org/mozilla/gecko/sync/repositories/android/AndroidBrowserRepositorySession.java] = 11
@@ -157,6 +176,7 @@ pj1[https://github.com/nolanlawson/KeepScore/KeepScore/src/com/nolanlawson/keeps
 pj1[https://github.com/okey666/BBC-News-Reader/src/com/digitallizard/bbcnewsreader/data/DatabaseHandler.java] = 4
 pj1[https://github.com/openintents/filemanager/FileManager/src/org/openintents/filemanager/util/MenuUtils.java] = 12
 pj1[https://github.com/openintents/openintents/compatibility/AndroidSupportV2/src/android/support/v2/content/CursorLoader.java] = 21
+pj1[https://github.com/openintents/openintents/widgets/ShoppingWidget/src/org/openintents/provider/Shopping.java] = 21
 pj1[https://github.com/patzi/foss-andoku/Andoku-Tests/src/com/googlecode/andoku/db/AndokuDatabaseSaveGameTest.java] = 2
 pj1[https://github.com/phini/Android-cybercom/RestfulClient/src/com/example/restfulclient/helpers/DatabaseHelper.java] = 4
 pj1[https://github.com/racamirko/Common-Sense-Net-2/RealFarm/src/com/commonsensenet/realfarm/dataaccess/RealFarmProvider.java] = 12
@@ -169,6 +189,7 @@ pj1[https://github.com/t2health/T2-Mood-Tracker-Android/MoodTracker/src/com/t2/v
 pj1[https://github.com/teamgummy/frameworks_base/core/java/android/webkit/WebViewCore.java] = 10
 pj1[https://github.com/thevoiceless/CSCI498/LunchList/src/csci498/thevoiceless/lunchlist/LunchFragment.java] = 1
 pj1[https://github.com/tinfoilhat/tinfoil-sms/src/com/tinfoil/sms/database/DBAccessor.java] = 12
+pj1[https://github.com/tmobile/themes-platform-packages-apps-Email/src/com/android/email/activity/MessageList.java] = 37
 pj1[https://github.com/tmobile/themes-platform-packages-apps-Email/src/com/android/exchange/adapter/FolderSyncParser.java] = 37
 pj1[https://github.com/tmobile/themes-platform-packages-apps-Mms/src/com/android/mms/util/Recycler.java] = 49
 pj1[https://github.com/tpruvot/android_packages_apps_SQLiteManager/src/dk/andsen/asqlitemanager/Database.java] = 3

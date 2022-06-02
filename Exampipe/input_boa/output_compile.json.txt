@@ -21,6 +21,8 @@ pj[https://github.com/before/uadetector/tree/master/modules/uadetector-core/src/
 pj[https://github.com/biojava/biojava-legacy/tree/master/core/src/main/java/org/biojava/bio/program/unigene/FlatFileUnigeneFactory.java] = 1290449544000000
 pj[https://github.com/black-knight/Q-Cumberless-Testing/tree/master/example/calabash-android-plugin/src/java/com/trollsahead/qcumberless/device/calabash/InteractiveDesigner.java] = 1340808270000000
 pj[https://github.com/brachior/platform_libcore/tree/master/luni/src/test/java/libcore/java/util/OldScannerTest.java] = 1316010181000000
+pj[https://github.com/brachior/platform_libcore/tree/master/luni/src/test/java/org/apache/harmony/regex/tests/java/util/regex/PatternTest.java] = 1316010181000000
+pj[https://github.com/brachior/platform_libcore/tree/master/luni/src/test/java/org/apache/harmony/regex/tests/java/util/regex/PatternTest.java] = 1316010181000000
 pj[https://github.com/chrizmo/SeljeIRC/tree/master/src/jerklib/parsers/AwayParser.java] = 1320448572000000
 pj[https://github.com/cnfree/sanguo/tree/master/org.sf.feeling.sanguo.patch_1.9a/src/org/sf/feeling/sanguo/patch/util/BattleUtil.java] = 1331127081000000
 pj[https://github.com/codehaus/griffon-git/tree/master/src/main/cli/org/codehaus/griffon/compiler/GriffonCompilerContext.java] = 1312878307000000
@@ -38,6 +40,8 @@ pj[https://github.com/funambol-mirror/funambol-client-sdk/tree/master/us8885/pim
 pj[https://github.com/galievruslan/mss-android/tree/master/mss/src/com/mss/application/services/SynchronizationAdapter.java] = 1383078010000000
 pj[https://github.com/gephi/gephi/tree/master/modules/FiltersPlugin/src/main/java/org/gephi/filters/plugin/attribute/AttributeEqualBuilder.java] = 1356509279000000
 pj[https://github.com/gmfawcett/openmark-mvn/tree/master/tags/v1.10.2/src/util/xml/XML.java] = 1271855256000000
+pj[https://github.com/gmfawcett/openmark-mvn/tree/master/tags/v1_9_1/trunk-archive/src/om/graph/World.java] = 1257852019000000
+pj[https://github.com/gmfawcett/openmark-mvn/tree/master/tags/v1_9_1/trunk-archive/src/util/xml/XML.java] = 1257852019000000
 pj[https://github.com/gpc/grails-searchable/tree/master/src/java/grails/plugin/searchable/internal/compass/search/DefaultSuggestQueryMethod.java] = 1375990691000000
 pj[https://github.com/grozeille/sonar-plugin-dotnet/tree/master/tools/dotnet-tools-commons/src/main/java/org/sonar/dotnet/tools/commons/visualstudio/ModelFactory.java] = 1330253058000000
 pj[https://github.com/h4ck3rm1k3/josm-older/tree/master/src/org/openstreetmap/josm/gui/bbox/TileSelectionBBoxChooser.java] = 1268234803000000
@@ -59,6 +63,7 @@ pj[https://github.com/mth/yeti/tree/master/c/YetiBuiltins.java] = 13853872280000
 pj[https://github.com/n8han/Databinder-for-Wicket/tree/master/databinder-components/src/main/java/jtextile/JTextile.java] = 1257966308000000
 pj[https://github.com/nabedge/mixer2-sample/tree/master/mixer2-fruitshop-springboot/src/main/java/org/mixer2/sample/web/view/IndexView.java] = 1399361902000000
 pj[https://github.com/npvincent/guava/tree/master/guava-tests/test/com/google/common/base/SplitterTest.java] = 1377729063000000
+pj[https://github.com/olanto/MYCAT/tree/master/prog/TranslationText/src/java/org/olanto/TranslationText/server/TranslateServiceImpl.java] = 1404736663000000
 pj[https://github.com/olanto/MYCAT/tree/master/prog/mySelfQDAlgo/src/org/olanto/mysqd/util/WildCharExpander.java] = 1371744899000000
 pj[https://github.com/pashamur/abcplayer/tree/master/src/player/Main.java] = 1364879113000000
 pj[https://github.com/pgorla/usergrid/tree/master/core/src/main/java/org/usergrid/utils/Inflector.java] = 1337216430000000
@@ -66,6 +71,7 @@ pj[https://github.com/pgroth/hbase-rdf/tree/master/src/main/java/nl/vu/datalayer
 pj[https://github.com/photon-infotech/framework/tree/master/phresco-framework-web/src/main/java/com/photon/phresco/framework/rest/api/util/FrameworkServiceUtil.java] = 1391682161000000
 pj[https://github.com/researchstudio-sat/ldspider4won/tree/master/src/com/ontologycentral/ldspider/tld/TldManager.java] = 1285332181000000
 pj[https://github.com/robovm/robovm/tree/master/tests/libcore/luni/src/test/java/org/apache/harmony/regex/tests/java/util/regex/Pattern2Test.java] = 1365536008000000
+pj[https://github.com/robovm/robovm/tree/master/tests/libcore/luni/src/test/java/org/apache/harmony/regex/tests/java/util/regex/PatternTest.java] = 1365536008000000
 pj[https://github.com/ru/casanova/tree/master/source/is/ru/ggp/singleagent/heuristic/RelaxationHeuristic.java] = 1271076637000000
 pj[https://github.com/rwl/j2objc/tree/master/jre_emul/apache_harmony/classlib/modules/regex/src/test/java/org/apache/harmony/tests/java/util/regex/PatternErrorTest.java] = 1358309936000000
 pj[https://github.com/seasarorg/chura/tree/master/dolteng/org.seasar.dolteng.eclipse.plugin/src/main/java/org/seasar/dolteng/eclipse/operation/KuinaDaoErrorReportJob.java] = 1205523852000000
@@ -80,6 +86,8 @@ pj[https://github.com/svn2github/google-libphonenumber-mirror/tree/master/tags/l
 pj[https://github.com/svn2github/morphia/tree/master/morphia/src/test/java/com/google/code/morphia/TestQuery.java] = 1320627180000000
 pj[https://github.com/svn2github/plantuml/tree/master/tags/plantuml-7177/src/net/sourceforge/plantuml/cucadiagram/dot/CucaDiagramFileMaker.java] = 1315327742000000
 pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.0.11/kernel-util/src/main/java/org/sakaiproject/util/BasicAuth.java] = 1246386219000000
+pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.1.0-beta06/kernel-util/src/main/java/org/sakaiproject/util/PasswordCheck.java] = 1261665956000000
+pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.2.0/kernel-util/src/main/java/org/sakaiproject/util/FormattedText.java] = 1300534736000000
 pj[https://github.com/tentejswi/PersonalityExtraction/tree/master/src/com/personalityextractor/entity/resolver/ExtractEntities.java] = 1301294921000000
 pj[https://github.com/thesmith/eventhorizon/tree/master/src/test/java/thesmith/eventhorizon/service/SocialGraphApiServiceImplTest.java] = 1269278371000000
 pj[https://github.com/tmyroadctfig/swingx/tree/master/swingx-core/src/test/java/org/jdesktop/swingx/decorator/HighlightPredicateTest.java] = 1292415686000000
@@ -113,6 +121,7 @@ pj1[https://github.com/before/uadetector/modules/uadetector-core/src/test/java/n
 pj1[https://github.com/biojava/biojava-legacy/core/src/main/java/org/biojava/bio/program/unigene/FlatFileUnigeneFactory.java] = 10
 pj1[https://github.com/black-knight/Q-Cumberless-Testing/example/calabash-android-plugin/src/java/com/trollsahead/qcumberless/device/calabash/InteractiveDesigner.java] = 2
 pj1[https://github.com/brachior/platform_libcore/luni/src/test/java/libcore/java/util/OldScannerTest.java] = 116
+pj1[https://github.com/brachior/platform_libcore/luni/src/test/java/org/apache/harmony/regex/tests/java/util/regex/PatternTest.java] = 232
 pj1[https://github.com/chrizmo/SeljeIRC/src/jerklib/parsers/AwayParser.java] = 4
 pj1[https://github.com/cnfree/sanguo/org.sf.feeling.sanguo.patch_1.9a/src/org/sf/feeling/sanguo/patch/util/BattleUtil.java] = 2
 pj1[https://github.com/codehaus/griffon-git/src/main/cli/org/codehaus/griffon/compiler/GriffonCompilerContext.java] = 10
@@ -130,6 +139,8 @@ pj1[https://github.com/funambol-mirror/funambol-client-sdk/us8885/pim/src/main/j
 pj1[https://github.com/galievruslan/mss-android/mss/src/com/mss/application/services/SynchronizationAdapter.java] = 2
 pj1[https://github.com/gephi/gephi/modules/FiltersPlugin/src/main/java/org/gephi/filters/plugin/attribute/AttributeEqualBuilder.java] = 53
 pj1[https://github.com/gmfawcett/openmark-mvn/tags/v1.10.2/src/util/xml/XML.java] = 8
+pj1[https://github.com/gmfawcett/openmark-mvn/tags/v1_9_1/trunk-archive/src/om/graph/World.java] = 8
+pj1[https://github.com/gmfawcett/openmark-mvn/tags/v1_9_1/trunk-archive/src/util/xml/XML.java] = 8
 pj1[https://github.com/gpc/grails-searchable/src/java/grails/plugin/searchable/internal/compass/search/DefaultSuggestQueryMethod.java] = 9
 pj1[https://github.com/grozeille/sonar-plugin-dotnet/tools/dotnet-tools-commons/src/main/java/org/sonar/dotnet/tools/commons/visualstudio/ModelFactory.java] = 8
 pj1[https://github.com/h4ck3rm1k3/josm-older/src/org/openstreetmap/josm/gui/bbox/TileSelectionBBoxChooser.java] = 21
@@ -151,6 +162,7 @@ pj1[https://github.com/mth/yeti/c/YetiBuiltins.java] = 7
 pj1[https://github.com/n8han/Databinder-for-Wicket/databinder-components/src/main/java/jtextile/JTextile.java] = 6
 pj1[https://github.com/nabedge/mixer2-sample/mixer2-fruitshop-springboot/src/main/java/org/mixer2/sample/web/view/IndexView.java] = 4
 pj1[https://github.com/npvincent/guava/guava-tests/test/com/google/common/base/SplitterTest.java] = 16
+pj1[https://github.com/olanto/MYCAT/prog/TranslationText/src/java/org/olanto/TranslationText/server/TranslateServiceImpl.java] = 4
 pj1[https://github.com/olanto/MYCAT/prog/mySelfQDAlgo/src/org/olanto/mysqd/util/WildCharExpander.java] = 4
 pj1[https://github.com/pashamur/abcplayer/src/player/Main.java] = 4
 pj1[https://github.com/pgorla/usergrid/core/src/main/java/org/usergrid/utils/Inflector.java] = 32
@@ -158,6 +170,7 @@ pj1[https://github.com/pgroth/hbase-rdf/src/main/java/nl/vu/datalayer/hbase/bulk
 pj1[https://github.com/photon-infotech/framework/phresco-framework-web/src/main/java/com/photon/phresco/framework/rest/api/util/FrameworkServiceUtil.java] = 66
 pj1[https://github.com/researchstudio-sat/ldspider4won/src/com/ontologycentral/ldspider/tld/TldManager.java] = 11
 pj1[https://github.com/robovm/robovm/tests/libcore/luni/src/test/java/org/apache/harmony/regex/tests/java/util/regex/Pattern2Test.java] = 14
+pj1[https://github.com/robovm/robovm/tests/libcore/luni/src/test/java/org/apache/harmony/regex/tests/java/util/regex/PatternTest.java] = 14
 pj1[https://github.com/ru/casanova/source/is/ru/ggp/singleagent/heuristic/RelaxationHeuristic.java] = 8
 pj1[https://github.com/rwl/j2objc/jre_emul/apache_harmony/classlib/modules/regex/src/test/java/org/apache/harmony/tests/java/util/regex/PatternErrorTest.java] = 3
 pj1[https://github.com/seasarorg/chura/dolteng/org.seasar.dolteng.eclipse.plugin/src/main/java/org/seasar/dolteng/eclipse/operation/KuinaDaoErrorReportJob.java] = 7
@@ -172,6 +185,8 @@ pj1[https://github.com/svn2github/google-libphonenumber-mirror/tags/libphonenumb
 pj1[https://github.com/svn2github/morphia/morphia/src/test/java/com/google/code/morphia/TestQuery.java] = 5
 pj1[https://github.com/svn2github/plantuml/tags/plantuml-7177/src/net/sourceforge/plantuml/cucadiagram/dot/CucaDiagramFileMaker.java] = 1
 pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.0.11/kernel-util/src/main/java/org/sakaiproject/util/BasicAuth.java] = 37
+pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.1.0-beta06/kernel-util/src/main/java/org/sakaiproject/util/PasswordCheck.java] = 37
+pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.2.0/kernel-util/src/main/java/org/sakaiproject/util/FormattedText.java] = 37
 pj1[https://github.com/tentejswi/PersonalityExtraction/src/com/personalityextractor/entity/resolver/ExtractEntities.java] = 5
 pj1[https://github.com/thesmith/eventhorizon/src/test/java/thesmith/eventhorizon/service/SocialGraphApiServiceImplTest.java] = 1
 pj1[https://github.com/tmyroadctfig/swingx/swingx-core/src/test/java/org/jdesktop/swingx/decorator/HighlightPredicateTest.java] = 27

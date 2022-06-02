@@ -1,4 +1,5 @@
 pj[https://github.com/Blakez/android_frameworks_base/tree/master/core/java/android/app/FragmentBreadCrumbs.java] = 1362355663000000
+pj[https://github.com/Blakez/android_frameworks_base/tree/master/packages/SystemUI/src/com/android/systemui/statusbar/NavigationBarView.java] = 1368406827000000
 pj[https://github.com/Blakez/android_packages_apps_Settings/tree/master/src/com/android/settings/DataUsageSummary.java] = 1368414327000000
 pj[https://github.com/Cyberspice/platform_tools_base/tree/master/apps/NotificationStudio/src/com/android/notificationstudio/NotificationStudioActivity.java] = 1355429334000000
 pj[https://github.com/DavidTPate/diablo3_builder/tree/master/d3_android/libs/ActionBarSherlock/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1341550066000000
@@ -7,6 +8,8 @@ pj[https://github.com/ICCL/IPPS/tree/master/app/libraries/actionbarsherlock/src/
 pj[https://github.com/IntersectAustralia/faims-android/tree/master/faims-android-app/src/au/org/intersect/faims/android/ui/map/button/ToolGroupButton.java] = 1376274541000000
 pj[https://github.com/MIPS/development/tree/master/samples/ApiDemos/src/com/example/android/apis/graphics/DensityActivity.java] = 1291074847000000
 pj[https://github.com/MIT-Mobile/MIT-Mobile-for-Android/tree/master/src/edu/mit/mitmobile2/MITPopupMenu.java] = 1354915743000000
+pj[https://github.com/NEXUS-EVO/frameworks_base/tree/master/core/java/android/app/FragmentBreadCrumbs.java] = 1354419589000000
+pj[https://github.com/NEXUS-EVO/frameworks_base/tree/master/core/tests/coretests/src/android/view/BigCache.java] = 1354419589000000
 pj[https://github.com/NEXUS-EVO/frameworks_base/tree/master/tests/DpiTest/src/com/google/android/test/dpi/DpiTestActivity.java] = 1354419589000000
 pj[https://github.com/PROMAND/MINK/tree/master/libs/action_bar/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1363773291000000
 pj[https://github.com/Prototik/HoloEverywhere/tree/master/library/src/org/holoeverywhere/widget/ListPopupWindow.java] = 1380888484000000
@@ -19,6 +22,8 @@ pj[https://github.com/ThinksInBits/OU-Mobile-App/tree/master/src/com/geared/ou/G
 pj[https://github.com/WSO2Mobile/wso2mobileserver/tree/master/products/mdm/modules/android-client/plugins/ActionBarSherlock/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1387340243000000
 pj[https://github.com/WableMaker/wableAndroid/tree/master/Wable/src/com/thx/bizcat/MainActivity.java] = 1364637140000000
 pj[https://github.com/Xomo/ActionBarSherlock-v4/tree/master/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1332785827000000
+pj[https://github.com/ZPI/ZPI-Android/tree/master/ChartViewLib/src/com/fima/chartview/ChartView.java] = 1385907081000000
+pj[https://github.com/ZPI/ZPI-Android/tree/master/ChartViewLib/src/com/fima/chartview/ChartView.java] = 1385907081000000
 pj[https://github.com/ZPI/ZPI-Android/tree/master/ChartViewLib/src/com/fima/chartview/ChartView.java] = 1385907081000000
 pj[https://github.com/abid-mujtaba/fetchheaders-android/tree/master/src/com/abid_mujtaba/fetchheaders/fragments/AccountFragment.java] = 1385011095000000
 pj[https://github.com/andronmobi/android-vlc-parrot-asteroid/tree/master/java-libs/WheelView/src/kankan/wheel/widget/WheelView.java] = 1366623086000000
@@ -41,7 +46,9 @@ pj[https://github.com/cschu004/CS180_Project/tree/master/src/com/example/ucrinst
 pj[https://github.com/dashford/asteroid-new/tree/master/Asteroid/src/ie/ucd/asteroid/Calc.java] = 1354708680000000
 pj[https://github.com/davros-/platform_frameworks_base/tree/master/tests/ImfTest/src/com/android/imftest/samples/BigEditTextActivityScrollablePanScan.java] = 1345145612000000
 pj[https://github.com/dittaeva/vespucci/tree/master/src/de/blau/android/TagEditor.java] = 1349070453000000
+pj[https://github.com/dodyg/AndroidRivers/tree/master/HoloEverywhere-master/contrib/ActionBarSherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1360248215000000
 pj[https://github.com/dodyg/AndroidRivers/tree/master/HoloEverywhere-master/library/src/org/holoeverywhere/widget/ListPopupWindow.java] = 1360248215000000
+pj[https://github.com/embest-tech/rowboat-frameworks-base/tree/master/services/java/com/android/server/status/StatusBarService.java] = 1248200214000000
 pj[https://github.com/embest-tech/rowboat-frameworks-base/tree/master/tests/FrameworkTest/src/com/android/frameworktest/view/BigCache.java] = 1236137504000000
 pj[https://github.com/evgs/BombusLime/tree/master/src/org/bombusim/lime/activity/EditContactActivity.java] = 1331829429000000
 pj[https://github.com/faux123/android_frameworks_base/tree/master/tests/DpiTest/src/com/google/android/test/dpi/DpiTestActivity.java] = 1304564460000000
@@ -58,6 +65,7 @@ pj[https://github.com/kanika23oct/beamto/tree/master/libs/slidingmenu/actionbars
 pj[https://github.com/kitkatandroid/JLS36G_base/tree/master/tests/DpiTest/src/com/google/android/test/dpi/DpiTestActivity.java] = 1380173574000000
 pj[https://github.com/ksallberg/beatr2/tree/master/BeatrProj/src/se/purestyle/beatr/view/editors/SynthEditorView.java] = 1376653613000000
 pj[https://github.com/kvite/astridclone/tree/master/actionbarsherlock/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1363804385000000
+pj[https://github.com/lbaye/repo/tree/master/android/src/com/socmaps/ui/MeetupRequestNewActivity.java] = 1373276558000000
 pj[https://github.com/lbaye/repo/tree/master/android/src/com/socmaps/ui/RecommendationActivity.java] = 1373276558000000
 pj[https://github.com/m13/DisTetris/tree/master/src/games/distetris/presentation/NewGameWaiting.java] = 1295624061000000
 pj[https://github.com/markmcd/android_packages_apps_Calendar/tree/master/src/com/android/calendar/EventInfoActivity.java] = 1258315604000000
@@ -66,7 +74,9 @@ pj[https://github.com/mturek/gras/tree/master/NestedFragments/src/com/example/ne
 pj[https://github.com/mtwebster/IEmail/tree/master/src/com/mwebster/iemail/activity/MessageCompose.java] = 1287907663000000
 pj[https://github.com/nebogeo/littlej/tree/master/android/Libraries/abs/src/com/actionbarsherlock/internal/widget/ActionBarView.java] = 1362416511000000
 pj[https://github.com/neeraj2608/realtrack/tree/master/libs/ActionBarSherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1405336437000000
+pj[https://github.com/onecoders/ViewPageIndicator/tree/master/Share SDK/Libs/OneKeyShare/src/cn/sharesdk/onekeyshare/EditPage.java] = 1382517834000000
 pj[https://github.com/onecoders/ViewPageIndicator/tree/master/WaypointsActivity/src/com/loopj/android/http/sample/SampleParentActivity.java] = 1382668496000000
+pj[https://github.com/openproject/world/tree/master/baseworld/src/com/tianxia/lib/baseworld/main/MainTabFrame.java] = 1344960709000000
 pj[https://github.com/openproject/world/tree/master/floworld/src/com/tianxia/app/floworld/appreciate/AppreciateLatestActivity.java] = 1334235413000000
 pj[https://github.com/pixmob/freemobilenetstat/tree/master/deps/httpclient/demo/deps/abs/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1360240987000000
 pj[https://github.com/racamirko/Common-Sense-Net-2/tree/master/AndroidBarSherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1341242569000000
@@ -75,6 +85,7 @@ pj[https://github.com/rcg0/arc/tree/master/android application/library2/src/com/
 pj[https://github.com/rinkdotrink/ComeTogether/tree/master/ActionBarSherlock/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1342519654000000
 pj[https://github.com/schoentoon/Connectbot/tree/master/ActionBarSherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1346940879000000
 pj[https://github.com/sntc06/Icequeen/tree/master/src/com/mis/icequeen/ChapterSelectionActivity.java] = 1344449987000000
+pj[https://github.com/spacecaker/android_frameworks_base_CSM9.1/tree/master/core/java/android/app/FragmentBreadCrumbs.java] = 1365327880000000
 pj[https://github.com/spacecaker/android_frameworks_base_CSM9.1/tree/master/tests/ImfTest/src/com/android/imftest/samples/BigEditTextActivityScrollablePanScan.java] = 1365327880000000
 pj[https://github.com/spidermandl/TimeMaster/tree/master/src/com/time/master/wheel/widget/WheelView.java] = 1383028951000000
 pj[https://github.com/srdperea/Informatics-191-ZotFinder-Repository/tree/master/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1392522141000000
@@ -83,10 +94,12 @@ pj[https://github.com/teamgummy/frameworks_base/tree/master/core/java/android/ap
 pj[https://github.com/thomasbreitbach/hci_advanced/tree/master/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 1370942725000000
 pj[https://github.com/tkymx/card-of-diffence/tree/master/GLSurfaceView/src/com/example/glsurfaceview/StageSelect.java] = 1385864827000000
 pj[https://github.com/tmobile/themes-platform-packages-apps-Email/tree/master/src/com/android/email/activity/MessageCompose.java] = 1271280561000000
+pj[https://github.com/todoroo/astrid/tree/master/astrid/src/com/todoroo/astrid/activity/TaskEditFragment.java] = 1365715593000000
 pj[https://github.com/todoroo/astrid/tree/master/astrid/src/com/todoroo/astrid/ui/ImportanceControlSet.java] = 1365789860000000
 pj[https://github.com/venukumar/bartsy-venue-android/tree/master/src/com/vendsy/bartsy/venue/view/BartenderSectionFragment.java] = 1377180543000000
 pj[https://github.com/y4nn/MobWebApp_ComemStar/tree/master/MobWebAndroid/src/ch/comem/android/QuestionActivity.java] = 1364482977000000
 pj1[https://github.com/Blakez/android_frameworks_base/core/java/android/app/FragmentBreadCrumbs.java] = 1
+pj1[https://github.com/Blakez/android_frameworks_base/packages/SystemUI/src/com/android/systemui/statusbar/NavigationBarView.java] = 1
 pj1[https://github.com/Blakez/android_packages_apps_Settings/src/com/android/settings/DataUsageSummary.java] = 1
 pj1[https://github.com/Cyberspice/platform_tools_base/apps/NotificationStudio/src/com/android/notificationstudio/NotificationStudioActivity.java] = 19
 pj1[https://github.com/DavidTPate/diablo3_builder/d3_android/libs/ActionBarSherlock/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 4
@@ -95,6 +108,8 @@ pj1[https://github.com/ICCL/IPPS/app/libraries/actionbarsherlock/src/com/actionb
 pj1[https://github.com/IntersectAustralia/faims-android/faims-android-app/src/au/org/intersect/faims/android/ui/map/button/ToolGroupButton.java] = 11
 pj1[https://github.com/MIPS/development/samples/ApiDemos/src/com/example/android/apis/graphics/DensityActivity.java] = 139
 pj1[https://github.com/MIT-Mobile/MIT-Mobile-for-Android/src/edu/mit/mitmobile2/MITPopupMenu.java] = 13
+pj1[https://github.com/NEXUS-EVO/frameworks_base/core/java/android/app/FragmentBreadCrumbs.java] = 2
+pj1[https://github.com/NEXUS-EVO/frameworks_base/core/tests/coretests/src/android/view/BigCache.java] = 2
 pj1[https://github.com/NEXUS-EVO/frameworks_base/tests/DpiTest/src/com/google/android/test/dpi/DpiTestActivity.java] = 2
 pj1[https://github.com/PROMAND/MINK/libs/action_bar/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 6
 pj1[https://github.com/Prototik/HoloEverywhere/library/src/org/holoeverywhere/widget/ListPopupWindow.java] = 50
@@ -107,7 +122,7 @@ pj1[https://github.com/ThinksInBits/OU-Mobile-App/src/com/geared/ou/GetStringDia
 pj1[https://github.com/WSO2Mobile/wso2mobileserver/products/mdm/modules/android-client/plugins/ActionBarSherlock/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 6
 pj1[https://github.com/WableMaker/wableAndroid/Wable/src/com/thx/bizcat/MainActivity.java] = 10
 pj1[https://github.com/Xomo/ActionBarSherlock-v4/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 35
-pj1[https://github.com/ZPI/ZPI-Android/ChartViewLib/src/com/fima/chartview/ChartView.java] = 4
+pj1[https://github.com/ZPI/ZPI-Android/ChartViewLib/src/com/fima/chartview/ChartView.java] = 12
 pj1[https://github.com/abid-mujtaba/fetchheaders-android/src/com/abid_mujtaba/fetchheaders/fragments/AccountFragment.java] = 1
 pj1[https://github.com/andronmobi/android-vlc-parrot-asteroid/java-libs/WheelView/src/kankan/wheel/widget/WheelView.java] = 15
 pj1[https://github.com/asafge/NewsBlurPlus/NewsBlurPlus/libs/ActionBarSherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 2
@@ -129,7 +144,9 @@ pj1[https://github.com/cschu004/CS180_Project/src/com/example/ucrinstagram/Follo
 pj1[https://github.com/dashford/asteroid-new/Asteroid/src/ie/ucd/asteroid/Calc.java] = 8
 pj1[https://github.com/davros-/platform_frameworks_base/tests/ImfTest/src/com/android/imftest/samples/BigEditTextActivityScrollablePanScan.java] = 2
 pj1[https://github.com/dittaeva/vespucci/src/de/blau/android/TagEditor.java] = 11
+pj1[https://github.com/dodyg/AndroidRivers/HoloEverywhere-master/contrib/ActionBarSherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 10
 pj1[https://github.com/dodyg/AndroidRivers/HoloEverywhere-master/library/src/org/holoeverywhere/widget/ListPopupWindow.java] = 10
+pj1[https://github.com/embest-tech/rowboat-frameworks-base/services/java/com/android/server/status/StatusBarService.java] = 9
 pj1[https://github.com/embest-tech/rowboat-frameworks-base/tests/FrameworkTest/src/com/android/frameworktest/view/BigCache.java] = 9
 pj1[https://github.com/evgs/BombusLime/src/org/bombusim/lime/activity/EditContactActivity.java] = 1
 pj1[https://github.com/faux123/android_frameworks_base/tests/DpiTest/src/com/google/android/test/dpi/DpiTestActivity.java] = 1
@@ -146,6 +163,7 @@ pj1[https://github.com/kanika23oct/beamto/libs/slidingmenu/actionbarsherlock/src
 pj1[https://github.com/kitkatandroid/JLS36G_base/tests/DpiTest/src/com/google/android/test/dpi/DpiTestActivity.java] = 2
 pj1[https://github.com/ksallberg/beatr2/BeatrProj/src/se/purestyle/beatr/view/editors/SynthEditorView.java] = 2
 pj1[https://github.com/kvite/astridclone/actionbarsherlock/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 23
+pj1[https://github.com/lbaye/repo/android/src/com/socmaps/ui/MeetupRequestNewActivity.java] = 24
 pj1[https://github.com/lbaye/repo/android/src/com/socmaps/ui/RecommendationActivity.java] = 24
 pj1[https://github.com/m13/DisTetris/src/games/distetris/presentation/NewGameWaiting.java] = 3
 pj1[https://github.com/markmcd/android_packages_apps_Calendar/src/com/android/calendar/EventInfoActivity.java] = 18
@@ -154,7 +172,9 @@ pj1[https://github.com/mturek/gras/NestedFragments/src/com/example/newspinproj/T
 pj1[https://github.com/mtwebster/IEmail/src/com/mwebster/iemail/activity/MessageCompose.java] = 51
 pj1[https://github.com/nebogeo/littlej/android/Libraries/abs/src/com/actionbarsherlock/internal/widget/ActionBarView.java] = 3
 pj1[https://github.com/neeraj2608/realtrack/libs/ActionBarSherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 5
+pj1[https://github.com/onecoders/ViewPageIndicator/Share SDK/Libs/OneKeyShare/src/cn/sharesdk/onekeyshare/EditPage.java] = 4
 pj1[https://github.com/onecoders/ViewPageIndicator/WaypointsActivity/src/com/loopj/android/http/sample/SampleParentActivity.java] = 4
+pj1[https://github.com/openproject/world/baseworld/src/com/tianxia/lib/baseworld/main/MainTabFrame.java] = 5
 pj1[https://github.com/openproject/world/floworld/src/com/tianxia/app/floworld/appreciate/AppreciateLatestActivity.java] = 5
 pj1[https://github.com/pixmob/freemobilenetstat/deps/httpclient/demo/deps/abs/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 34
 pj1[https://github.com/racamirko/Common-Sense-Net-2/AndroidBarSherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 12
@@ -163,6 +183,7 @@ pj1[https://github.com/rcg0/arc/android application/library2/src/com/actionbarsh
 pj1[https://github.com/rinkdotrink/ComeTogether/ActionBarSherlock/library/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 3
 pj1[https://github.com/schoentoon/Connectbot/ActionBarSherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 9
 pj1[https://github.com/sntc06/Icequeen/src/com/mis/icequeen/ChapterSelectionActivity.java] = 7
+pj1[https://github.com/spacecaker/android_frameworks_base_CSM9.1/core/java/android/app/FragmentBreadCrumbs.java] = 3
 pj1[https://github.com/spacecaker/android_frameworks_base_CSM9.1/tests/ImfTest/src/com/android/imftest/samples/BigEditTextActivityScrollablePanScan.java] = 3
 pj1[https://github.com/spidermandl/TimeMaster/src/com/time/master/wheel/widget/WheelView.java] = 13
 pj1[https://github.com/srdperea/Informatics-191-ZotFinder-Repository/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 8
@@ -171,6 +192,7 @@ pj1[https://github.com/teamgummy/frameworks_base/core/java/android/app/FragmentB
 pj1[https://github.com/thomasbreitbach/hci_advanced/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java] = 5
 pj1[https://github.com/tkymx/card-of-diffence/GLSurfaceView/src/com/example/glsurfaceview/StageSelect.java] = 4
 pj1[https://github.com/tmobile/themes-platform-packages-apps-Email/src/com/android/email/activity/MessageCompose.java] = 37
+pj1[https://github.com/todoroo/astrid/astrid/src/com/todoroo/astrid/activity/TaskEditFragment.java] = 23
 pj1[https://github.com/todoroo/astrid/astrid/src/com/todoroo/astrid/ui/ImportanceControlSet.java] = 23
 pj1[https://github.com/venukumar/bartsy-venue-android/src/com/vendsy/bartsy/venue/view/BartenderSectionFragment.java] = 2
 pj1[https://github.com/y4nn/MobWebApp_ComemStar/MobWebAndroid/src/ch/comem/android/QuestionActivity.java] = 7
