@@ -47,6 +47,7 @@ def extract_info(github_URL):
         ret["num_open_issues"] = int(data['open_issues_count'])
     except:
         ret["num_open_issues"] = 0
+
     # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
 
     # SECOND REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -94,6 +95,7 @@ def extract_info(github_URL):
         ret["last_commit"] = epoch_time
     except:
         ret["last_commit"] = 0
+
 
     return ret
 

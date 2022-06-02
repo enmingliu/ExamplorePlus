@@ -17,9 +17,10 @@ export const get_frequent_dataset = async function () {
     for (let item of temp) {
         res.push(item._id);
     }
-    console.log(res);
+
     return res;
 }
+
 
 
 export const update_database = async function (urls) {
@@ -42,14 +43,14 @@ export const update_database = async function (urls) {
                             resolve(res)
                             let obj = JSON.parse(res[0].replace(/'/g, '"'));
                             let isChange = false;
-                            console.log(res);
-                            console.log(res[0]);
-                            console.log(d.num_stars, obj.num_stars, d.num_stars === obj.num_stars)
-                            console.log(d.num_forks, obj.num_forks, d.num_forks === obj.num_forks)
-                            console.log(d.num_open_issues, obj.num_open_issues, d.num_open_issues === obj.num_open_issues)
-                            console.log(parseInt(d.num_contributors), parseInt(obj.num_contributors), parseInt(d.num_contributors) === parseInt(obj.num_contributors))
-                            console.log(d.num_closed_issues, obj.num_closed_issues, d.num_closed_issues === obj.num_closed_issues)
-                            console.log(d.timestamp, obj.last_commit, d.timestamp === obj.last_commit)
+//                             console.log(res);
+//                             console.log(res[0]);
+//                             console.log(d.num_stars, obj.num_stars, d.num_stars === obj.num_stars)
+//                             console.log(d.num_forks, obj.num_forks, d.num_forks === obj.num_forks)
+//                             console.log(d.num_open_issues, obj.num_open_issues, d.num_open_issues === obj.num_open_issues)
+//                             console.log(parseInt(d.num_contributors), parseInt(obj.num_contributors), parseInt(d.num_contributors) === parseInt(obj.num_contributors))
+//                             console.log(d.num_closed_issues, obj.num_closed_issues, d.num_closed_issues === obj.num_closed_issues)
+//                             console.log(d.timestamp, obj.last_commit, d.timestamp === obj.last_commit)
 
                             if (d.num_stars && d.num_stars !== obj.num_stars) {
                                 bound(() => {
@@ -109,6 +110,7 @@ export const update_database = async function (urls) {
 
 
             }
+
 
         })
 
