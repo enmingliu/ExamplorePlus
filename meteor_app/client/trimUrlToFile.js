@@ -7,26 +7,26 @@ const trim = function(url){
     return trimmed_url;
 }
 
-const readFromFolder = function(dir){
-    const obj = {};
+// const readFromFolder = function(dir){
+//     const obj = {};
     
-    const jsonsInDir = fs.readdirSync(dir).filter(file => path.extname(file) === '.json');
-    jsonsInDir.forEach(file => {
-        const fileData = fs.readFileSync(path.join(dir, file));
-        const json = JSON.parse(fileData.toString());
+//     const jsonsInDir = fs.readdirSync(dir).filter(file => path.extname(file) === '.json');
+//     jsonsInDir.forEach(file => {
+//         const fileData = fs.readFileSync(path.join(dir, file));
+//         const json = JSON.parse(fileData.toString());
 
-        json.forEach(item => {
-            if(!obj[item.dataset]){
-                obj[item.dataset] = [];
-                obj[item.dataset].push(trim(item.url));
-            }else
-                obj[item.dataset].push(trim(item.url));
-        })
+//         json.forEach(item => {
+//             if(!obj[item.dataset]){
+//                 obj[item.dataset] = [];
+//                 obj[item.dataset].push(trim(item.url));
+//             }else
+//                 obj[item.dataset].push(trim(item.url));
+//         })
         
-      });
+//       });
 
-      return obj;
-}
+//       return obj;
+// }
 
 const writeToFile = function(input, dir){
     for (const key in input) {
@@ -46,8 +46,8 @@ const writeToFile = function(input, dir){
 
 var directory = '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/meteor_app/private';
 
-var app = readFromFolder(directory);
-writeToFile(app, '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/meteor_app/client/');
+// var app = readFromFolder(directory);
+// writeToFile(app, '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/meteor_app/client/');
 
 
 

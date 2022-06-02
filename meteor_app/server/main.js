@@ -69,7 +69,7 @@ Meteor.startup(() => {
   new CronJob({
     cronTime: '0 8 * * *', // everyday at 8 am
     onTick: Meteor.bindEnvironment(async () => {
-      let x = 0, Y=0;
+      // let x = 0, Y=0;
 
       // console.log("=======================================before======================================================")
 
