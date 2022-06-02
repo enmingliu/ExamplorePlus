@@ -3,6 +3,7 @@
   <div class="container-fluid">
     <div class="row" style="padding-top: 2em;">
       <b><center>
+
       <div class="col-md-12 ">
         <h4>Choose an API: 
           <div class="dropdown" style="display: inline-block;">
@@ -127,7 +128,7 @@
         <div class="col-md-2">
           <!-- <h5>Histogram</h5> -->
         </div>
-
+        
         <div class="col-md-12">
           <h3>Cross-example counts for <span class="code">{{getDataset}}</span></h3>
           <!-- <button type="button" class="btn btn-dark hide-labels"  title="display/hide the labels of code blocks in the synthetic code skeleton">Toggle Labels</button> -->
@@ -139,6 +140,30 @@
             <button type="button" class="btn btn-primary less-uncommon" title="display one more common option in each code block">Show Less</button>
             <button type="button" class="btn btn-primary more-uncommon" title="display one less common option in each code block">Show More</button>
             <button type="button" class="btn btn-primary show-all" title="display all options in each code block">Show All</button>
+            <input type="range" id="points" name="points" min="{{lowestVal}}" max="{{largestVal}}">
+          </div>
+          <div class="middle" style="margin-top: 18px; margin-bottom: 18px;">
+            <div style="margin: 24px 0px;">
+              <span style="padding: 10px 0px;
+              margin: 24px 0px;">Range Filter for Date</span>
+            </div>
+            <div class="multi-range-slider">
+              <input type="range" id="input-left" min="{{lowestVal}}" max="{{largestVal}}" value="{{currentLeft}}">
+              <input type="range" id="input-right" min="{{lowestVal}}" max="{{largestVal}}" value="{{currentRight}}">
+          
+              <div class="slider">
+                <div class="track"></div>
+                <div class="range"></div>
+                <div class="thumb left"></div>
+                <div class="thumb right"></div>
+                <div style="left: -3%;
+                position: absolute;
+                margin: 24px 0px;">{{currentLeftS}}</div>
+                <div style="right: -6%;
+                position: absolute;
+                margin: 24px 0px;">{{currentRightS}}</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -171,11 +196,22 @@
         </div>
       </div>
     </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="chart">{{createChart}}</div>
+  </div>
+
+</div>
     <div class="row">
       <div class="col-md-6" style="height: 1200px; overflow: scroll;">
         <!-- {{> functionOptionBlock blockname="precedingAPICall"}} -->
         {{> declarations blockname='initialization'}}
-        {{> try blockname='try'}}
+        <!-- {{> try blockname='try'}} -->
         {{> precall blockname='configuration'}}
         {{> precheck blockname='guardCondition'}}
         {{> focus blockname='focalAPI'}}
@@ -311,7 +347,7 @@
               {{/if}}
             </span>
             <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
-            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this.name}}</span>
           </div>
         </div>
       </div>
@@ -348,26 +384,34 @@
 
     <div id="{{blockname}}-options" class="collapse">
       {{#each options blockname}}
-      <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+      <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this.text}}{{/if}}">
         <div class="col-md-2">
           <div style="padding-left: 0px;">
-            <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
-              <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
-              <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+            <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this.text}} examples have {{this}}{{conditionalTooltipOption this.text}}">
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this.text}}%"></div>
+              <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this.text}}%"></div>
             </div>
           </div>
         </div>
         <div class="col-md-10">
-          <div style="padding-left: 15px; display: flex;">
+          <div style="padding-left: 15px; display: flex; margin-bottom: 8px;">
             <span style="width: 30px;">
-              {{#if checkboxType this}}
-              <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+              {{#if checkboxType this.text}}
+              <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this.text}}"/> 
               {{else}}
-              <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+              <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this.text}}"/>
               {{/if}}
             </span>
             <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
-            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this.text}}, {{this.date}}</span>
+            <button class="myBtn" name="{{getBlockName}}~{{this.text}}" style="margin-left: 10px;">Get Insight</button>
+            <!-- <div class="tooltip">Hover over me -->
+              <!-- <div class="tooltiptext"> -->
+                <!-- dsd -->
+                
+                <!-- {{> highchartsHelper chartId="test" chartWidth="100%" charHeight="100%" chartObject=topGenresChart}} -->
+              <!-- </div> -->
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -414,26 +458,29 @@
 
     <div id="{{blockname}}-options" class="collapse">
       {{#each options blockname}}
-      <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+      <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this.text}}{{/if}}">
         <div class="col-md-2">
           <div style="padding-left: 0px;">
-            <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
-              <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
-              <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+            <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this.text}} examples have {{this}}{{conditionalTooltipOption this.text}}">
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this.text}}%"></div>
+              <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this.text}}%"></div>
             </div>
           </div>
         </div>
         <div class="col-md-10">
           <div style="padding-left: 45px; display: flex;">
             <span style="width: 30px;">
-              {{#if checkboxType this}}
-              <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+              {{#if checkboxType this.text}}
+              <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this.text}}"/> 
               {{else}}
-              <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+              <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this.text}}"/>
               {{/if}}
             </span>
             <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
-            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this.text}}, {{this.date}}</span>
+            <button class="myBtn" name="{{getBlockName}}~{{this.text}}" style="margin-left: 10px;">Get Insight</button>
+            <!-- <span>{{this.name}}</span> -->
+            <!-- <span>{{blockname}}</span> -->
           </div>
         </div>
       </div>
@@ -460,26 +507,27 @@
     </div>
     <div id="{{blockname}}-options" class="collapse">
       {{#each options blockname}}
-      <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+      <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this.text}}{{/if}}">
         <div class="col-md-2">
           <div style="padding-left: 0px;">
-            <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
-              <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
-              <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+            <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this.text}} examples have {{this.text}}{{conditionalTooltipOption this.text}}">
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this.text}}%"></div>
+              <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this.text}}%"></div>
             </div>
           </div>
         </div>
         <div class="col-md-10">
           <div style="padding-left: 45px; display: flex;">
             <span style="width: 30px;">
-              {{#if checkboxType this}}
-              <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+              {{#if checkboxType this.text}}
+              <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this.text}}"/> 
               {{else}}
-              <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+              <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this.text}}"/>
               {{/if}}
             </span>
-            <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
-            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+            <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this.text}}); flex: 1;" data-blockname="{{getBlockName}}">{{this.text}}</span> -->
+            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this.text}}{{this.date}}</span>
+            <button class="myBtn" name="{{getBlockName}}~{{this.text}}" style="margin-left: 10px;">Get Insight</button>
           </div>
         </div>
       </div>
@@ -514,26 +562,27 @@
   
   <div id="{{blockname}}-options" class="collapse">
     {{#each options blockname}}
-    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this.text}}{{/if}}">
       <div class="col-md-2">
         <div style="padding-left: 0px;">
-          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
-            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
-            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this.text}} examples have {{this.text}}{{conditionalTooltipOption this.text}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this.text}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this.text}}%"></div>
           </div>
         </div>
       </div>
       <div class="col-md-10">
         <div style="padding-left: 75px; display: flex;">
           <span style="width: 30px;">
-            {{#if checkboxType this}}
-            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{#if checkboxType this.text}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this.text}}"/> 
             {{else}}
-            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this.text}}"/>
             {{/if}}
           </span>
-          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
-          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this.text}}); flex: 1;" data-blockname="{{getBlockName}}">{{this.text}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this.text}}, {{this.date}}</span>
+          <button class="myBtn" name="{{getBlockName}}~{{this.text}}" style="margin-left: 10px;">Get Insight</button>
         </div>
       </div>
     </div>
@@ -560,26 +609,27 @@
   </div>
   <div id="{{blockname}}-options" class="collapse">
     {{#each options blockname}}
-    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this.text}}{{/if}}">
       <div class="col-md-2">
         <div style="padding-left: 0px;">
-          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
-            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
-            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this.text}} examples have {{this.text}}{{conditionalTooltipOption this.text}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this.text}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this.text}}%"></div>
           </div>
         </div>
       </div>
       <div class="col-md-10">
         <div style="padding-left: 75px; display: flex;">
           <span style="width: 30px;">
-            {{#if checkboxType this}}
-            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{#if checkboxType this.text}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this.text}}"/> 
             {{else}}
-            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this.text}}"/>
             {{/if}}
           </span>
-          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
-          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this.text}}); flex: 1;" data-blockname="{{getBlockName}}">{{this.text}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this.text}}, {{this.date}}</span>
+          <button class="myBtn" name="{{getBlockName}}~{{this.text}}" style="margin-left: 10px;">Get Insight</button>
         </div>
       </div>
     </div>
@@ -615,26 +665,27 @@
   </div>
   <div id="{{blockname}}-options" class="collapse">
     {{#each options blockname}}
-    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this.text}}{{/if}}">
       <div class="col-md-2">
         <div style="padding-left: 0px;">
-          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
-            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
-            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this.text}} examples have {{this.text}}{{conditionalTooltipOption this.text}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this.text}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this.text}}%"></div>
           </div>
         </div>
       </div>
       <div class="col-md-10">
         <div style="padding-left: 95px; display: flex;">
           <span style="width: 30px;">
-            {{#if checkboxType this}}
-            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{#if checkboxType this.text}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this.text}}"/> 
             {{else}}
-            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this.text}}"/>
             {{/if}}
           </span>
-          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
-          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this.text}}); flex: 1;" data-blockname="{{getBlockName}}">{{this.text}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this.text}}, {{this.date}}</span>
+          <button class="myBtn" name="{{getBlockName}}~{{this.text}}" style="margin-left: 10px;">Get Insight</button>
         </div>
       </div>
     </div>
@@ -654,26 +705,27 @@
   </div>
   <div id="{{blockname}}-options" class="collapse">
     {{#each options blockname}}
-    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this.text}}{{/if}}">
       <div class="col-md-2">
         <div style="padding-left: 0px;">
-          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
-            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
-            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this.text}} examples have {{this.text}}{{conditionalTooltipOption this.text}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this.text}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this.text}}%"></div>
           </div>
         </div>
       </div>
       <div class="col-md-10">
         <div style="padding-left: 30px; display: flex;">
           <span style="width: 30px;">
-            {{#if checkboxType this}}
-            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{#if checkboxType this.text}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this.text}}"/> 
             {{else}}
-            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this.text}}"/>
             {{/if}}
           </span>
-          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
-          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}} e</span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this.text}}); flex: 1;" data-blockname="{{getBlockName}}">{{this.text}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this.text}}</span>
+          <button class="myBtn" name="{{getBlockName}}~{{this.text.text}}" style="margin-left: 10px;">Get Insight</button>
         </div>
       </div>
     </div>
@@ -709,26 +761,27 @@
   </div>
   <div id="{{blockname}}-options" class="collapse">
     {{#each options blockname}}
-    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this.text}}{{/if}}">
       <div class="col-md-2">
         <div style="padding-left: 0px;">
-          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
-            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
-            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this.text}} examples have {{this.text}}{{conditionalTooltipOption this.text}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this.text}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this.text}}%"></div>
           </div>
         </div>
       </div>
       <div class="col-md-10">
         <div style="padding-left: 45px; display: flex;">
           <span style="width: 30px;">
-            {{#if checkboxType this}}
-            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{#if checkboxType this.text}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this.text}}"/> 
             {{else}}
-            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this.text}}"/>
             {{/if}}
           </span>
-          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
-          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this.text}}); flex: 1;" data-blockname="{{getBlockName}}">{{this.text}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this.text}}, {{this.date}}</span>
+          <button class="myBtn" name="{{getBlockName}}~{{this.text}}" style="margin-left: 10px;">Get Insight</button>
         </div>
       </div>
     </div>
@@ -755,26 +808,27 @@
   </div>
   <div id="{{blockname}}-options" class="collapse">
     {{#each options blockname}}
-    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this.text}}{{/if}}">
       <div class="col-md-2">
         <div style="padding-left: 0px;">
-          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
-            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
-            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this.text}} examples have {{this.text}}{{conditionalTooltipOption this.text}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this.text}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this.text}}%"></div>
           </div>
         </div>
       </div>
       <div class="col-md-10">
         <div style="padding-left: 15px; display: flex;">
           <span style="width: 30px;">
-            {{#if checkboxType this}}
-            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{#if checkboxType this.text}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this.text}}"/> 
             {{else}}
-            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this.text}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this.text}}"/>
             {{/if}}
           </span>
-          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
-          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this.text}}); flex: 1;" data-blockname="{{getBlockName}}">{{this.text}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this.text}}, {{this.date}}</span>
+          <button class="myBtn" name="{{getBlockName}}~{{this.text}}" style="margin-left: 10px;">Get Insight</button>
         </div>
       </div>
     </div>

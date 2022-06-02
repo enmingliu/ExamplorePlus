@@ -19,7 +19,7 @@ Meteor.startup(() => {
   if (reload){
     
     // console.log('reload',reload);
-    Assets.getText('addView.json', function(err, data) {
+    Assets.getText('findViewById.json', function(err, data) {
       var content = EJSON.parse(data);
       console.log('content',content);
       content.forEach((doc) => {
@@ -69,32 +69,9 @@ Meteor.startup(() => {
   new CronJob({
     cronTime: '0 8 * * *', // everyday at 8 am
     onTick: Meteor.bindEnvironment(async () => {
-      // let x = 0, Y=0;
-
-      // console.log("=======================================before======================================================")
-
-      // Examples.find().forEach(d => {
-      //   if(Y < 3){
-      //     console.log(d);
-      //     Y++;
-      //   }
-      // })
-
-      // console.log("===================================================================================================")
-
       let urls = await get_frequent_dataset();
-      if(urls && urls.length > 0){
-        update_database(urls);
-      }
-      // console.log("=======================================after======================================================")
-
-      // Examples.find().forEach(d => {
-      //   if(x < 3){
-      //     console.log(d);
-      //     x++;
-      //   }
-      // })
-      // console.log("===================================================================================================")
+      update_database(urls).then(()=>{
+      })
 
     }),
     start: true,

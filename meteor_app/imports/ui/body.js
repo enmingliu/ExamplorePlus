@@ -1,14 +1,78 @@
 import { Template } from 'meteor/templating';
+// import Meteor from 'meteor';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { Session } from 'meteor/session';
 
 import { Examples } from '../api/options.js';
 import { ActionLog } from '../api/actionlog.js';
 import Pycollections from 'pycollections';
-
-
+import Highcharts from 'highcharts';
 import './body.html';
 
+// var inputLeft = document.getElementById("input-left");
+// var inputRight = document.getElementById("input-right");
+
+// var thumbLeft = document.querySelector(".slider > .thumb.left");
+// var thumbRight = document.querySelector(".slider > .thumb.right");
+// var range = document.querySelector(".slider > .range");
+
+// function setLeftValue() {
+// 	var _this = inputLeft,
+// 		min = parseInt(_this.min),
+// 		max = parseInt(_this.max);
+
+// 	_this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
+
+// 	var percent = ((_this.value - min) / (max - min)) * 100;
+
+// 	thumbLeft.style.left = percent + "%";
+// 	range.style.left = percent + "%";
+// }
+// setLeftValue();
+
+// function setRightValue() {
+// 	var _this = inputRight,
+// 		min = parseInt(_this.min),
+// 		max = parseInt(_this.max);
+
+// 	_this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
+
+// 	var percent = ((_this.value - min) / (max - min)) * 100;
+
+// 	thumbRight.style.right = (100 - percent) + "%";
+// 	range.style.right = (100 - percent) + "%";
+// }
+// setRightValue();
+
+// inputLeft.addEventListener("input", setLeftValue);
+// inputRight.addEventListener("input", setRightValue);
+
+// inputLeft.addEventListener("mouseover", function() {
+// 	thumbLeft.classList.add("hover");
+// });
+// inputLeft.addEventListener("mouseout", function() {
+// 	thumbLeft.classList.remove("hover");
+// });
+// inputLeft.addEventListener("mousedown", function() {
+// 	thumbLeft.classList.add("active");
+// });
+// inputLeft.addEventListener("mouseup", function() {
+// 	thumbLeft.classList.remove("active");
+// });
+
+// inputRight.addEventListener("mouseover", function() {
+// 	thumbRight.classList.add("hover");
+// });
+// inputRight.addEventListener("mouseout", function() {
+// 	thumbRight.classList.remove("hover");
+// });
+// inputRight.addEventListener("mousedown", function() {
+// 	thumbRight.classList.add("active");
+// });
+// inputRight.addEventListener("mouseup", function() {
+// 	thumbRight.classList.remove("active");
+// });
+console.log("hey", Highcharts);
 var exampleTotal = function(){
   // console.log('exampleTotal',Examples.find({dataset: Session.get('dataset')}).count());
   return Examples.find({dataset: Session.get('dataset')}).count();
@@ -21,7 +85,10 @@ var fetchExamples = function(selector){
   } else {
     selector['dataset'] = Session.get('dataset');
   }
-  return Examples.find(selector).fetch();
+  a = Examples.find(selector).fetch();
+  console.log('coming here', "dsdsds dka", selector);
+  console.log(";et sss ********", a);
+  return a;
 }
 
 var fetchAndCountExamples = function(selector){
@@ -30,6 +97,7 @@ var fetchAndCountExamples = function(selector){
   } else {
     selector['dataset'] = Session.get('dataset');
   }
+  // console.log('coming here', "dsdsds dka", selector);
   return Examples.find(selector).count();
 }
 
@@ -39,7 +107,8 @@ var fetchShortestExamples = function(selector){
   } else {
     selector['dataset'] = Session.get('dataset');
   }
-  console.log('selector',selector);
+  // console.log('selector',selector);
+  // console.log('coming here', "dsdsds dka", selector);
   return Examples.find(selector, { sort: { codeLength : 1 } });
 }
 
@@ -68,6 +137,8 @@ var option_lists = [
   'use',
   'cleanUpCall'
 ];
+
+var lineProps = new Map();
 
 // console.log(blocknames)
 
@@ -144,6 +215,27 @@ Template.example.onRendered(function() {
  * Register the helper functions for the body template
  */
 Template.body.helpers({
+  lowestVal() {
+    console.log(Session.get('lowestTs'));
+    return Session.get('lowestTs');
+  },
+  largestVal() {
+    return Session.get('largestTs');
+  },
+  currentLeft() {
+    console.log(Session.get('currentLeft'), "key gaya");
+    return Number(Session.get('currentLeft'));
+  },
+  currentRight() {
+    return Session.get('currentRight');
+  },
+  currentLeftS() {
+    console.log(Session.get('currentLeft'), "key gaya");
+    return new Date(Number(Session.get('currentLeft'))*1000).toLocaleDateString();
+  },
+  currentRightS() {
+    return new Date(Number(Session.get('currentRight'))*1000).toLocaleDateString();
+  },
   getDataset(){
     return Session.get('dataset');
   },
@@ -186,8 +278,11 @@ Template.breadcrumb.helpers({
     var selector = Session.get('selector');
     var filterValue = selector[filterType];
     if (!_.isEmpty(filterValue)) {
-      if (typeof filterValue === 'string' && filterValue !== 'dataset') {
-        console.log('filterValue is string');
+      if (typeof filterValue === 'string' && filterValue === 'timestamp'){
+        console.log(filterValue, "Sfsfsdf");
+      }
+      else if (typeof filterValue === 'string' && filterValue !== 'dataset') {
+        // console.log('filterValue is string');
         return 'must have '+filterValue;
       } else if (Object.keys(filterValue)[0] === '$ne'){
         switch(filterType) {
@@ -287,12 +382,90 @@ Template.breadcrumb.helpers({
  * Register the event listeners on the body template
  */
 Template.body.events({
+  'click .myBtn'(event) {
+    Session.set('graph-head', event.target.name);
+    $('#myModal').css('display', 'block');
+  },
+  'click .close'(event) {
+    console.log("why nit", event.target);
+    $('#myModal').css('display', 'none');
+  },
+  'change #input-left'(event) {
+    try{
+
+      var _this = event.target,
+      min = parseInt(Session.get('lowestTs')),
+      max = parseInt(Session.get('largestTs'));
+      // console.log(Session.set('largestTs'));
+      console.log(_this, parseInt(_this.value), max, min);
+  
+    // _this.value = Math.min(parseInt(_this.value), parseInt(1e18) - 1);
+    let val = Math.min(parseInt(_this.value), parseInt(Session.get('currentRight')) - 1);
+    Session.set('currentLeft', val);
+    // Session.set('currentLeft', Math.min(parseInt(_this.value), parseInt(1e18) - 1));
+  
+    var percent = ((parseInt(_this.value) - min) / (max - min)) * 100;
+    var thumbLeft = $(".slider > .thumb.left");
+    console.log(thumbLeft,"d", percent);
+  // var thumbRight = document.querySelector(".slider > .thumb.right");
+  var range = $(".slider > .range");
+  
+    // thumbLeft.style.left = percent + "%";
+    console.log(thumbLeft.css('left'));
+    thumbLeft.css('left', `${percent}%`);
+    console.log(thumbLeft.css('left'));
+    range.css('left', `${percent}%`);
+    const selector = Session.get('selector') || {};
+    const timestamp = Object.assign(selector.timestamp || {}, { '$gte': Session.get('currentLeft')});
+    Session.set('selector', Object.assign(selector || {}, { timestamp }));
+    console.log("hey see", Session.get('selector'));
+    }
+    catch(e){
+      console.log('chutiya big', e);
+    }
+	// range.style.left = percent + "%";
+  },
+  'change #input-right'(event) {
+    try{
+
+      var _this = event.target,
+      min = parseInt(Session.get('lowestTs')),
+      max = parseInt(Session.get('largestTs'));
+      // console.log(Session.set('largestTs'));
+      console.log(_this, parseInt(_this.value), max, min);
+  
+    // _this.value = Math.min(parseInt(_this.value), parseInt(1e18) - 1);
+    let val = Math.max(parseInt(_this.value), parseInt(Session.get('currentLeft')) + 1);
+    // _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
+    Session.set('currentRight', val);
+    // Session.set('currentLeft', Math.min(parseInt(_this.value), parseInt(1e18) - 1));
+  
+    var percent = ((parseInt(_this.value) - min) / (max - min)) * 100;
+    var thumbLeft = $(".slider > .thumb.right");
+    console.log(thumbLeft,"d", percent);
+  // var thumbRight = document.querySelector(".slider > .thumb.right");
+  var range = $(".slider > .range");
+  
+    // thumbLeft.style.left = percent + "%";
+    console.log(thumbLeft.css('right'));
+    thumbLeft.css('right', `${100-percent}%`);
+    console.log(thumbLeft.css('right'));
+    range.css('right', `${100-percent}%`);
+    const selector = Session.get('selector') || {};
+    const timestamp = Object.assign(selector.timestamp || {}, {'$lte': Session.get('currentRight')});
+    Session.set('selector', Object.assign(selector || {}, { timestamp }));
+    console.log("hey see", Session.get('selector'));
+    }
+    catch(e){
+      console.log('Sbig', e);
+    }
+	// range.style.left = percent + "%";
+  },
   'change #change-dataset'(event){
-    var newDataSet = $(event.target).val()
+    var newDataSet = $(event.target).val();
+    ActionLog.insert({date : new Date(), action: "change-dataset", subjectNum: Session.get('subjectNum'), dataset: newDataSet});
     console.log('Dataset', newDataSet);
     Session.set('dataset', newDataSet);
-    ActionLog.insert({date : new Date(), dataset : newDataSet});
-
   },
   'click .change-dataset'(event, instance){
     console.log('API Change')
@@ -364,7 +537,9 @@ Template.body.events({
     $("input:radio").prop('checked', false);      
   },
   'change .filterByBlock'(event, instance) {
+    console.log("filter By Block is being triggred", event);
     var selector = Session.get('selector');
+    console.log("is what is called selector", selector);
     if (selector == null){
       selector = {};
     }
@@ -391,10 +566,11 @@ Template.body.events({
     }
 
     ActionLog.insert({date : new Date(), blockname: blockname, action: "change filterByBlock", subjectNum: Session.get('subjectNum')});
-    // console.log('selector',selector);
+    console.log('selector',selector, "this is what selected");
     Session.set('selector',selector);
   },
   'change .filterByCheckOption'(event, instance){
+    console.log("filter By check option is being triggred", event);
     var selector = Session.get('selector');
     if (selector == null){
       selector = {};
@@ -449,6 +625,7 @@ Template.body.events({
     Session.set('selector',selector);
   },
   'click .filterByRadioOption'(event, instance) {
+    console.log("filter By Radio options is being triggred", event);
     // console.log('click event on .filterByRadioOption');
     var selector = Session.get('selector');
     if (selector == null){
@@ -885,15 +1062,102 @@ var helpers = {
     // if (blockname === 'try'){
     //   return [];
     // }
-    var selector = {};
-    if (!_.isEmpty(_.find(option_lists, function(list_type){ return list_type===blockname;}))) {
-      selector[blockname] = {$ne: []};
+    // console.log("blockname :- ", blockname);
+    if(!lineProps.get(blockname))
+      lineProps.set(blockname, new Map());
+    const blockProps = lineProps.get(blockname);
+    console.log(blockname,"Dwe");
+    const selector = {};
+    let lowestTs = Session.get('lowestTs') || Infinity;
+    let largestTs = Session.get('largestTs') || 0;
+    const sortByTimeStamp = new Map();
+    selector[blockname] = {$ne: []};
+    if(_.isEmpty(_.find(option_lists, function(list_type){ return list_type===blockname;})))
+      selector[blockname] = {$ne: 'empty'};
+    // const lineProps = new Map();
+    
+    if (1 == 1||!_.isEmpty(_.find(option_lists, function(list_type){ return list_type===blockname;}))) {
+      // console.log("coming in elseeijfejf");
+
       var examps = fetchExamples(selector);
-      var calls = new Pycollections.Counter();
-      _.each(examps, function(examp){
-        calls.update(examp[blockname]);
-      });
-      var uniq_opts = calls.mostCommon().map(function(item){ return item[0]}); //unnecesary to call mostCommon here but fine
+      console.log("blockname:- 123", blockname);
+      try {
+        _.each(examps, function(examp) {
+          // console.log(typeof(examp[blockname]), "filetype", examp[blockname]);
+          const {
+            num_stars = 0,
+            num_forks = 0,
+            num_open_issues = 0,
+            num_contributors = 0,
+            num_closed_issues = 0,
+            ranking_metric = 0,
+            timestamp = 0
+          } = examp;
+          const props = { num_stars, num_forks, num_open_issues, num_contributors, num_closed_issues};
+          if(typeof(examp[blockname]) === 'object'){
+            try{
+  
+              _.each(examp[blockname], function(line) {
+                // console.log("check line", line, sortByTimeStamp.get(line));
+                if(sortByTimeStamp.get(line)){
+                  blockProps.set(line, [...blockProps.get(line), props]);
+                  // console.log("this is repeated line", line, blockname, blockProps);
+                  const data = sortByTimeStamp.get(line);
+                  if(data.date < Number(timestamp)){
+                    data.date = Number(timestamp)
+                  }
+                  data.sum += ranking_metric;
+                  data.freq++;
+                  sortByTimeStamp.set(line, data);
+                  console.log("what is it", timestamp);
+                }
+                else{
+                  blockProps.set(line, [props]);
+                  sortByTimeStamp.set(line, { date: Number(timestamp), freq: 1, sum: ranking_metric});
+                }
+              });
+            }
+            catch(e){
+              console.log(e, "Errpr");
+            }
+  
+          }
+          else{
+            console.log("what type", "blockname", examp[blockname], blockname);
+            const line = examp[blockname];
+            if(sortByTimeStamp.get(line)){
+              blockProps.set(line, [...blockProps.get(line), props]);
+              // console.log("this is repeated line", line, blockname, blockProps);
+              const data = sortByTimeStamp.get(line);
+              if(data.date < Number(timestamp)){
+                data.date = Number(timestamp)
+              }
+              data.sum += ranking_metric;
+              data.freq++;
+              sortByTimeStamp.set(line, data);
+              console.log("what is it", timestamp);
+            }
+            else{
+              blockProps.set(line, [props]);
+              sortByTimeStamp.set(line, { date: Number(timestamp), freq: 1, sum: ranking_metric});
+            }
+          }
+        });
+  
+        lineProps.set(blockname, blockProps);
+        // console.log(lineProps.get(blockname));
+  
+        // console.log([...sortByTimeStamp.entries()], "check this out");
+        // var calls = new Pycollections.Counter();
+        // _.each(examps, function(examp){
+        //   console.log("blockname causing error", examp[blockname]);
+        //   calls.update(examp[blockname]);
+        // });
+        // var uniq_opts = calls.mostCommon().map(function(item){ return item[0]}); //unnecesary to call mostCommon here but fine
+        
+      } catch (error) {
+        console.log("blockname:- 123", error, "big");
+      }
     } else {
       selector[blockname] = {$ne: 'empty'};
       // var opts = fetchExamples(selector);
@@ -902,14 +1166,135 @@ var helpers = {
             return rec[blockname];
         }), false);
     }
-    var counts = {}
-    _.each(uniq_opts, function(opt){ 
-      var selector = {};
-      selector[blockname] = opt;
-      counts[opt] = fetchAndCountExamples(selector);
-    });
-    return _.sortBy(uniq_opts, function(opt){ return counts[opt]; }).reverse().slice(0, Session.get('numOptions'));
+    // var counts = {}
+    // // console.log(uniq_opts, "uniq")
+    // _.each(uniq_opts, function(opt){ 
+    //   var selector = {};
+    //   selector[blockname] = opt;
+    //   counts[opt] = fetchAndCountExamples(selector);
+    // });
+    // aa =  _.sortBy(uniq_opts, function(opt){ return counts[opt]; }).reverse().slice(0, Session.get('numOptions'));
+    // if(blockname !== 'initialization')
+    //   return aa;
+    try {
+      const rt = _.sortBy([...sortByTimeStamp.entries()], function(opt){ return opt[1].sum/opt[1].freq;}).reverse().slice(0, Session.get('numOptions'));
+      console.log(rt, "fsdfsfdsf");
+      if(!rt.length)
+        return rt;
+      const sorted = _.sortBy([...sortByTimeStamp.entries()], function(opt){ return opt[1].date;}).reverse().slice(0).filter((opt) => opt[1].date!=0);
+      if(sorted.length){
+
+        lowestTs = Math.min(sorted[sorted.length-1][1].date, lowestTs);
+        largestTs = Math.max(sorted[0][1].date, largestTs);
+        console.log("chhchch", largestTs, sorted, lowestTs, sortByTimeStamp, sorted[sorted.length-1][1].date, sorted[0][1].date, blockname);
+        Session.set('largestTs',largestTs);
+        Session.set('lowestTs',lowestTs);
+        Session.set('currentLeft',lowestTs);
+        Session.set('currentRight',largestTs);
+        console.log(rt,"chhchch", [...sortByTimeStamp.entries()].length, rt.length, sorted.length);
+      }
+      pt = rt.map((d) => {
+        // return `${d[0]}, Date:- ${new Date(d[1]/1000)}`;
+        return { text: d[0], date: d[1].date=0 ? '': new Date(d[1].date*1000).toLocaleString().split(',')[0]};
+      });
+      // console.log(pt, "ds");
+      if(blockname === 'configuration')
+        console.log("what is object", pt);
+      return pt;
+      
+    } catch (error) {
+      console.log(aa, error, "ere");
+      return [];
+    }
+    // console.log(aa, "dfsdfds");
+    // return aa;
   },
+  createChart: function () {
+    // Gather data: 
+    const graph_head = Session.get('graph-head');
+    console.log("calling", graph_head);
+    try {
+      
+      const [ blockname, line ] = graph_head.split('~');
+      console.log("calling", blockname, line, lineProps);
+      const blockProps = lineProps.get(blockname);
+      console.log(blockProps, "let-see");
+      if(!blockProps)
+        return;
+      const taskData = blockProps.get(line);
+      console.log("calling taskdata", taskData);
+      if(taskData && taskData.length){
+        const categories = Object.keys(taskData[0]);
+        const series = taskData.map((task, index) => {
+          return {
+            name: `#${index+1}`,
+            data: categories.map(prop => Number(task[prop]))
+          }
+        });
+        Highcharts.chart('chart', {
+          chart: {
+            type: 'column'
+          },
+          title: {
+            text: 'Stacked column chart'
+          },
+          xAxis: {
+            categories: categories
+          },
+          yAxis: {
+            min: 0,
+            title: {
+              text: 'Features'
+            },
+            stackLabels: {
+              enabled: true,
+              style: {
+                fontWeight: 'bold',
+                color: ( // theme
+                  Highcharts.defaultOptions.title.style &&
+                  Highcharts.defaultOptions.title.style.color
+                ) || 'gray'
+              }
+            }
+          },
+          legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor:
+              Highcharts.defaultOptions.legend.backgroundColor || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+          },
+          tooltip: {
+            headerFormat: '<b>{point.x}</b><br/>',
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+          },
+          plotOptions: {
+            column: {
+              stacking: 'normal',
+              dataLabels: {
+                enabled: true
+              }
+            }
+          },
+          series
+        });
+      }
+    
+    
+      Meteor.defer(function() {
+        // Create standard Highcharts chart with options:
+      });
+    } catch (error) {
+      console.log(error, "calling");
+    }
+    // Use Meteor.defer() to craete chart after DOM is ready:
+  
+  }
 };
 
 /*
@@ -918,6 +1303,7 @@ var helpers = {
 _.each(helpers, function(value, key){
   Template.registerHelper(key, value);
 });
+
 
 
 /*

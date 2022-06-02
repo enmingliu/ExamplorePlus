@@ -47,7 +47,7 @@ const writeToFile = function(input, dir){
 var directory = '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/meteor_app/private';
 
 // var app = readFromFolder(directory);
-// writeToFile(app, '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/meteor_app/client/');
+// writeToFile(app, '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/boa/backend/sampleJSON');
 
 
 
