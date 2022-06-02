@@ -6,6 +6,7 @@ import { Examples } from '../api/options.js';
 import { ActionLog } from '../api/actionlog.js';
 import Pycollections from 'pycollections';
 
+
 import './body.html';
 
 var exampleTotal = function(){
@@ -68,7 +69,7 @@ var option_lists = [
   'cleanUpCall'
 ];
 
-console.log(blocknames)
+// console.log(blocknames)
 
 var addSpan = function(exampleID,expressionStart,expressionEnd,blockname){
   if (expressionStart !== -1 && expressionEnd !== -1) {
@@ -290,6 +291,8 @@ Template.body.events({
     var newDataSet = $(event.target).val()
     console.log('Dataset', newDataSet);
     Session.set('dataset', newDataSet);
+    ActionLog.insert({date : new Date(), dataset : newDataSet});
+
   },
   'click .change-dataset'(event, instance){
     console.log('API Change')

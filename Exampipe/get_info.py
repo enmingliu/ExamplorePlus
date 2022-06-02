@@ -1,4 +1,11 @@
 import requests
+import time
+from calendar import timegm
+from datetime import datetime
+from pytz import timezone
+import sys
+from dotenv import load_dotenv
+import os
 
 # TODO: insert code to section out URLs from BOA output
 
@@ -10,11 +17,11 @@ def extract_info(github_URL):
     splits = github_URL.split("/")
     owner = splits[3]
     repo = splits[4]
-    print(owner + ", " + repo)
 
     # insert Github API Access Token
-    username = "nikkiwoo"
-    api_token = "" # TODO
+    load_dotenv()
+    username = os.getenv('USERNAME')
+    api_token = os.getenv('GITHUB_PERSONAL_ACCESS_TOKEN')
 
     # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo
@@ -25,19 +32,19 @@ def extract_info(github_URL):
 
     # GET number of stars
     try:
-        ret["num_stars"] = data['stargazers_count']
+        ret["num_stars"] = int(data['stargazers_count'])
     except:
         ret["num_stars"] = 0
 
     # GET number of forks
     try:
-        ret["num_forks"] = data['forks_count']
+        ret["num_forks"] = int(data['forks_count'])
     except:
         ret["num_forks"] = 0
 
     # GET number of open issues
     try:
-        ret["num_open_issues"] = data['open_issues_count']
+        ret["num_open_issues"] = int(data['open_issues_count'])
     except:
         ret["num_open_issues"] = 0
     # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
@@ -51,12 +58,12 @@ def extract_info(github_URL):
         data = r.headers['Link']
         splits = data.split(">")
         splits = splits[1].split("=")
-        ret["num_contributors"] = splits[-1]
+        ret["num_contributors"] = int(splits[-1])
     except KeyError:
         ret["num_contributors"] = 0
     
 
-    # # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    # THIRD REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/issues?state=closed&per_page=1"
     r = requests.get(url = request_URL, auth=(username,api_token))
 
@@ -68,6 +75,25 @@ def extract_info(github_URL):
         ret["num_closed_issues"] = splits[-1]
     except KeyError:
         ret["num_closed_issues"] = 0
+
+    # FOURTH REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/branches/master"
+    r = requests.get(url = request_URL, auth=(username,api_token))
+
+    # GET time of last commit
+    data = r.json()
+    try: 
+        last_commit = data['commit']['commit']['author']['date']
+        # convert to UTC
+        datetime_object = datetime.strptime(last_commit, "%Y-%m-%dT%H:%M:%SZ")
+        converted = datetime_object.astimezone(timezone('UTC'))
+        converted = converted.strftime("%Y-%m-%dT%H:%M:%SZ")
+        utc_time = time.strptime(converted, "%Y-%m-%dT%H:%M:%SZ")
+        epoch_time = timegm(utc_time)
+        # add to dictionary
+        ret["last_commit"] = epoch_time
+    except:
+        ret["last_commit"] = 0
 
     return ret
 
@@ -130,8 +156,8 @@ def get_authors_info(owner, repo, api_key):
 
 def main():
     # sample url, no need to add /tree/master, just added here for convenience of access
-    github_URL = "https://github.com/ArchimedesCAD/Archimedes/"
-    print(extract_info(github_URL))
+    # github_URL = "https://github.com/ArchimedesCAD/Archimedes/"
+    print(extract_info(sys.argv[1]))
     
 
 if __name__ == "__main__":

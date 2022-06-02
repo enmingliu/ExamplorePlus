@@ -1,3 +1,4 @@
+pj[https://github.com/ARUP-NGS/Pipeline/tree/master/src/main/java/buffer/BEDFile.java] = 1376075332000000
 pj[https://github.com/ARUP-NGS/Pipeline/tree/master/src/main/java/util/VCFLineParser.java] = 1392829867000000
 pj[https://github.com/BrandiATMuhkuh/prore2012gp3/tree/master/android/src/at/ac/tuwien/sportmate/DBHandler.java] = 1358351618000000
 pj[https://github.com/Cyberspice/platform_tools_base/tree/master/sdk-common/src/main/java/com/android/ide/common/resources/configuration/NetworkCodeQualifier.java] = 1363974569000000
@@ -11,6 +12,7 @@ pj[https://github.com/LightGuard/incubator-deltaspike/tree/master/deltaspike/cor
 pj[https://github.com/MiniSEC/adito_reload/tree/master/adito/branches/nonembedded/webapp/src/main/java/com/adito/table/tags/PageSizeTag.java] = 1246530063000000
 pj[https://github.com/NCIP/visda/tree/master/visda/VISDA-Developer/Month-5-yr1/visdaDev-V0.1/src/edu/vt/cbil/visda/view/Plot.java] = 1122987907000000
 pj[https://github.com/NF28Group/Vmote/tree/master/src/fr/nf28/vmote/play/classes/Media.java] = 1371243619000000
+pj[https://github.com/QADM/SCG/tree/master/opentaps-1.5/applications/order/src/org/ofbiz/order/shoppingcart/ShoppingCartEvents.java] = 1374929009000000
 pj[https://github.com/QADM/SCG/tree/master/opentaps-1.5/framework/base/src/org/ofbiz/base/util/UtilValidate.java] = 1374929707000000
 pj[https://github.com/RomRaider/original.flat/tree/master/tags/0.2.5/src/Enginuity/SwingComponents/TableToolBar.java] = 1151477009000000
 pj[https://github.com/RudolfWeeber/eyes-free/tree/master/trunk/tts/espeak-tts/src/com/googlecode/eyesfree/espeak/SpeechSynthesis.java] = 1335563455000000
@@ -36,6 +38,7 @@ pj[https://github.com/eea/geonetwork-eea/tree/master/web/src/main/java/org/fao/g
 pj[https://github.com/ekirkilevics/TestSSQL/tree/master/archive/thirdparty-non-maven/toniclf-1.0.5/src/com/digitprop/tonic/TonicUtils.java] = 1282419771000000
 pj[https://github.com/fullwall/Citizens/tree/master/src/core/net/citizensnpcs/utils/ConversationUtils.java] = 1312558169000000
 pj[https://github.com/funambol-mirror/funambol-client-sdk/tree/master/us8294/examples/jsync/src/com/funambol/jsync/JSync.java] = 1307112944000000
+pj[https://github.com/funambol-mirror/funambol-client-sdk/tree/master/us8528/client/src/main/java/com/funambol/client/test/basic/BasicCommandRunner.java] = 1305611322000000
 pj[https://github.com/fyp09008/E-HospitalS/tree/master/lib/mysql-connector-java-5.1.12/src/com/mysql/jdbc/LoadBalancingConnectionProxy.java] = 1268905256000000
 pj[https://github.com/georchestra/geonetwork/tree/master/web/src/main/java/org/fao/geonet/guiservices/metadata/GetRandom.java] = 1368782089000000
 pj[https://github.com/gnuton/Playground/tree/master/HTML5/fleeingchick/platforms/android/CordovaLib/src/org/apache/cordova/ExifHelper.java] = 1393329156000000
@@ -48,6 +51,7 @@ pj[https://github.com/jenkinsci/jacoco-plugin/tree/master/src/main/java/hudson/p
 pj[https://github.com/jonnyzzz/maragogype/tree/master/tags/v1.6/java/com/xerox/amazonws/sdb/DataUtils.java] = 1299597605000000
 pj[https://github.com/jpfx1342/mlparch/tree/master/src/mlparch/MLPArch.java] = 1361813271000000
 pj[https://github.com/jponge/izpack-full-svn-history-copy/tree/master/izpack-src/tags/release-3-6-0/src/lib/com/izforge/izpack/panels/RuleInputField.java] = 1091012075000000
+pj[https://github.com/justin808/dof/tree/master/dof_junit/src/org/doframework/sample/persistence/jdbc_persistence/JdbcManufacturerPersistence.java] = 1225053049000000
 pj[https://github.com/justin808/dof/tree/master/workshop/Exercise3-AccountingDOF/junit/org/doframework/sample/jdbc_app/test/dof/CustomerDOFHandler.java] = 1215790019000000
 pj[https://github.com/kazkus/noquarter/tree/master/src/main/java/us/kazk/noquarter/chart/SimpleChart.java] = 1357323857000000
 pj[https://github.com/kitkatandroid/JLS36G_base/tree/master/cmds/wm/src/com/android/commands/wm/Wm.java] = 1380173574000000
@@ -73,9 +77,13 @@ pj[https://github.com/rnewson/couchdb-lucene/tree/master/src/main/java/com/githu
 pj[https://github.com/se-inbelly-com/se-master/tree/master/tree/master/src/main/java/com/megalogika/sv/service/SearchCriteria.java] = 0
 pj[https://github.com/shallada/ChessExtended/tree/master/src/AIClient.java] = 1320165712000000
 pj[https://github.com/srnsw/xena/tree/master/plugins/html/ext/src/xalan-j_2_7_1/src/org/apache/xml/utils/URI.java] = 1271209269000000
+pj[https://github.com/srnsw/xena/tree/master/xena/ext/src/xalan-j_2_7_1/src/org/apache/xalan/xsltc/compiler/Output.java] = 1271209269000000
 pj[https://github.com/subgraph/Vega/tree/master/platform/com.subgraph.vega.http.proxy/src/com/subgraph/vega/internal/http/proxy/VegaHttpService.java] = 1308320033000000
+pj[https://github.com/svn2github/plantuml/tree/master/tags/plantuml-7934/src/net/sourceforge/plantuml/png/PngSplitter.java] = 1347219407000000
 pj[https://github.com/svn2github/plantuml/tree/master/tags/plantuml-7941/src/net/sourceforge/plantuml/SkinParam.java] = 1353449279000000
 pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.0.13/kernel-util/src/main/java/org/sakaiproject/util/Web.java] = 1263942138000000
+pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.0.18/kernel-impl/src/main/java/org/sakaiproject/db/impl/BasicSqlService.java] = 1281769699000000
+pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.3.3/kernel-impl/src/main/java/org/sakaiproject/tool/impl/SessionComponent.java] = 1377039363000000
 pj[https://github.com/teropa/stem/tree/master/org.eclipse.stem.utility/src/org/eclipse/stem/utility/generators/AttenuateLogFile.java] = 1258989366000000
 pj[https://github.com/thecarlhall/follow/tree/master/src/main/java/ghm/follow/config/FollowAppAttributes.java] = 1300221538000000
 pj[https://github.com/thelabtech/staffsite-java/tree/master/common-src/source/org/alt60m/html/Formatter.java] = 1160035969000000
@@ -83,10 +91,13 @@ pj[https://github.com/thihy/lucene/tree/master/solr/core/src/java/org/apache/sol
 pj[https://github.com/titokone/kohahdus/tree/master/EAssari/WEB-INF/src/fi/helsinki/cs/kohahdus/criteria/VariableCriterion.java] = 1166100423000000
 pj[https://github.com/utgenome/utgb/tree/master/utgb-core/src/main/java/org/utgenome/format/keyword/KeywordDB.java] = 1306850712000000
 pj[https://github.com/wjcquking/fuzzyJoin/tree/master/WordCount/src/org/macau/flickr/knn/exact/second/kNNJoinMapper.java] = 1393308346000000
+pj[https://github.com/wjcquking/fuzzyJoin/tree/master/WordCount/src/org/macau/local/sample/SpatialBlackBoxWR2.java] = 1413878159000000
 pj[https://github.com/wubs/485-Project/tree/master/pa6/hadoop/src/contrib/data_join/src/test/org/apache/hadoop/contrib/utils/join/TestDataJoin.java] = 1366394819000000
 pj[https://github.com/yeyue910107/MR-Packer/tree/master/src/testquery2.java] = 1383731336000000
 pj[https://github.com/yukoff/concourse-connect/tree/master/src/main/java/com/concursive/connect/web/modules/documents/dao/FileItemList.java] = 1276826367000000
+pj[https://github.com/yukoff/concourse-connect/tree/master/src/main/java/com/concursive/connect/web/modules/issues/dao/TicketList.java] = 1276826367000000
 pj[https://github.com/zeph/grinder/tree/master/source/src/HTTPClient/HTTPResponse.java] = 1252584510000000
+pj1[https://github.com/ARUP-NGS/Pipeline/src/main/java/buffer/BEDFile.java] = 10
 pj1[https://github.com/ARUP-NGS/Pipeline/src/main/java/util/VCFLineParser.java] = 10
 pj1[https://github.com/BrandiATMuhkuh/prore2012gp3/android/src/at/ac/tuwien/sportmate/DBHandler.java] = 5
 pj1[https://github.com/Cyberspice/platform_tools_base/sdk-common/src/main/java/com/android/ide/common/resources/configuration/NetworkCodeQualifier.java] = 19
@@ -100,6 +111,7 @@ pj1[https://github.com/LightGuard/incubator-deltaspike/deltaspike/core/impl/src/
 pj1[https://github.com/MiniSEC/adito_reload/adito/branches/nonembedded/webapp/src/main/java/com/adito/table/tags/PageSizeTag.java] = 22
 pj1[https://github.com/NCIP/visda/visda/VISDA-Developer/Month-5-yr1/visdaDev-V0.1/src/edu/vt/cbil/visda/view/Plot.java] = 6
 pj1[https://github.com/NF28Group/Vmote/src/fr/nf28/vmote/play/classes/Media.java] = 4
+pj1[https://github.com/QADM/SCG/opentaps-1.5/applications/order/src/org/ofbiz/order/shoppingcart/ShoppingCartEvents.java] = 12
 pj1[https://github.com/QADM/SCG/opentaps-1.5/framework/base/src/org/ofbiz/base/util/UtilValidate.java] = 12
 pj1[https://github.com/RomRaider/original.flat/tags/0.2.5/src/Enginuity/SwingComponents/TableToolBar.java] = 7
 pj1[https://github.com/RudolfWeeber/eyes-free/trunk/tts/espeak-tts/src/com/googlecode/eyesfree/espeak/SpeechSynthesis.java] = 20
@@ -125,6 +137,7 @@ pj1[https://github.com/eea/geonetwork-eea/web/src/main/java/org/fao/geonet/servi
 pj1[https://github.com/ekirkilevics/TestSSQL/archive/thirdparty-non-maven/toniclf-1.0.5/src/com/digitprop/tonic/TonicUtils.java] = 23
 pj1[https://github.com/fullwall/Citizens/src/core/net/citizensnpcs/utils/ConversationUtils.java] = 6
 pj1[https://github.com/funambol-mirror/funambol-client-sdk/us8294/examples/jsync/src/com/funambol/jsync/JSync.java] = 6
+pj1[https://github.com/funambol-mirror/funambol-client-sdk/us8528/client/src/main/java/com/funambol/client/test/basic/BasicCommandRunner.java] = 6
 pj1[https://github.com/fyp09008/E-HospitalS/lib/mysql-connector-java-5.1.12/src/com/mysql/jdbc/LoadBalancingConnectionProxy.java] = 1
 pj1[https://github.com/georchestra/geonetwork/web/src/main/java/org/fao/geonet/guiservices/metadata/GetRandom.java] = 40
 pj1[https://github.com/gnuton/Playground/HTML5/fleeingchick/platforms/android/CordovaLib/src/org/apache/cordova/ExifHelper.java] = 2
@@ -137,6 +150,7 @@ pj1[https://github.com/jenkinsci/jacoco-plugin/src/main/java/hudson/plugins/jaco
 pj1[https://github.com/jonnyzzz/maragogype/tags/v1.6/java/com/xerox/amazonws/sdb/DataUtils.java] = 8
 pj1[https://github.com/jpfx1342/mlparch/src/mlparch/MLPArch.java] = 1
 pj1[https://github.com/jponge/izpack-full-svn-history-copy/izpack-src/tags/release-3-6-0/src/lib/com/izforge/izpack/panels/RuleInputField.java] = 45
+pj1[https://github.com/justin808/dof/dof_junit/src/org/doframework/sample/persistence/jdbc_persistence/JdbcManufacturerPersistence.java] = 4
 pj1[https://github.com/justin808/dof/workshop/Exercise3-AccountingDOF/junit/org/doframework/sample/jdbc_app/test/dof/CustomerDOFHandler.java] = 4
 pj1[https://github.com/kazkus/noquarter/src/main/java/us/kazk/noquarter/chart/SimpleChart.java] = 2
 pj1[https://github.com/kitkatandroid/JLS36G_base/cmds/wm/src/com/android/commands/wm/Wm.java] = 2
@@ -162,9 +176,13 @@ pj1[https://github.com/rnewson/couchdb-lucene/src/main/java/com/github/rnewson/c
 pj1[https://github.com/se-inbelly-com/se-master/tree/master/src/main/java/com/megalogika/sv/service/SearchCriteria.java] = 10
 pj1[https://github.com/shallada/ChessExtended/src/AIClient.java] = 8
 pj1[https://github.com/srnsw/xena/plugins/html/ext/src/xalan-j_2_7_1/src/org/apache/xml/utils/URI.java] = 10
+pj1[https://github.com/srnsw/xena/xena/ext/src/xalan-j_2_7_1/src/org/apache/xalan/xsltc/compiler/Output.java] = 10
 pj1[https://github.com/subgraph/Vega/platform/com.subgraph.vega.http.proxy/src/com/subgraph/vega/internal/http/proxy/VegaHttpService.java] = 9
+pj1[https://github.com/svn2github/plantuml/tags/plantuml-7934/src/net/sourceforge/plantuml/png/PngSplitter.java] = 1
 pj1[https://github.com/svn2github/plantuml/tags/plantuml-7941/src/net/sourceforge/plantuml/SkinParam.java] = 1
 pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.0.13/kernel-util/src/main/java/org/sakaiproject/util/Web.java] = 37
+pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.0.18/kernel-impl/src/main/java/org/sakaiproject/db/impl/BasicSqlService.java] = 37
+pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.3.3/kernel-impl/src/main/java/org/sakaiproject/tool/impl/SessionComponent.java] = 37
 pj1[https://github.com/teropa/stem/org.eclipse.stem.utility/src/org/eclipse/stem/utility/generators/AttenuateLogFile.java] = 6
 pj1[https://github.com/thecarlhall/follow/src/main/java/ghm/follow/config/FollowAppAttributes.java] = 6
 pj1[https://github.com/thelabtech/staffsite-java/common-src/source/org/alt60m/html/Formatter.java] = 23
@@ -172,7 +190,9 @@ pj1[https://github.com/thihy/lucene/solr/core/src/java/org/apache/solr/schema/Fi
 pj1[https://github.com/titokone/kohahdus/EAssari/WEB-INF/src/fi/helsinki/cs/kohahdus/criteria/VariableCriterion.java] = 6
 pj1[https://github.com/utgenome/utgb/utgb-core/src/main/java/org/utgenome/format/keyword/KeywordDB.java] = 8
 pj1[https://github.com/wjcquking/fuzzyJoin/WordCount/src/org/macau/flickr/knn/exact/second/kNNJoinMapper.java] = 3
+pj1[https://github.com/wjcquking/fuzzyJoin/WordCount/src/org/macau/local/sample/SpatialBlackBoxWR2.java] = 3
 pj1[https://github.com/wubs/485-Project/pa6/hadoop/src/contrib/data_join/src/test/org/apache/hadoop/contrib/utils/join/TestDataJoin.java] = 6
 pj1[https://github.com/yeyue910107/MR-Packer/src/testquery2.java] = 4
 pj1[https://github.com/yukoff/concourse-connect/src/main/java/com/concursive/connect/web/modules/documents/dao/FileItemList.java] = 6
+pj1[https://github.com/yukoff/concourse-connect/src/main/java/com/concursive/connect/web/modules/issues/dao/TicketList.java] = 6
 pj1[https://github.com/zeph/grinder/source/src/HTTPClient/HTTPResponse.java] = 4

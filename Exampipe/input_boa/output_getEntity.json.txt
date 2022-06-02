@@ -4,6 +4,8 @@ pj[https://github.com/DomoTop/DomoTop/tree/master/Product/Android/tests/src/org/
 pj[https://github.com/Findwise/Hydra/tree/master/stages/utils/http/src/main/java/com/findwise/utils/http/HttpFetcher.java] = 1392323249000000
 pj[https://github.com/Genshin/SpreeWarehouseAndroid/tree/master/src/org/genshin/spree/RESTConnector.java] = 1340703582000000
 pj[https://github.com/Ian-Wright1979/INB372-Solar/tree/master/INB372-SolarAndroid/src/solar/solarAndroid/SolarPowerCalculator.java] = 1350968336000000
+pj[https://github.com/ImmobilienScout24/yum-repo-server/tree/master/src/test/java/de/is24/infrastructure/gridfs/http/security/AuthenticationIT.java] = 1389082562000000
+pj[https://github.com/ImmobilienScout24/yum-repo-server/tree/master/src/test/java/de/is24/infrastructure/gridfs/http/web/controller/StaticRepositoryInfoControllerIT.java] = 1377798108000000
 pj[https://github.com/ImmobilienScout24/yum-repo-server/tree/master/src/test/java/de/is24/infrastructure/gridfs/http/web/controller/StaticRepositoryInfoControllerIT.java] = 1377798108000000
 pj[https://github.com/Jasig/sched-assist/tree/master/sched-assist-spi-caldav/src/main/java/org/jasig/schedassist/impl/caldav/CaldavCalendarDataDaoImpl.java] = 1354123177000000
 pj[https://github.com/Lowkey2224/HAW_App/tree/master/src/com/example/haw_app/veranstaltungsplan/implementations/Veranstaltungsplan.java] = 1371231116000000
@@ -11,6 +13,7 @@ pj[https://github.com/MIT-Mobile/MIT-Mobile-for-Android/tree/master/src/edu/mit/
 pj[https://github.com/OMFGB/packages_apps_Browser/tree/master/src/com/android/browser/search/OpenSearchSearchEngine.java] = 1285547417000000
 pj[https://github.com/OSAStudio/newshub/tree/master/src/com/osastudio/newshub/net/NewsBaseApi.java] = 1382277352000000
 pj[https://github.com/RonnieVandenPoel/SourceFish/tree/master/Java-semester1/GUI/Entry.java] = 1361442856000000
+pj[https://github.com/RonnieVandenPoel/SourceFish/tree/master/SourceDroid/projectmanagement/src/com/fedorvlasov/lazylist/ImageLoader.java] = 1364217743000000
 pj[https://github.com/SAP/cloud-odata-java/tree/master/odata-fit/src/test/java/com/sap/core/odata/fit/basic/UrlRewriteTest.java] = 1377247548000000
 pj[https://github.com/SmartBear/soapui/tree/master/soapui/src/main/java/com/eviware/soapui/impl/wsdl/submit/transports/http/HttpMethodSupport.java] = 1385734075000000
 pj[https://github.com/Sravan2j/Cinequest-Android/tree/master/Android/src/edu/sjsu/cinequest/android/AndroidWebConnection.java] = 1380106928000000
@@ -28,7 +31,9 @@ pj[https://github.com/bulldog2011/nano/tree/master/sample/binding/AndroidMovieSe
 pj[https://github.com/cloudfoundry-community/cf-java-component/tree/master/cf-spring/src/test/java/cf/spring/CfComponentTest.java] = 1394489957000000
 pj[https://github.com/cloudsoft/brooklyn-marklogic/tree/master/brooklyn-marklogic-api/src/main/java/io/cloudsoft/marklogic/client/Responses.java] = 1383839788000000
 pj[https://github.com/conxgit/conxlogistics-gerrit4/tree/master/com.conx.logistics.kernel/documentlibrary/remote.services.impl/src/main/java/com/conx/logistics/kernel/documentlibrary/remote/services/impl/LiferayPortalDocumentRepositoryImpl.java] = 1355719397000000
+pj[https://github.com/conxgit/conxlogistics-gerrit4/tree/master/com.conx.logistics.kernel/portal/remote.services.impl/src/main/java/com/conx/logistics/kernel/portal/remote/services/impl/LiferayPortalServicesImpl.java] = 1347299088000000
 pj[https://github.com/crh/escidoc-core-1.4/tree/master/integration-tests/src/test/java/de/escidoc/core/test/aa/UserGroupTestBase.java] = 1310397734000000
+pj[https://github.com/crh/escidoc-core-1.4/tree/master/integration-tests/src/test/java/de/escidoc/core/test/sb/SbTestBase.java] = 1326698872000000
 pj[https://github.com/darrenjl/pdfrun/tree/master/OpenGPSTracker/external_sources/httpclient-4.1.1/httpclient/src/test/java/org/apache/ogt/http/impl/client/TestDefaultClientRequestDirector.java] = 1352022046000000
 pj[https://github.com/deegree/deegree3/tree/master/uncoupled/orphaned-after-3.2/deegree-featurestore-couchbase/src/main/java/org/deegree/feature/persistence/geocouch/GeoCouchFeatureStore.java] = 1392993195000000
 pj[https://github.com/dhara-uom/WPS/tree/master/52n-wps-server/src/main/java/org/n52/wps/server/request/strategy/DefaultReferenceStrategy.java] = 1374064091000000
@@ -36,7 +41,9 @@ pj[https://github.com/dzo/packages_providers_downloadprovider/tree/master/src/co
 pj[https://github.com/easysoa/EasySOA/tree/master/easysoa-proxy/easysoa-proxy-core/easysoa-proxy-core-tests/src/test/java/org/easysoa/tests/ScenarioTest.java] = 1362126119000000
 pj[https://github.com/edaniels/Seminole_Tix/tree/master/src/com/dunksoftware/seminoletix/ListActivity.java] = 1366261471000000
 pj[https://github.com/erichkleung/trydish/tree/master/src/com/trydish/review/ReviewHome.java] = 1368324028000000
+pj[https://github.com/erichkleung/trydish/tree/master/src/com/trydish/review/ReviewHome.java] = 1368324028000000
 pj[https://github.com/escidoc/escidoc-core/tree/master/integration-tests/src/test/java/de/escidoc/core/test/sm/PreprocessingTestBase.java] = 1331908026000000
+pj[https://github.com/escidoc/escidoc-core/tree/master/persistence-impl/src/main/java/org/escidoc/core/persistence/impl/fedora/util/HttpUtil.java] = 1349779713000000
 pj[https://github.com/ese-unibe-ch/ese2013-team7/tree/master/Programming/Mensa@Unibe/src/com/ese2013/mensaunibe/map/GetMapDirection.java] = 1385650036000000
 pj[https://github.com/faux123/android_packages_apps_Browser/tree/master/src/com/android/browser/DownloadTouchIcon.java] = 1273687592000000
 pj[https://github.com/fcrepo/fcrepo/tree/master/fcrepo-integrationtest/fcrepo-integrationtest-core/src/main/java/org/fcrepo/test/api/TestRESTAPI.java] = 1383400255000000
@@ -51,6 +58,9 @@ pj[https://github.com/jifeee/tb/tree/master/Desktop/Textbuster/src/com/access2/G
 pj[https://github.com/jmcc0nn3ll/jetty-project/tree/master/jetty-reverse-http/reverse-http-client/src/main/java/org/mortbay/jetty/rhttp/client/ApacheClient.java] = 1330966283000000
 pj[https://github.com/kerpie/truTest/tree/master/src/com/trustripes/adapters/CustomViewPagerAdapter.java] = 1360848699000000
 pj[https://github.com/luigiliquori/myMed/tree/master/frontend/binary/android/myEdu/lib/httpcomponents-client-4.1.2/examples/org/apache/http/examples/client/ClientExecuteDirect.java] = 1363965118000000
+pj[https://github.com/luigiliquori/myMed/tree/master/frontend/binary/android/myEuroCin/lib/httpcomponents-client-4.1.2/examples/org/apache/http/examples/client/ClientGZipContentCompression.java] = 1363965118000000
+pj[https://github.com/luigiliquori/myMed/tree/master/frontend/binary/android/myFSA/lib/httpcomponents-client-4.1.2/examples/org/apache/http/examples/client/ClientAuthentication.java] = 1363965118000000
+pj[https://github.com/luigiliquori/myMed/tree/master/frontend/binary/android/myjam/src/com/mymed/android/myjam/controller/HttpCall.java] = 1363965118000000
 pj[https://github.com/madeye/dbartists/tree/master/src/org/dbartists/StreamProxy.java] = 1326592786000000
 pj[https://github.com/masconsult/bgBanking/tree/master/bgBanking/src/eu/masconsult/bgbanking/banks/fibank/ebanking/EFIBankClient.java] = 1348124329000000
 pj[https://github.com/mathieupedrero/eclihand/tree/master/eclihand/rest-server/src/test/java/com/pedrero/eclihand/rest/security/AuthenticationSimulator.java] = 1428477184000000
@@ -60,6 +70,7 @@ pj[https://github.com/michaelgobbers/QuantifyThis/tree/master/QuantifyThisAndroi
 pj[https://github.com/mitmel/Locast-Android-UNICEF/tree/master/src/edu/mit/mobile/android/locast/net/NetworkClient.java] = 1320845312000000
 pj[https://github.com/mmoutenot/SandFox/tree/master/mobile/android/base/sync/net/SyncResponse.java] = 1338489138000000
 pj[https://github.com/mortenpi/ebookdroid/tree/master/src/org/ebookdroid/opds/OPDSClient.java] = 1356429508000000
+pj[https://github.com/nasa/coeci-cms-mpsp/tree/master/pesp-jboss/cms-external-sources/services/src/main/java/gov/medicaid/screening/dao/impl/HealthCareCommonDAO.java] = 1369299486000000
 pj[https://github.com/nasa/coeci-cms-mpsp/tree/master/pesp-jboss/cms-external-sources/services/src/main/java/gov/medicaid/screening/dao/impl/NursingLicenseDAOBean.java] = 1369299486000000
 pj[https://github.com/nblair/sometime/tree/master/sometime-spi-caldav/src/main/java/org/jasig/schedassist/impl/caldav/CaldavCalendarDataDaoImpl.java] = 1359569640000000
 pj[https://github.com/odata4j/odata4j/tree/master/odata4j-fit/src/test/java/org/odata4j/test/integration/issues/Issue184Test.java] = 1340794493000000
@@ -82,6 +93,7 @@ pj[https://github.com/srl-mcgill/rter/tree/master/android/rter/src/ca/nehil/rter
 pj[https://github.com/struberg/deltaspike/tree/master/deltaspike/modules/servlet/impl/src/test/java/org/apache/deltaspike/test/servlet/impl/event/session/SessionEventsTest.java] = 1378190728000000
 pj[https://github.com/tentejswi/PersonalityExtraction/tree/master/lair/freebase-java-1.0.0/src/main/java/com/freebase/api/Freebase.java] = 1291006244000000
 pj[https://github.com/tjhart/swivel/tree/master/swivel-server/src/test/java/com/tjh/swivel/model/ResponseFactoryTest.java] = 1383011897000000
+pj[https://github.com/tjhart/swivel/tree/master/swivel-server/src/test/java/com/tjh/swivel/model/ResponseFactoryTest.java] = 1383011897000000
 pj[https://github.com/tomdong/borrow/tree/master/src/com/intalker/borrow/cloud/CloudUtility.java] = 1366290388000000
 pj[https://github.com/ujayant/acal/tree/master/src/com/morphoss/acal/service/connector/AcalRequestor.java] = 1361744608000000
 pj[https://github.com/voxeolabs/moho/tree/master/moho-impl/src/main/java/com/voxeo/moho/imified/ImifiedEndpointImpl.java] = 1311249095000000
@@ -92,13 +104,15 @@ pj1[https://github.com/DomoTop/DomoTop/Product/Android/tests/src/org/openremote/
 pj1[https://github.com/Findwise/Hydra/stages/utils/http/src/main/java/com/findwise/utils/http/HttpFetcher.java] = 20
 pj1[https://github.com/Genshin/SpreeWarehouseAndroid/src/org/genshin/spree/RESTConnector.java] = 3
 pj1[https://github.com/Ian-Wright1979/INB372-Solar/INB372-SolarAndroid/src/solar/solarAndroid/SolarPowerCalculator.java] = 8
-pj1[https://github.com/ImmobilienScout24/yum-repo-server/src/test/java/de/is24/infrastructure/gridfs/http/web/controller/StaticRepositoryInfoControllerIT.java] = 20
+pj1[https://github.com/ImmobilienScout24/yum-repo-server/src/test/java/de/is24/infrastructure/gridfs/http/security/AuthenticationIT.java] = 20
+pj1[https://github.com/ImmobilienScout24/yum-repo-server/src/test/java/de/is24/infrastructure/gridfs/http/web/controller/StaticRepositoryInfoControllerIT.java] = 40
 pj1[https://github.com/Jasig/sched-assist/sched-assist-spi-caldav/src/main/java/org/jasig/schedassist/impl/caldav/CaldavCalendarDataDaoImpl.java] = 3
 pj1[https://github.com/Lowkey2224/HAW_App/src/com/example/haw_app/veranstaltungsplan/implementations/Veranstaltungsplan.java] = 8
 pj1[https://github.com/MIT-Mobile/MIT-Mobile-for-Android/src/edu/mit/mitmobile2/ConnectionWrapper.java] = 13
 pj1[https://github.com/OMFGB/packages_apps_Browser/src/com/android/browser/search/OpenSearchSearchEngine.java] = 63
 pj1[https://github.com/OSAStudio/newshub/src/com/osastudio/newshub/net/NewsBaseApi.java] = 3
 pj1[https://github.com/RonnieVandenPoel/SourceFish/Java-semester1/GUI/Entry.java] = 5
+pj1[https://github.com/RonnieVandenPoel/SourceFish/SourceDroid/projectmanagement/src/com/fedorvlasov/lazylist/ImageLoader.java] = 5
 pj1[https://github.com/SAP/cloud-odata-java/odata-fit/src/test/java/com/sap/core/odata/fit/basic/UrlRewriteTest.java] = 21
 pj1[https://github.com/SmartBear/soapui/soapui/src/main/java/com/eviware/soapui/impl/wsdl/submit/transports/http/HttpMethodSupport.java] = 26
 pj1[https://github.com/Sravan2j/Cinequest-Android/Android/src/edu/sjsu/cinequest/android/AndroidWebConnection.java] = 7
@@ -116,15 +130,18 @@ pj1[https://github.com/bulldog2011/nano/sample/binding/AndroidMovieSearchAppProj
 pj1[https://github.com/cloudfoundry-community/cf-java-component/cf-spring/src/test/java/cf/spring/CfComponentTest.java] = 2
 pj1[https://github.com/cloudsoft/brooklyn-marklogic/brooklyn-marklogic-api/src/main/java/io/cloudsoft/marklogic/client/Responses.java] = 6
 pj1[https://github.com/conxgit/conxlogistics-gerrit4/com.conx.logistics.kernel/documentlibrary/remote.services.impl/src/main/java/com/conx/logistics/kernel/documentlibrary/remote/services/impl/LiferayPortalDocumentRepositoryImpl.java] = 5
+pj1[https://github.com/conxgit/conxlogistics-gerrit4/com.conx.logistics.kernel/portal/remote.services.impl/src/main/java/com/conx/logistics/kernel/portal/remote/services/impl/LiferayPortalServicesImpl.java] = 5
 pj1[https://github.com/crh/escidoc-core-1.4/integration-tests/src/test/java/de/escidoc/core/test/aa/UserGroupTestBase.java] = 5
+pj1[https://github.com/crh/escidoc-core-1.4/integration-tests/src/test/java/de/escidoc/core/test/sb/SbTestBase.java] = 5
 pj1[https://github.com/darrenjl/pdfrun/OpenGPSTracker/external_sources/httpclient-4.1.1/httpclient/src/test/java/org/apache/ogt/http/impl/client/TestDefaultClientRequestDirector.java] = 6
 pj1[https://github.com/deegree/deegree3/uncoupled/orphaned-after-3.2/deegree-featurestore-couchbase/src/main/java/org/deegree/feature/persistence/geocouch/GeoCouchFeatureStore.java] = 38
 pj1[https://github.com/dhara-uom/WPS/52n-wps-server/src/main/java/org/n52/wps/server/request/strategy/DefaultReferenceStrategy.java] = 27
 pj1[https://github.com/dzo/packages_providers_downloadprovider/src/com/android/providers/downloads/DownloadThread.java] = 29
 pj1[https://github.com/easysoa/EasySOA/easysoa-proxy/easysoa-proxy-core/easysoa-proxy-core-tests/src/test/java/org/easysoa/tests/ScenarioTest.java] = 13
 pj1[https://github.com/edaniels/Seminole_Tix/src/com/dunksoftware/seminoletix/ListActivity.java] = 5
-pj1[https://github.com/erichkleung/trydish/src/com/trydish/review/ReviewHome.java] = 6
+pj1[https://github.com/erichkleung/trydish/src/com/trydish/review/ReviewHome.java] = 12
 pj1[https://github.com/escidoc/escidoc-core/integration-tests/src/test/java/de/escidoc/core/test/sm/PreprocessingTestBase.java] = 17
+pj1[https://github.com/escidoc/escidoc-core/persistence-impl/src/main/java/org/escidoc/core/persistence/impl/fedora/util/HttpUtil.java] = 17
 pj1[https://github.com/ese-unibe-ch/ese2013-team7/Programming/Mensa@Unibe/src/com/ese2013/mensaunibe/map/GetMapDirection.java] = 7
 pj1[https://github.com/faux123/android_packages_apps_Browser/src/com/android/browser/DownloadTouchIcon.java] = 63
 pj1[https://github.com/fcrepo/fcrepo/fcrepo-integrationtest/fcrepo-integrationtest-core/src/main/java/org/fcrepo/test/api/TestRESTAPI.java] = 20
@@ -139,6 +156,9 @@ pj1[https://github.com/jifeee/tb/Desktop/Textbuster/src/com/access2/GetMac.java]
 pj1[https://github.com/jmcc0nn3ll/jetty-project/jetty-reverse-http/reverse-http-client/src/main/java/org/mortbay/jetty/rhttp/client/ApacheClient.java] = 15
 pj1[https://github.com/kerpie/truTest/src/com/trustripes/adapters/CustomViewPagerAdapter.java] = 5
 pj1[https://github.com/luigiliquori/myMed/frontend/binary/android/myEdu/lib/httpcomponents-client-4.1.2/examples/org/apache/http/examples/client/ClientExecuteDirect.java] = 27
+pj1[https://github.com/luigiliquori/myMed/frontend/binary/android/myEuroCin/lib/httpcomponents-client-4.1.2/examples/org/apache/http/examples/client/ClientGZipContentCompression.java] = 27
+pj1[https://github.com/luigiliquori/myMed/frontend/binary/android/myFSA/lib/httpcomponents-client-4.1.2/examples/org/apache/http/examples/client/ClientAuthentication.java] = 27
+pj1[https://github.com/luigiliquori/myMed/frontend/binary/android/myjam/src/com/mymed/android/myjam/controller/HttpCall.java] = 27
 pj1[https://github.com/madeye/dbartists/src/org/dbartists/StreamProxy.java] = 1
 pj1[https://github.com/masconsult/bgBanking/bgBanking/src/eu/masconsult/bgbanking/banks/fibank/ebanking/EFIBankClient.java] = 2
 pj1[https://github.com/mathieupedrero/eclihand/eclihand/rest-server/src/test/java/com/pedrero/eclihand/rest/security/AuthenticationSimulator.java] = 6
@@ -148,6 +168,7 @@ pj1[https://github.com/michaelgobbers/QuantifyThis/QuantifyThisAndroid/src/be/mu
 pj1[https://github.com/mitmel/Locast-Android-UNICEF/src/edu/mit/mobile/android/locast/net/NetworkClient.java] = 3
 pj1[https://github.com/mmoutenot/SandFox/mobile/android/base/sync/net/SyncResponse.java] = 2
 pj1[https://github.com/mortenpi/ebookdroid/src/org/ebookdroid/opds/OPDSClient.java] = 9
+pj1[https://github.com/nasa/coeci-cms-mpsp/pesp-jboss/cms-external-sources/services/src/main/java/gov/medicaid/screening/dao/impl/HealthCareCommonDAO.java] = 3
 pj1[https://github.com/nasa/coeci-cms-mpsp/pesp-jboss/cms-external-sources/services/src/main/java/gov/medicaid/screening/dao/impl/NursingLicenseDAOBean.java] = 3
 pj1[https://github.com/nblair/sometime/sometime-spi-caldav/src/main/java/org/jasig/schedassist/impl/caldav/CaldavCalendarDataDaoImpl.java] = 3
 pj1[https://github.com/odata4j/odata4j/odata4j-fit/src/test/java/org/odata4j/test/integration/issues/Issue184Test.java] = 23
@@ -169,7 +190,7 @@ pj1[https://github.com/slok/mdissphoto/mdiss-api/src/test/java/org/mdissjava/api
 pj1[https://github.com/srl-mcgill/rter/android/rter/src/ca/nehil/rter/streamingapp2/FFmpegFrameSender.java] = 11
 pj1[https://github.com/struberg/deltaspike/deltaspike/modules/servlet/impl/src/test/java/org/apache/deltaspike/test/servlet/impl/event/session/SessionEventsTest.java] = 22
 pj1[https://github.com/tentejswi/PersonalityExtraction/lair/freebase-java-1.0.0/src/main/java/com/freebase/api/Freebase.java] = 5
-pj1[https://github.com/tjhart/swivel/swivel-server/src/test/java/com/tjh/swivel/model/ResponseFactoryTest.java] = 2
+pj1[https://github.com/tjhart/swivel/swivel-server/src/test/java/com/tjh/swivel/model/ResponseFactoryTest.java] = 4
 pj1[https://github.com/tomdong/borrow/src/com/intalker/borrow/cloud/CloudUtility.java] = 3
 pj1[https://github.com/ujayant/acal/src/com/morphoss/acal/service/connector/AcalRequestor.java] = 4
 pj1[https://github.com/voxeolabs/moho/moho-impl/src/main/java/com/voxeo/moho/imified/ImifiedEndpointImpl.java] = 14
