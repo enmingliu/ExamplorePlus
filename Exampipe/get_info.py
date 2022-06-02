@@ -4,6 +4,8 @@ from calendar import timegm
 from datetime import datetime
 from pytz import timezone
 import sys
+from dotenv import load_dotenv
+import os
 
 # TODO: insert code to section out URLs from BOA output
 
@@ -17,28 +19,29 @@ def extract_info(github_URL):
     repo = splits[4]
 
     # insert Github API Access Token
-    username = "ZacYoutube"
-    api_token = "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"
+    load_dotenv()
+    username = os.getenv('USERNAME')
+    api_token = os.getenv('GITHUB_PERSONAL_ACCESS_TOKEN')
 
     # FIRST REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    # request_URL = "https://api.github.com/repos/" + owner + "/" + repo
-    # # sending get request and saving the response as response object
-    # r = requests.get(url = request_URL, auth=(username,api_token))
-    # # extracting data in json format
-    # data = r.json()
+    request_URL = "https://api.github.com/repos/" + owner + "/" + repo
+    # sending get request and saving the response as response object
+    r = requests.get(url = request_URL, auth=(username,api_token))
+    # extracting data in json format
+    data = r.json()
 
-    # # GET number of stars
-    # try:
-    #     ret["num_stars"] = data['stargazers_count']
-    # except KeyError:
-    #     ret["num_stars"] = 0
+    # GET number of stars
+    try:
+        ret["num_stars"] = data['stargazers_count']
+    except KeyError:
+        ret["num_stars"] = 0
 
-    # # GET number of forks
-    # ret["num_forks"] = data['forks_count']
+    # GET number of forks
+    ret["num_forks"] = data['forks_count']
 
-    # # GET number of open issues
-    # ret["num_open_issues"] = data['open_issues_count']
-    # # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
+    # GET number of open issues
+    ret["num_open_issues"] = data['open_issues_count']
+    # can be categorized into categories - "bug", "refactoring", "enhancement", etc.
 
     # SECOND REQUEST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     request_URL = "https://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=1"

@@ -1,80 +1,54 @@
+const fs = require('fs');
+const path = require('path');
 
-// let file = require('../private/addActionListener.json');
-// let json = JSON.parse(JSON.stringify(file))
-
-
-const getUrl = function(filename){
-    var file = require('../private/' + filename);
-    var json = JSON.parse(JSON.stringify(file));
-    var result_urls = []
-    for(var i = 0; i < json.length; i++){
-       result_urls.push(json[i].url);
-    }
-
-    return result_urls;
+const trim = function(url){
+    const trimmed_url = {};
+    trimmed_url[url.substring(0, url.indexOf('tree')-1)] = url.substring(url.indexOf('master')+7, url.length)
+    return trimmed_url;
 }
 
-const trim_repo_url = function(array){
-    var repo_url = array;
-    for(var i = 0; i < array.length; i++){
-        for(var j = 0; j < array[i].length; j++){
-            repo_url[i][j] = [(array[i][j].substring(0, array[i][j].indexOf('tree')-1)), array[i][j].substring(array[i][j].indexOf('master')+7, array[i][j].length)]
-        }
-    }
+const readFromFolder = function(dir){
+    const obj = {};
+    
+    const jsonsInDir = fs.readdirSync(dir).filter(file => path.extname(file) === '.json');
+    jsonsInDir.forEach(file => {
+        const fileData = fs.readFileSync(path.join(dir, file));
+        const json = JSON.parse(fileData.toString());
 
-    return repo_url;
-}
-
-const returnAllUrls = async(directory, res) => {
-
-    const Promise = require('bluebird');
-    const fs = Promise.promisifyAll(require('fs'));
-
-    fs.readdirAsync(directory).then((filename)=>{
-        for(const item of filename){
-            res.push(getUrl(item));
-        }
-        var repo_url = trim_repo_url(res);
-        var path = '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/Examplore-master/meteor_app/client/'
-        var name = 'output.txt';
-        var path_for_repo_url = '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/Examplore-master/meteor_app/client/';
-
-        for(let i = 0; i < repo_url.length; i++){
-            console.log(JSON.stringify(repo_url[1][i][1])+",")
-        }
-        fs.writeFileSync(path + name, res.toString(), (err) => {
-      
-            // In case of a error throw err.
-            if (err) throw err;
+        json.forEach(item => {
+            if(!obj[item.dataset]){
+                obj[item.dataset] = [];
+                obj[item.dataset].push(trim(item.url));
+            }else
+                obj[item.dataset].push(trim(item.url));
         })
-
         
-        
-        for(let i = 0; i < repo_url.length; i++){
-            var obj = {};
-            for(let j = 0; j < repo_url[i].length; j++){
-                obj[repo_url[i][j][0]] = repo_url[i][j][1];
-                fs.writeFileSync(path_for_repo_url + filename[i], JSON.stringify(obj), (err) => {
-              
-                        // In case of a error throw err.
-                    if (err) throw err;
-                })
-                
-            }
-            // console.log(obj);
+      });
 
-        }
-        
-        return res;
-    })
-    
-   
-    
-
+      return obj;
 }
-var directory = '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/Examplore-master/meteor_app/private';
 
-returnAllUrls(directory, []);
+const writeToFile = function(input, dir){
+    for (const key in input) {
+        const str = JSON.stringify(input[key]);
+        const content = "{" + str.replace(/\[/g, "").replace(/\]/g,"").replace(/{/g,"").replace(/}/g,"") + "}"
+    
+        fs.writeFileSync(dir + key + ".json", content, (err) => {
+            if (err) {
+              console.error(err)
+              return
+            }
+            //file written successfully
+          })
+    }
+}
+
+
+var directory = '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/meteor_app/private';
+
+var app = readFromFolder(directory);
+writeToFile(app, '/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/meteor_app/client/');
+
 
 
 

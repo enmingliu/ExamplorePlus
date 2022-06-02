@@ -24,6 +24,7 @@ pj[https://github.com/aumann/emfstore.core/tree/master/org.eclipse.emf.emfstore.
 pj[https://github.com/bdumitriu/playground/tree/master/university-work/uu/distributed object systems/project/src/client/ClientAppointmentModel.java] = 1304233181000000
 pj[https://github.com/bedditor/ohtu-Alarmclock/tree/master/beddit_alarm/src/ohtu/beddit/activity/MainActivity.java] = 1340871303000000
 pj[https://github.com/belerweb/cqlybest/tree/master/common/src/main/java/com/cqlybest/common/IdcardUtils.java] = 1379825518000000
+pj[https://github.com/bobeal/capdemat/tree/master/Model/src/java/fr/cg95/cvq/business/request/leisure/SmsNotificationRequest.java] = 1303459564000000
 pj[https://github.com/bobeal/capdemat/tree/master/Model/src/java/fr/cg95/cvq/business/request/social/DomesticHelpRequest.java] = 1322677629000000
 pj[https://github.com/camunda/camunda-bpm-platform/tree/master/engine/src/test/java/org/camunda/bpm/engine/test/standalone/history/FullHistoryTest.java] = 1395659136000000
 pj[https://github.com/ccstorch/am-academia/tree/master/workspace/AMAcademiaJSF/src/br/com/acad/bean/dieta/SolicitacaoDietaBean.java] = 1376527612000000
@@ -31,6 +32,7 @@ pj[https://github.com/cesar06ar/SgsSalud/tree/master/src/main/java/edu/sgssalud/
 pj[https://github.com/clintmanning/new-empty/tree/master/engine/src/test/java/org/camunda/bpm/engine/test/jobexecutor/tobemerged/TestSequentialJobAcquisition.java] = 1366667873000000
 pj[https://github.com/cnyangyifeng/otp/tree/master/src/main/java/cn/xdf/me/otp/sso/e2/impl/E2LoginServiceImp.java] = 1364265812000000
 pj[https://github.com/codefireX/platform_libcore/tree/master/luni/src/test/java/libcore/java/sql/OldPreparedStatementTest.java] = 1316010181000000
+pj[https://github.com/codefireX/platform_libcore/tree/master/luni/src/test/java/tests/security/cert/X509CertSelectorTest.java] = 1317909651000000
 pj[https://github.com/commoncrawl/commoncrawl-crawler/tree/master/src/org/commoncrawl/util/time/SpreadsheetDate.java] = 1337752134000000
 pj[https://github.com/cs301w01/Meat-Loaf/tree/master/Meat-Loaf/src/com/cs301w01/meatload/model/querygenerators/AlbumQueryGenerator.java] = 1333727612000000
 pj[https://github.com/czarneckid/blojsom-sourceforge/tree/master/branches/blojsom-2_31-final/blojsom-2.0/plugins/src/org/blojsom/plugin/calendar/CalendarFilterPlugin.java] = 1293485736000000
@@ -40,6 +42,7 @@ pj[https://github.com/dukeboard/kevoree-extra/tree/master/org.kevoree.extra.espe
 pj[https://github.com/eastseven/tsm/tree/master/tsm/src/main/java/com/justinmobile/tsm/application/web/ApplicationVersionController.java] = 1329267583000000
 pj[https://github.com/enina/AdvertManager/tree/master/src/java/com/mne/advertmanager/util/PurchaseOrderImporter.java] = 1342621772000000
 pj[https://github.com/enwida/idpRepo/tree/master/workspace/enwida/src/main/java/de/enwida/web/controller/UploadController.java] = 1378940414000000
+pj[https://github.com/enwida/idpRepo/tree/master/workspace/enwida/src/test/java/de/enwida/web/ChartNavigationTestsRelaxed.java] = 1378249440000000
 pj[https://github.com/erny/activiti/tree/master/modules/activiti-engine/src/test/java/org/activiti/engine/test/api/task/TaskQueryTest.java] = 1328795411000000
 pj[https://github.com/europeana/contrib/tree/master/repox2/repoxCore/branches/repoxCore_12_03_2013/src/main/java/pt/utl/ist/repox/task/ScheduledTask.java] = 1374788496000000
 pj[https://github.com/ewcmsfree/ewcms/tree/master/src/main/java/com/ewcms/content/particular/service/ProjectBasicService.java] = 1350977353000000
@@ -61,6 +64,7 @@ pj[https://github.com/maiklos/squirrel-sql/tree/master/sql12/app/src/main/java/n
 pj[https://github.com/mamgjigsaw/sece/tree/master/src/java/dwrScripts/initCapacitadores.java] = 1363991618000000
 pj[https://github.com/mbastian/gephi-maven/tree/master/modules/DataLaboratoryAPI/src/main/java/org/gephi/datalab/impl/AttributeColumnsMergeStrategiesControllerImpl.java] = 1341983279000000
 pj[https://github.com/motech/MOTECH-Ghana/tree/master/motech-server-core/src/test/java/org/motechproject/server/service/EDDScheduleTest.java] = 1307080089000000
+pj[https://github.com/motech/MOTECH-Ghana/tree/master/motech-server-omod/src/test/java/org/motechproject/server/svc/impl/RegistrarBeanRecordVisitsTest.java] = 1311089908000000
 pj[https://github.com/mozilla-metrics/akela/tree/master/src/main/java/com/mozilla/util/DateUtil.java] = 1363092679000000
 pj[https://github.com/nasa/coeci-cms-mpsp/tree/master/pesp-was8.5/services/src/main/java/gov/medicaid/binders/XMLUtility.java] = 1370038554000000
 pj[https://github.com/papousek/GpsMid/tree/master/src/de/ueller/util/HelperRoutines.java] = 1333933255000000
@@ -79,7 +83,11 @@ pj[https://github.com/smaldeniya/GlobalMeshETicket/tree/master/src/com/globalmes
 pj[https://github.com/sonyfe25cp/EventsMachine/tree/master/gossip/src/main/java/gossip/urlTemp/ChinaNews.java] = 1363536554000000
 pj[https://github.com/sparkoo/Bugmaze/tree/master/src/cz/sparko/Bugmaze/Activity/Game.java] = 1387566933000000
 pj[https://github.com/stas/pos/tree/master/src-beans/com/openbravo/beans/DateUtils.java] = 1234870610000000
+pj[https://github.com/svn2github/sakai-kernel/tree/master/branches/KNL-635/kernel-impl/src/test/java/org/sakaiproject/jcr/test/ExportDocViewTestData.java] = 1344901761000000
+pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.0.10/kernel-impl/src/test/java/org/sakaiproject/jcr/test/ExportDocViewTestData.java] = 1246264574000000
 pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.0.13/kernel-impl/src/test/java/org/sakaiproject/jcr/test/NodeTestData.java] = 1263942138000000
+pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.1.0-beta04/kernel-impl/src/main/java/org/sakaiproject/content/impl/LockManagerImpl.java] = 1259610840000000
+pj[https://github.com/svn2github/sakai-kernel/tree/master/tags/kernel-1.1.12/kernel-impl/src/test/java/org/sakaiproject/jcr/test/PropertyTestData.java] = 1311957859000000
 pj[https://github.com/t2health/T2-Mood-Tracker-Android/tree/master/MoodTracker/src/com/t2/vas/activity/ExportActivity.java] = 1349900043000000
 pj[https://github.com/tavlima/fosstrak-epcis/tree/master/epcis-captureclient/src/test/java/org/fosstrak/epcis/captureclient/SampleEventsGenerator.java] = 1250856263000000
 pj[https://github.com/ted/ted/tree/master/ted-server/src/test/java/nu/ted/domain/SeriesBackendWrapperTest.java] = 1291096255000000
@@ -116,6 +124,7 @@ pj1[https://github.com/aumann/emfstore.core/org.eclipse.emf.emfstore.client.test
 pj1[https://github.com/bdumitriu/playground/university-work/uu/distributed object systems/project/src/client/ClientAppointmentModel.java] = 1
 pj1[https://github.com/bedditor/ohtu-Alarmclock/beddit_alarm/src/ohtu/beddit/activity/MainActivity.java] = 8
 pj1[https://github.com/belerweb/cqlybest/common/src/main/java/com/cqlybest/common/IdcardUtils.java] = 1
+pj1[https://github.com/bobeal/capdemat/Model/src/java/fr/cg95/cvq/business/request/leisure/SmsNotificationRequest.java] = 18
 pj1[https://github.com/bobeal/capdemat/Model/src/java/fr/cg95/cvq/business/request/social/DomesticHelpRequest.java] = 18
 pj1[https://github.com/camunda/camunda-bpm-platform/engine/src/test/java/org/camunda/bpm/engine/test/standalone/history/FullHistoryTest.java] = 66
 pj1[https://github.com/ccstorch/am-academia/workspace/AMAcademiaJSF/src/br/com/acad/bean/dieta/SolicitacaoDietaBean.java] = 3
@@ -123,6 +132,7 @@ pj1[https://github.com/cesar06ar/SgsSalud/src/main/java/edu/sgssalud/controller/
 pj1[https://github.com/clintmanning/new-empty/engine/src/test/java/org/camunda/bpm/engine/test/jobexecutor/tobemerged/TestSequentialJobAcquisition.java] = 57
 pj1[https://github.com/cnyangyifeng/otp/src/main/java/cn/xdf/me/otp/sso/e2/impl/E2LoginServiceImp.java] = 10
 pj1[https://github.com/codefireX/platform_libcore/luni/src/test/java/libcore/java/sql/OldPreparedStatementTest.java] = 124
+pj1[https://github.com/codefireX/platform_libcore/luni/src/test/java/tests/security/cert/X509CertSelectorTest.java] = 124
 pj1[https://github.com/commoncrawl/commoncrawl-crawler/src/org/commoncrawl/util/time/SpreadsheetDate.java] = 3
 pj1[https://github.com/cs301w01/Meat-Loaf/Meat-Loaf/src/com/cs301w01/meatload/model/querygenerators/AlbumQueryGenerator.java] = 7
 pj1[https://github.com/czarneckid/blojsom-sourceforge/branches/blojsom-2_31-final/blojsom-2.0/plugins/src/org/blojsom/plugin/calendar/CalendarFilterPlugin.java] = 8
@@ -132,6 +142,7 @@ pj1[https://github.com/dukeboard/kevoree-extra/org.kevoree.extra.esper/src/main/
 pj1[https://github.com/eastseven/tsm/tsm/src/main/java/com/justinmobile/tsm/application/web/ApplicationVersionController.java] = 9
 pj1[https://github.com/enina/AdvertManager/src/java/com/mne/advertmanager/util/PurchaseOrderImporter.java] = 7
 pj1[https://github.com/enwida/idpRepo/workspace/enwida/src/main/java/de/enwida/web/controller/UploadController.java] = 10
+pj1[https://github.com/enwida/idpRepo/workspace/enwida/src/test/java/de/enwida/web/ChartNavigationTestsRelaxed.java] = 10
 pj1[https://github.com/erny/activiti/modules/activiti-engine/src/test/java/org/activiti/engine/test/api/task/TaskQueryTest.java] = 13
 pj1[https://github.com/europeana/contrib/repox2/repoxCore/branches/repoxCore_12_03_2013/src/main/java/pt/utl/ist/repox/task/ScheduledTask.java] = 9
 pj1[https://github.com/ewcmsfree/ewcms/src/main/java/com/ewcms/content/particular/service/ProjectBasicService.java] = 6
@@ -153,6 +164,7 @@ pj1[https://github.com/maiklos/squirrel-sql/sql12/app/src/main/java/net/sourcefo
 pj1[https://github.com/mamgjigsaw/sece/src/java/dwrScripts/initCapacitadores.java] = 17
 pj1[https://github.com/mbastian/gephi-maven/modules/DataLaboratoryAPI/src/main/java/org/gephi/datalab/impl/AttributeColumnsMergeStrategiesControllerImpl.java] = 2
 pj1[https://github.com/motech/MOTECH-Ghana/motech-server-core/src/test/java/org/motechproject/server/service/EDDScheduleTest.java] = 19
+pj1[https://github.com/motech/MOTECH-Ghana/motech-server-omod/src/test/java/org/motechproject/server/svc/impl/RegistrarBeanRecordVisitsTest.java] = 19
 pj1[https://github.com/mozilla-metrics/akela/src/main/java/com/mozilla/util/DateUtil.java] = 6
 pj1[https://github.com/nasa/coeci-cms-mpsp/pesp-was8.5/services/src/main/java/gov/medicaid/binders/XMLUtility.java] = 3
 pj1[https://github.com/papousek/GpsMid/src/de/ueller/util/HelperRoutines.java] = 11
@@ -171,7 +183,11 @@ pj1[https://github.com/smaldeniya/GlobalMeshETicket/src/com/globalmesh/action/ha
 pj1[https://github.com/sonyfe25cp/EventsMachine/gossip/src/main/java/gossip/urlTemp/ChinaNews.java] = 4
 pj1[https://github.com/sparkoo/Bugmaze/src/cz/sparko/Bugmaze/Activity/Game.java] = 3
 pj1[https://github.com/stas/pos/src-beans/com/openbravo/beans/DateUtils.java] = 7
+pj1[https://github.com/svn2github/sakai-kernel/branches/KNL-635/kernel-impl/src/test/java/org/sakaiproject/jcr/test/ExportDocViewTestData.java] = 37
+pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.0.10/kernel-impl/src/test/java/org/sakaiproject/jcr/test/ExportDocViewTestData.java] = 37
 pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.0.13/kernel-impl/src/test/java/org/sakaiproject/jcr/test/NodeTestData.java] = 37
+pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.1.0-beta04/kernel-impl/src/main/java/org/sakaiproject/content/impl/LockManagerImpl.java] = 37
+pj1[https://github.com/svn2github/sakai-kernel/tags/kernel-1.1.12/kernel-impl/src/test/java/org/sakaiproject/jcr/test/PropertyTestData.java] = 37
 pj1[https://github.com/t2health/T2-Mood-Tracker-Android/MoodTracker/src/com/t2/vas/activity/ExportActivity.java] = 5
 pj1[https://github.com/tavlima/fosstrak-epcis/epcis-captureclient/src/test/java/org/fosstrak/epcis/captureclient/SampleEventsGenerator.java] = 8
 pj1[https://github.com/ted/ted/ted-server/src/test/java/nu/ted/domain/SeriesBackendWrapperTest.java] = 3
