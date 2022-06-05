@@ -43,7 +43,7 @@ def extract_url(line):
     value = line[eq_pos+2:]
     return (key, url, value)
 
-def process_json(input_filename, output_filename, input_boa_dir, output_json_dir, input_json_dir, start_idx, max_api_calls, cur_idx):
+def process_api(input_filename, output_filename, input_boa_dir, output_json_dir, input_json_dir, start_idx, max_api_calls, cur_idx):
     url_data_map = {}
     with open(os.path.join(os.getcwd(), input_boa_dir, input_filename), 'r') as f:
         data = f.read().split('\n')
@@ -65,11 +65,12 @@ def process_json(input_filename, output_filename, input_boa_dir, output_json_dir
             data = json.load(f)
             for idx, obj in enumerate(data):
                 if obj["url"] in url_data_map:
-                    # curl -H "Authorization: token api_key" -X GET https://api.github.com/rate_limit 
                     github_api_data = extract_info(obj["url"])
 
-                    stars_forks = (math.log(max(1.0, float(github_api_data["num_stars"]))) + math.log(max(1.0, float(github_api_data["num_forks"]))))
-                    open_closed_issues = max(1.0, float(github_api_data["num_closed_issues"]) - float(github_api_data["num_open_issues"])) / (max(1.0, float(github_api_data["num_contributors"])))
+                    stars_forks = (math.log(max(1.0, float(github_api_data["num_stars"]))) + \
+                                   math.log(max(1.0, float(github_api_data["num_forks"]))))
+                    open_closed_issues = max(1.0, float(github_api_data["num_closed_issues"]) - float(github_api_data["num_open_issues"])) / \
+                                        (max(1.0, float(github_api_data["num_contributors"])))
                     try:
                         timestamp_metric = ((time() - float(url_data_map[obj["url"]]["timestamp"])) / float(360*24))**(-math.log(0.9))
                         ranking_metric = (stars_forks + open_closed_issues)**timestamp_metric
@@ -113,7 +114,7 @@ def main():
     if len(sys.argv) == 5:
         input_filename = str(sys.argv[3])
         output_filename = str(sys.argv[4])
-        process_json(input_filename, output_filename, input_boa_dir, output_json_dir, input_json_dir, start_idx, max_api_calls, cur_idx)
+        process_api(input_filename, output_filename, input_boa_dir, output_json_dir, input_json_dir, start_idx, max_api_calls, cur_idx)
         return
 
     url_data_map = {}
