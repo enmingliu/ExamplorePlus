@@ -7,6 +7,10 @@ Meteor.startup(function(){
         spanAdder = new tutorons.TutoronsConnection(window);
         spanAdder.scanDom();
     });
+    Session.set('lowestTs', Date.now()/1000);
+    Session.set('largestTs',0);
+    Session.set('currentLeft',Date.now()/1000);
+    Session.set('currentRight',100);
     Session.set('countTooLowThreshold',0);
     Session.set('numOptions',3);
     Session.set('toggleZeroCount', true);
