@@ -17,7 +17,7 @@ export const get_frequent_dataset = async function () {
     for (let item of temp) {
         res.push(item._id);
     }
-    // console.log(res);
+    console.log(res);
     return res;
 }
 

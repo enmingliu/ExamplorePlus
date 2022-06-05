@@ -70,8 +70,7 @@ Meteor.startup(() => {
     cronTime: '0 8 * * *', // everyday at 8 am
     onTick: Meteor.bindEnvironment(async () => {
       let urls = await get_frequent_dataset();
-      update_database(urls).then(()=>{
-      })
+      update_database(urls);
 
     }),
     start: true,

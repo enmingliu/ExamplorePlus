@@ -134,7 +134,8 @@ public class MapleClient {
                 repoURL = repoURL.replace("{", "");
                 repoURL = repoURL.replace("}", "");
 
-                String query = "p: Project = input;" +
+                String query = 
+                        "p: Project = input;" +
                         " pj: output collection[string] of time;" +
                         " pj1: output sum[string] of int;" +
                         " q_urls : array of string;" +
@@ -163,10 +164,11 @@ public class MapleClient {
                         "        q_file := q_files[i];" +
                         "        snapshot := getLastSnapshot(node, q_file);" +
                         "        pj[q_url+\"/tree/master/\"+q_file] << last_commit_date;" +
-                        "        foreach (j: int; def(p.code_repositories[j]))" +
-                        "         foreach (z: int; def(p.code_repositories[j].revisions[z])) " +
-                        "          committers[p.code_repositories[j].revisions[z].committer.username] = true;" +
-                        "        if (len(committers) > 0)pj1[q_url+\"/tree/master/\"+q_file] << len(committers); }}stop;}});";
+                        // "        foreach (j: int; def(p.code_repositories[j]))" +
+                        // "         foreach (z: int; def(p.code_repositories[j].revisions[z])) " +
+                        // "          committers[p.code_repositories[j].revisions[z].committer.username] = true;" +
+                        // "            if (len(committers) > 0)pj1[q_url+\"/tree/master/\"+q_file] << len(committers);" +
+                        "         }}stop;}});";
 
                 client.run(query,
                         "/Users/zacyou/Desktop/UCLA/Spring 2022/CS 230/Project/ExamplorePlus/boa/output",
