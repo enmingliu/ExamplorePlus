@@ -72,7 +72,7 @@ def process_api(input_filename, output_filename, input_boa_dir, output_json_dir,
                     open_closed_issues = max(1.0, float(github_api_data["num_closed_issues"]) - float(github_api_data["num_open_issues"])) / \
                                         (max(1.0, float(github_api_data["num_contributors"])))
                     try:
-                        timestamp_metric = ((time() - float(url_data_map[obj["url"]]["timestamp"])) / float(360*24))**(-math.log(0.9))
+                        timestamp_metric = ((time() - float(url_data_map[obj["url"]]["timestamp"])) / float(360*24))**(-math.log(1.14))
                         ranking_metric = (stars_forks + open_closed_issues)**timestamp_metric
                     except:
                         ranking_metric = sys.float_info.max
