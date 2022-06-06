@@ -1,6 +1,6 @@
 # ExamplorePlus: API Usage Aggregation with Code Quality Metrics
 
-This repository contains the source code of Examplore. Please refer to our CHI 2018 paper *[Visualizing API Usage at Scale](http://web.cs.ucla.edu/~tianyi.zhang/examplore.pdf)* for details. 
+This repository contains the source code of ExamplorePlus, which is an extension to Examplore. Please refer to Tianyi's CHI 2018 paper *[Visualizing API Usage at Scale](http://web.cs.ucla.edu/~tianyi.zhang/examplore.pdf)* for details of Examplore. 
 
 ## Run Examplore
 1. Install [Meteor](https://www.meteor.com/install)
